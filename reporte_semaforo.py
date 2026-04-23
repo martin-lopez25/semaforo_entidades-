@@ -239,7 +239,7 @@ function imprimirPDF() {{
 </html>
 """
 
-descargas = os.path.join(os.path.expanduser("~"), "Downloads")
+descargas = os.path.join(os.path.expanduser("~"), f"C:\\Users\\{usuario}\\Downloads\\semaforo_entidades-")
 
 ruta_html = os.path.join(descargas, "index.html")
 
