@@ -1,34 +1,125 @@
 import pandas as pd
-# import webbrowser
 import os
-usuario = os.getlogin()
+#import webbrowser
 from datetime import datetime
+from pathlib import Path
 
+usuario = os.getlogin()
 fecha_actualizacion = datetime.now().strftime("%d/%m/%Y %H:%M")
-ruta = fr"C:\Users\{usuario}\IMSS-BIENESTAR\División de Procesamiento de información - Comando Florence Nightingale\Proyectos\74 Limpieza de bases de abasto\Data\reporte_metas_y_flags_2026-05-01.xlsx"
 
+# =========================
+# RUTA DINÁMICA
+# =========================
+carpeta = Path(fr"C:\Users\{usuario}\IMSS-BIENESTAR\División de Procesamiento de información - Comando Florence Nightingale\Proyectos\74 Limpieza de bases de abasto\Data")
+
+archivos = list(carpeta.glob("reporte_metas_y_flags_*.xlsx"))
+if not archivos:
+    raise FileNotFoundError("No se encontraron archivos")
+
+ruta = str(max(archivos, key=lambda x: x.stat().st_mtime))
+print(f"Usando archivo: {ruta}")
+
+# =========================
+# CATÁLOGO
+# =========================
+clues_catalogo = pd.read_parquet(
+    fr"C:\Users\{usuario}\IMSS-BIENESTAR\División de Procesamiento de información - Repositorio de Datos\CLUES\clues.parquet"
+)
+
+catalogo_limpio = clues_catalogo.drop_duplicates(subset="clues_imb")
+
+# =========================
+# TABLA PRINCIPAL
+# =========================
 df = pd.read_excel(ruta, sheet_name="Tabla_entidad_flags")
+
 metas = df.assign(
-    inventario_completo = (
+    inventario_completo=(
         (df["clues_material_curacion_060"] / df["meta_de_clues"])
-        .where(df["meta_de_clues"] != 0, 0)
-        * 100
+        .where(df["meta_de_clues"] != 0, 0) * 100
     ).round(1)
 )
-# quitamos los _ para mejor visualizacion en el mapa 
-metas.columns = metas.columns.str.replace("_", " ", regex=False)
-# mapeo para nombres largos de las entidades, pa que se vea chidori 
-mapeo_entidades = {
-    "MICHOACAN DE OCAMPO": "MICHOACAN",
-    "VERACRUZ DE IGNACIO DE LA LLAVE": "VERACRUZ"
-}
 
-metas["entidad"] = metas["entidad"].replace(mapeo_entidades)
+metas.columns = metas.columns.str.replace("_", " ", regex=False)
 
 cols_color = ["pct avance", "inventario completo"]
+metas[cols_color] = metas[cols_color].astype(float).round(2)
 
-for col in cols_color:
-    metas[col] = metas[col].astype(float).round(2)
+# =========================
+# CLUES
+# =========================
+clues = pd.read_excel(ruta, sheet_name="Tabla_clues_flags")
+clues = clues.drop(columns=["nombre_comercial"], errors="ignore")
+
+# detectar columna entidad en catálogo
+col_entidad_catalogo = next(
+    (c for c in catalogo_limpio.columns if "entidad" in c.lower()),
+    None
+)
+
+# columnas a usar en merge
+cols_catalogo = ["clues_imb", "nombre_de_la_unidad"]
+if col_entidad_catalogo:
+    cols_catalogo.append(col_entidad_catalogo)
+
+# merge
+clues = clues.merge(
+    catalogo_limpio[cols_catalogo],
+    on="clues_imb",
+    how="left",
+    validate="m:1"
+)
+
+# =========================
+# NORMALIZACIÓN
+# =========================
+clues.columns = (
+    clues.columns
+    .str.replace("_", " ", regex=False)
+    .str.lower()
+)
+
+# =========================
+# FLAGS
+# =========================
+cols_flags = [
+    "reporto en cpm y ca",
+    "reporto medicamentos 010 040",
+    "reporto material curacion 060",
+    "reporto otros 030 070 080"
+]
+
+clues["conteo"] = clues[cols_flags].sum(axis=1)
+
+# =========================
+# DETECTAR ENTIDAD YA LIMPIA
+# =========================
+col_entidad = next(
+    (c for c in clues.columns if "entidad" in c),
+    None
+)
+
+# columnas finales dinámicas
+columnas_salida = ["clues imb", "nombre de la unidad", "conteo"]
+
+if col_entidad:
+    columnas_salida.insert(2, col_entidad)
+
+# =========================
+# SEGMENTACIÓN
+# =========================
+no_reportaron = clues[clues["conteo"] == 0][columnas_salida]
+incompletos = clues[
+    (clues["conteo"] > 0) & (clues["conteo"] < 4)
+][columnas_salida]
+
+# ordenar
+no_reportaron = no_reportaron.sort_values(["conteo", "clues imb"])
+incompletos = incompletos.sort_values(["conteo", "clues imb"])
+
+# =========================
+# FUNCIONES
+# =========================
 def semaforo(valor):
     return (
         "#D41111" if valor < 50 else
@@ -36,39 +127,51 @@ def semaforo(valor):
         "#88A91E" if valor < 100 else
         "#0D5D2A"
     )
+
 def color_texto(bg):
     return "white" if bg in ["#D41111", "#0D5D2A"] else "black"
-# html filas
-filas_html = ""
 
-for _, row in metas.iterrows():
-    fila = "<tr>"
-    
-    for col in metas.columns:
-        valor = row[col]
-        
-        if col in cols_color:
-            color = semaforo(valor)
-            txt_color = color_texto(color)
-            display = f"{valor:.2f}"
-        else:
-            color = "white"
-            txt_color = "black"
-            display = valor
-        
-        fila += f'''
-        <td style="
-            background-color:{color};
-            color:{txt_color};
-            text-align:center;
-            font-weight:500;
-        ">
-            {display}
-        </td>
-        '''
-    
-    fila += "</tr>"
-    filas_html += fila
+def tabla_principal_html(df):
+    filas = ""
+    for _, row in df.iterrows():
+        fila = "<tr>"
+        for col in df.columns:
+            valor = row[col]
+            if col in cols_color:
+                color = semaforo(valor)
+                txt = color_texto(color)
+                display = f"{valor:.2f}"
+            else:
+                color = "white"
+                txt = "black"
+                display = valor
+
+            fila += f'<td style="background:{color};color:{txt};text-align:center;">{display}</td>'
+        fila += "</tr>"
+        filas += fila
+    return filas
+
+def tabla_simple_html(df):
+    filas = ""
+    for _, row in df.iterrows():
+        fila = "<tr>"
+        for col in df.columns:
+            fila += f"<td>{row[col]}</td>"
+        fila += "</tr>"
+        filas += fila
+    return filas
+
+tabla_principal = tabla_principal_html(metas)
+tabla_no = tabla_simple_html(no_reportaron)
+tabla_inc = tabla_simple_html(incompletos)
+
+headers_principal = ''.join([f"<th>{col}</th>" for col in metas.columns])
+headers_no = ''.join([f"<th>{col}</th>" for col in no_reportaron.columns])
+headers_inc = ''.join([f"<th>{col}</th>" for col in incompletos.columns])
+
+# =========================
+# HTML
+# =========================
 html = f"""
 <!DOCTYPE html>
 <html>
@@ -77,121 +180,31 @@ html = f"""
 <title>Reporte Inventario</title>
 
 <style>
-body {{
-    font-family: 'Segoe UI', Arial;
-    margin: 0;
-    background-color: #f4f6f9;
-}}
+body {{ font-family: Arial; background:#f4f6f9; margin:0; }}
+.header {{ background:#7a1f2b; color:white; padding:15px; }}
+.container {{ padding:20px; }}
 
-.header {{
-    background: #7a1f2b;
-    color: white;
-    padding: 15px 25px;
-}}
+table {{ border-collapse: collapse; width:100%; margin-bottom:20px; }}
+th {{ background:#7a1f2b; color:white; padding:8px; }}
+td {{ padding:6px; text-align:center; }}
 
-.header h1 {{
-    margin: 0;
-    font-size: 22px;
-}}
-
-.subheader {{
-    font-size: 12px;
-    opacity: 0.8;
-}}
-
-.container {{
-    padding: 20px;
-}}
-
-.tabla-container {{
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    overflow-x: auto;
-}}
-
-table {{
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 13px;
-}}
-
-th {{
-    background-color: #7a1f2b;
-    color: white;
-    padding: 8px;
-}}
-
-td {{
-    padding: 6px;
-    text-align: center;
-}}
-
-tr:hover {{
-    background-color: #f1f1f1;
-}}
-
-.update {{
-    text-align: right;
-    font-size: 12px;
-    color: #777;
-    margin-bottom: 10px;
-}}
+.simple td {{ background:white; color:black; }}
 
 .btn {{
-    background-color: #7a1f2b;
-    color: white;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-bottom: 10px;
+    background:#7a1f2b;
+    color:white;
+    padding:8px;
+    border:none;
+    cursor:pointer;
 }}
 
-.btn:hover {{
-    background-color: #5a1720;
-}}
-
-/*  MODO IMPRESIÓN */
 @media print {{
-
-    @page {{
-        size: landscape;
-        margin: 10mm;
-    }}
-
-    /*  fuerza colores */
+    @page {{ size: landscape; margin: 10mm; }}
     * {{
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
     }}
-
-    body * {{
-        visibility: hidden;
-    }}
-
-    .tabla-container, .tabla-container * {{
-        visibility: visible;
-    }}
-
-    .tabla-container {{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        box-shadow: none;
-        background: white;
-    }}
-
-    td {{
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-    }}
-
-    .btn {{
-        display: none;
-    }}
+    .btn {{ display:none; }}
 }}
 </style>
 
@@ -206,44 +219,46 @@ function imprimirPDF() {{
 <body>
 
 <div class="header">
-    <h1>Reporte de Inventario Hospitales por Entidad</h1>
-    <div class="subheader">IMSS-BIENESTAR · Monitoreo Operativo</div>
+<h1>Reporte de Inventario</h1>
 </div>
 
 <div class="container">
 
-    <div class="tabla-container">
+<button class="btn" onclick="imprimirPDF()">Descargar PDF</button>
+<p>Actualización: {fecha_actualizacion}</p>
 
-        <button class="btn" onclick="imprimirPDF()">Descargar PDF</button>
+<h2>Vista General</h2>
+<table>
+<thead><tr>{headers_principal}</tr></thead>
+<tbody>{tabla_principal}</tbody>
+</table>
 
-        <div class="update">
-            Última actualización: {fecha_actualizacion}
-        </div>
+<h2>CLUES que NO reportaron ({len(no_reportaron)})</h2>
+<table class="simple">
+<thead><tr>{headers_no}</tr></thead>
+<tbody>{tabla_no}</tbody>
+</table>
 
-        <table>
-            <thead>
-                <tr>
-                    {''.join([f"<th>{col}</th>" for col in metas.columns])}
-                </tr>
-            </thead>
-            <tbody>
-                {filas_html}
-            </tbody>
-        </table>
-
-    </div>
+<h2>CLUES incompletos ({len(incompletos)})</h2>
+<table class="simple">
+<thead><tr>{headers_inc}</tr></thead>
+<tbody>{tabla_inc}</tbody>
+</table>
 
 </div>
-
 </body>
 </html>
 """
 
-descargas = os.path.join(os.path.expanduser("~"), f"C:\\Users\\{usuario}\\Downloads\\semaforo_entidades-")
-
-ruta_html = os.path.join(descargas, "index.html")
+# =========================
+# GUARDAR Y ABRIR
+# =========================
+descargas = os.path.join(os.path.expanduser("~"), "Downloads")
+ruta_html = os.path.join(descargas, "reporte_inventario.html")
 
 with open(ruta_html, "w", encoding="utf-8") as f:
     f.write(html)
 
-# webbrowser.open("file://" + os.path.realpath(ruta_html))
+print(f"Reporte generado en: {ruta_html}")
+
+#webbrowser.open("file://" + os.path.realpath(ruta_html))
