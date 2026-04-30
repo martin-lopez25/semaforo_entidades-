@@ -5,7 +5,7 @@ usuario = os.getlogin()
 from datetime import datetime
 
 fecha_actualizacion = datetime.now().strftime("%d/%m/%Y %H:%M")
-ruta = fr"C:\Users\{usuario}\IMSS-BIENESTAR\División de Procesamiento de información - Comando Florence Nightingale\Proyectos\74 Limpieza de bases de abasto\Data\reporte_metas_y_flags_2026-04-24.xlsx"
+ruta = fr"C:\Users\{usuario}\IMSS-BIENESTAR\División de Procesamiento de información - Comando Florence Nightingale\Proyectos\74 Limpieza de bases de abasto\Data\reporte_metas_y_flags_2026-05-01.xlsx"
 
 df = pd.read_excel(ruta, sheet_name="Tabla_entidad_flags")
 metas = df.assign(
