@@ -254,7 +254,7 @@ function imprimirPDF() {{
 # GUARDAR Y ABRIR
 # =========================
 descargas = os.path.join(os.path.expanduser("~"), "Downloads")
-ruta_html = os.path.join(descargas, "reporte_inventario.html")
+ruta_html = os.path.join(descargas, "reporte_semaforo.html")
 
 with open(ruta_html, "w", encoding="utf-8") as f:
     f.write(html)
