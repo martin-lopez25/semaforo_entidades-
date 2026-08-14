@@ -4,6 +4,35 @@ import os
 from datetime import datetime
 from pathlib import Path
 
+
+def reparar_mojibake(valor):
+    if not isinstance(valor, str):
+        return valor
+
+    texto = valor.strip()
+    if not texto:
+        return texto
+
+    if any(marca in texto for marca in ("Ã", "Â", "â", "ð")):
+        try:
+            return texto.encode("latin1").decode("utf-8")
+        except UnicodeError:
+            return texto
+
+    return texto
+
+
+def normalizar_texto_df(df_entrada):
+    columnas_texto = df_entrada.select_dtypes(include=["object", "string"]).columns
+    if len(columnas_texto) == 0:
+        return df_entrada
+
+    df_entrada[columnas_texto] = df_entrada[columnas_texto].apply(
+        lambda serie: serie.map(reparar_mojibake)
+    )
+    return df_entrada
+
+
 usuario = os.getlogin()
 fecha_actualizacion = datetime.now().strftime("%d/%m/%Y %H:%M")
 
@@ -43,6 +72,7 @@ if ruta_clues is None:
     raise FileNotFoundError("No se encontró clues.parquet en ninguna ruta esperada")
 
 clues_catalogo = pd.read_parquet(ruta_clues)
+clues_catalogo = normalizar_texto_df(clues_catalogo)
 
 
 catalogo_limpio = clues_catalogo.drop_duplicates(subset="clues_imb")
@@ -59,11 +89,13 @@ claves_excluidas = {"GRIMB000012"}
 # TABLA PRINCIPAL
 # =========================
 df = pd.read_excel(ruta, sheet_name="Tabla_entidad_flags")
+df = normalizar_texto_df(df)
 
 if claves_excluidas and col_entidad_catalogo:
     df["entidad"] = df["entidad"].astype(str).str.strip()
 
     clues_excluidas = pd.read_excel(ruta, sheet_name="Tabla_clues_flags")
+    clues_excluidas = normalizar_texto_df(clues_excluidas)
     clues_excluidas = clues_excluidas[clues_excluidas["clues_imb"].isin(claves_excluidas)]
 
     if not clues_excluidas.empty:
@@ -158,6 +190,7 @@ metas[cols_color] = metas[cols_color].astype(float).round(2)
 # CLUES
 # =========================
 clues = pd.read_excel(ruta, sheet_name="Tabla_clues_flags")
+clues = normalizar_texto_df(clues)
 clues = clues.drop(columns=["nombre_comercial"], errors="ignore")
 
 clues = clues[~clues["clues_imb"].isin(claves_excluidas)]
