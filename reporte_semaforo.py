@@ -47,10 +47,94 @@ clues_catalogo = pd.read_parquet(ruta_clues)
 
 catalogo_limpio = clues_catalogo.drop_duplicates(subset="clues_imb")
 
+col_entidad_catalogo = next(
+    (c for c in catalogo_limpio.columns if "entidad" in c.lower()),
+    None
+)
+
+# CLUES a excluir completamente del reporte.
+claves_excluidas = {"GRIMB000012"}
+
 # =========================
 # TABLA PRINCIPAL
 # =========================
 df = pd.read_excel(ruta, sheet_name="Tabla_entidad_flags")
+
+if claves_excluidas and col_entidad_catalogo:
+    df["entidad"] = df["entidad"].astype(str).str.strip()
+
+    clues_excluidas = pd.read_excel(ruta, sheet_name="Tabla_clues_flags")
+    clues_excluidas = clues_excluidas[clues_excluidas["clues_imb"].isin(claves_excluidas)]
+
+    if not clues_excluidas.empty:
+        clues_excluidas = clues_excluidas.merge(
+            catalogo_limpio[["clues_imb", col_entidad_catalogo]],
+            on="clues_imb",
+            how="left",
+            validate="m:1"
+        )
+        clues_excluidas[col_entidad_catalogo] = clues_excluidas[col_entidad_catalogo].astype(str).str.strip()
+
+        clues_excluidas["clues_con_inventario"] = (
+            clues_excluidas[
+                [
+                    "reporto_medicamentos_010_040",
+                    "reporto_material_curacion_060",
+                    "reporto_otros_030_070_080"
+                ]
+            ].sum(axis=1) > 0
+        ).astype(int)
+
+        ajuste = (
+            clues_excluidas
+            .groupby(col_entidad_catalogo, dropna=False)
+            .agg(
+                meta_de_clues_ajuste=("clues_imb", "size"),
+                clues_con_inventario_ajuste=("clues_con_inventario", "sum"),
+                clues_medicamentos_010_040_ajuste=("reporto_medicamentos_010_040", "sum"),
+                clues_material_curacion_060_ajuste=("reporto_material_curacion_060", "sum")
+            )
+            .reset_index()
+        )
+
+        df = df.merge(ajuste, left_on="entidad", right_on=col_entidad_catalogo, how="left")
+
+        cols_ajustables = [
+            "meta_de_clues",
+            "clues_con_inventario",
+            "clues_medicamentos_010_040",
+            "clues_material_curacion_060"
+        ]
+        for col in cols_ajustables:
+            col_ajuste = f"{col}_ajuste"
+            df[col] = (df[col] - df[col_ajuste].fillna(0)).clip(lower=0)
+
+        if col_entidad_catalogo != "entidad":
+            df = df.drop(columns=[col_entidad_catalogo], errors="ignore")
+
+        df = df.drop(columns=[
+            "meta_de_clues_ajuste",
+            "clues_con_inventario_ajuste",
+            "clues_medicamentos_010_040_ajuste",
+            "clues_material_curacion_060_ajuste"
+        ], errors="ignore")
+
+df["pct_avance"] = (
+    (df["clues_con_inventario"] / df["meta_de_clues"]).where(df["meta_de_clues"] != 0, 0)
+    .mul(100)
+    .round(2)
+)
+
+df["pct_completo"] = (
+    (
+        (df["clues_medicamentos_010_040"] + df["clues_material_curacion_060"])
+        /
+        (df["meta_de_clues"] * 2)
+    )
+    .where(df["meta_de_clues"] != 0, 0)
+    .mul(100)
+    .round(1)
+)
 
 metas = df.assign(
     inventario_completo=(
@@ -76,11 +160,7 @@ metas[cols_color] = metas[cols_color].astype(float).round(2)
 clues = pd.read_excel(ruta, sheet_name="Tabla_clues_flags")
 clues = clues.drop(columns=["nombre_comercial"], errors="ignore")
 
-# detectar entidad en catálogo
-col_entidad_catalogo = next(
-    (c for c in catalogo_limpio.columns if "entidad" in c.lower()),
-    None
-)
+clues = clues[~clues["clues_imb"].isin(claves_excluidas)]
 
 cols_catalogo = ["clues_imb", "nombre_de_la_unidad"]
 if col_entidad_catalogo:
