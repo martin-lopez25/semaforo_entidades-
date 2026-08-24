@@ -99,13 +99,7 @@ if claves_excluidas and col_entidad_catalogo:
     clues_excluidas = clues_excluidas[clues_excluidas["clues_imb"].isin(claves_excluidas)]
 
     if not clues_excluidas.empty:
-        clues_excluidas = clues_excluidas.merge(
-            catalogo_limpio[["clues_imb", col_entidad_catalogo]],
-            on="clues_imb",
-            how="left",
-            validate="m:1"
-        )
-        clues_excluidas[col_entidad_catalogo] = clues_excluidas[col_entidad_catalogo].astype(str).str.strip()
+        clues_excluidas["entidad"] = clues_excluidas["entidad"].astype(str).str.strip()
 
         clues_excluidas["clues_con_inventario"] = (
             clues_excluidas[
@@ -119,7 +113,7 @@ if claves_excluidas and col_entidad_catalogo:
 
         ajuste = (
             clues_excluidas
-            .groupby(col_entidad_catalogo, dropna=False)
+            .groupby("entidad", dropna=False)
             .agg(
                 meta_de_clues_ajuste=("clues_imb", "size"),
                 clues_con_inventario_ajuste=("clues_con_inventario", "sum"),
@@ -129,7 +123,7 @@ if claves_excluidas and col_entidad_catalogo:
             .reset_index()
         )
 
-        df = df.merge(ajuste, left_on="entidad", right_on=col_entidad_catalogo, how="left")
+        df = df.merge(ajuste, on="entidad", how="left")
 
         cols_ajustables = [
             "meta_de_clues",
@@ -140,9 +134,6 @@ if claves_excluidas and col_entidad_catalogo:
         for col in cols_ajustables:
             col_ajuste = f"{col}_ajuste"
             df[col] = (df[col] - df[col_ajuste].fillna(0)).clip(lower=0)
-
-        if col_entidad_catalogo != "entidad":
-            df = df.drop(columns=[col_entidad_catalogo], errors="ignore")
 
         df = df.drop(columns=[
             "meta_de_clues_ajuste",
@@ -405,8 +396,7 @@ function imprimirPDF() {{
 # =========================
 # GUARDAR Y ABRIR
 # =========================
-descargas = os.path.join(os.path.expanduser("~"), "Downloads\semaforo_entidades-\semaforo_entidades-")
-ruta_html = os.path.join(descargas, "index.html")
+ruta_html = Path(__file__).resolve().parent / "index.html"
 
 with open(ruta_html, "w", encoding="utf-8") as f:
     f.write(html)
