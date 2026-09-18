@@ -46,6 +46,15 @@
       "inventarioCompleto": 100.0
     },
     {
+      "id": "HIDALGO",
+      "entidad": "HIDALGO",
+      "metaClues": 18,
+      "cluesConInventario": 18,
+      "cluesMedicamentos": 18,
+      "cluesMaterialCuracion": 18,
+      "inventarioCompleto": 100.0
+    },
+    {
       "id": "HRAES",
       "entidad": "HRAES",
       "metaClues": 2,
@@ -154,6 +163,15 @@
       "inventarioCompleto": 100.0
     },
     {
+      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "metaClues": 55,
+      "cluesConInventario": 55,
+      "cluesMedicamentos": 55,
+      "cluesMaterialCuracion": 55,
+      "inventarioCompleto": 100.0
+    },
+    {
       "id": "ZACATECAS",
       "entidad": "ZACATECAS",
       "metaClues": 17,
@@ -181,31 +199,13 @@
       "inventarioCompleto": 100.0
     },
     {
-      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "metaClues": 55,
-      "cluesConInventario": 53,
-      "cluesMedicamentos": 53,
-      "cluesMaterialCuracion": 53,
-      "inventarioCompleto": 96.4
-    },
-    {
-      "id": "HIDALGO",
-      "entidad": "HIDALGO",
-      "metaClues": 18,
-      "cluesConInventario": 17,
-      "cluesMedicamentos": 17,
-      "cluesMaterialCuracion": 17,
-      "inventarioCompleto": 94.4
-    },
-    {
       "id": "OAXACA",
       "entidad": "OAXACA",
       "metaClues": 37,
-      "cluesConInventario": 34,
-      "cluesMedicamentos": 34,
-      "cluesMaterialCuracion": 34,
-      "inventarioCompleto": 91.9
+      "cluesConInventario": 35,
+      "cluesMedicamentos": 35,
+      "cluesMaterialCuracion": 35,
+      "inventarioCompleto": 94.6
     },
     {
       "id": "BAJA CALIFORNIA",
@@ -230,26 +230,6 @@
     },
     {
       "id": "nr-2",
-      "clues": "HGIMB002036",
-      "nombreUnidad": "HOSPITAL INTEGRAL CINTA LARGA",
-      "entidad": "HIDALGO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-3",
-      "clues": "OCIMB007181",
-      "nombreUnidad": "HOSPITAL ESPECIALIZADO DE 30 CAMAS DE JUCHITAN",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-4",
       "clues": "OCIMB008634",
       "nombreUnidad": "HC LOMA BONITA",
       "entidad": "OAXACA",
@@ -259,7 +239,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-5",
+      "id": "nr-3",
       "clues": "OCIMB009416",
       "nombreUnidad": "HC TEOTITLÁN DE FLORES MAGÓN",
       "entidad": "OAXACA",
@@ -269,30 +249,10 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-6",
+      "id": "nr-4",
       "clues": "PLIMB000351",
       "nombreUnidad": "HOSPITAL COMUNITARIO DE AYOTOXCO",
       "entidad": "PUEBLA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-7",
-      "clues": "VZIMB004046",
-      "nombreUnidad": "HOSPITAL GENERAL DE SANTIAGO TUXTLA",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-8",
-      "clues": "VZIMB006315",
-      "nombreUnidad": "HOSPITAL GENERAL DE OLUTA-ACAYUCAN",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
       "municipio": "",
       "tipoUnidad": "Primer Nivel",
       "diasSinReporte": 0,

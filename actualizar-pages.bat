@@ -1,14 +1,20 @@
 @echo off
 setlocal
 
-set "REPO_PATH=%~dp0"
-set "APP_PATH=%REPO_PATH%reporte-de-inventario-de-unidades-médicas"
+set "REPO_PATH=C:\Users\jose.valdez\Downloads\reporte_pao\semaforo_entidades-"
 set "PYTHON_EXE=%LocalAppData%\Programs\Python\Python313\python.exe"
 set "BRANCH=main"
 
 echo Actualizando reporte desde: %REPO_PATH%
 cd /d "%REPO_PATH%"
 if errorlevel 1 exit /b 1
+
+for /d %%D in ("%REPO_PATH%\reporte-de-inventario-de-unidades-*") do set "APP_PATH=%%~fD"
+if not defined APP_PATH (
+  echo ERROR: no se encontro la carpeta del frontend.
+  pause
+  exit /b 1
+)
 
 if not exist "%PYTHON_EXE%" set "PYTHON_EXE=python"
 
@@ -22,6 +28,11 @@ if errorlevel 1 (
 
 echo Construyendo el frontend nuevo...
 cd /d "%APP_PATH%"
+if errorlevel 1 (
+  echo ERROR: no se pudo entrar a la carpeta del frontend: %APP_PATH%
+  pause
+  exit /b 1
+)
 call npm run build
 if errorlevel 1 (
   echo ERROR: no se pudo construir el frontend.
