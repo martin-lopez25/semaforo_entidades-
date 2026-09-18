@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #F3F4F6;
+    color: #1F2937;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Institutional Print Layout */
+@page {
+  size: landscape;
+  margin: 10mm 12mm;
+}
+
+@media print {
+  html, body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-size: 10pt;
+  }
+
+  /* Force color printing for institutional badges and table accents */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide non-printable interactive elements */
+  button,
+  #filter-bar,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Page break rules to prevent awkward cuts across rows */
+  tr,
+  section,
+  .break-inside-avoid {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Ensure tables use 100% width and display all content */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  thead {
+    display: table-header-group !important;
+  }
+
+  tfoot {
+    display: table-footer-group !important;
+  }
+
+  /* Expand max-height and overflow scrollbars */
+  .overflow-x-auto,
+  .overflow-y-auto,
+  .max-h-\[640px\],
+  .max-h-\[520px\] {
+    overflow: visible !important;
+    max-height: none !important;
+  }
+
+  /* Clean subtle borders in print */
+  .border,
+  .border-gray-200,
+  .border-gray-300 {
+    border-color: #D1D5DB !important;
+  }
+
+  .shadow-xs,
+  .shadow-sm,
+  .shadow-md,
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+}
+

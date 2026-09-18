@@ -1,0 +1,6 @@
+{
+  "name": "Reporte de Inventario de Unidades Médicas",
+  "description": "Sistema institucional para el seguimiento de avance y reporte de inventario de unidades médicas por entidad federativa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

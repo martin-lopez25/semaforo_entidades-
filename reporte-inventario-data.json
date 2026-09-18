@@ -1,0 +1,303 @@
+{
+  "entities": [
+    {
+      "id": "BAJA CALIFORNIA SUR",
+      "entidad": "BAJA CALIFORNIA SUR",
+      "metaClues": 7,
+      "cluesConInventario": 7,
+      "cluesMedicamentos": 7,
+      "cluesMaterialCuracion": 7,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "CAMPECHE",
+      "entidad": "CAMPECHE",
+      "metaClues": 12,
+      "cluesConInventario": 12,
+      "cluesMedicamentos": 12,
+      "cluesMaterialCuracion": 12,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "CHIAPAS",
+      "entidad": "CHIAPAS",
+      "metaClues": 40,
+      "cluesConInventario": 40,
+      "cluesMedicamentos": 40,
+      "cluesMaterialCuracion": 40,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "CIUDAD DE MEXICO",
+      "entidad": "CIUDAD DE MEXICO",
+      "metaClues": 32,
+      "cluesConInventario": 32,
+      "cluesMedicamentos": 32,
+      "cluesMaterialCuracion": 32,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "COLIMA",
+      "entidad": "COLIMA",
+      "metaClues": 6,
+      "cluesConInventario": 6,
+      "cluesMedicamentos": 6,
+      "cluesMaterialCuracion": 6,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "HRAES",
+      "entidad": "HRAES",
+      "metaClues": 2,
+      "cluesConInventario": 2,
+      "cluesMedicamentos": 2,
+      "cluesMaterialCuracion": 2,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "MEXICO",
+      "entidad": "MEXICO",
+      "metaClues": 70,
+      "cluesConInventario": 70,
+      "cluesMedicamentos": 70,
+      "cluesMaterialCuracion": 70,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "MICHOACAN DE OCAMPO",
+      "entidad": "MICHOACAN DE OCAMPO",
+      "metaClues": 27,
+      "cluesConInventario": 27,
+      "cluesMedicamentos": 27,
+      "cluesMaterialCuracion": 27,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "MORELOS",
+      "entidad": "MORELOS",
+      "metaClues": 11,
+      "cluesConInventario": 11,
+      "cluesMedicamentos": 11,
+      "cluesMaterialCuracion": 11,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "NAYARIT",
+      "entidad": "NAYARIT",
+      "metaClues": 14,
+      "cluesConInventario": 14,
+      "cluesMedicamentos": 14,
+      "cluesMaterialCuracion": 14,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "QUINTANA ROO",
+      "entidad": "QUINTANA ROO",
+      "metaClues": 13,
+      "cluesConInventario": 13,
+      "cluesMedicamentos": 13,
+      "cluesMaterialCuracion": 13,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "SAN LUIS POTOSI",
+      "entidad": "SAN LUIS POTOSI",
+      "metaClues": 15,
+      "cluesConInventario": 15,
+      "cluesMedicamentos": 15,
+      "cluesMaterialCuracion": 15,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "SINALOA",
+      "entidad": "SINALOA",
+      "metaClues": 21,
+      "cluesConInventario": 21,
+      "cluesMedicamentos": 21,
+      "cluesMaterialCuracion": 21,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "SONORA",
+      "entidad": "SONORA",
+      "metaClues": 18,
+      "cluesConInventario": 18,
+      "cluesMedicamentos": 18,
+      "cluesMaterialCuracion": 18,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "TABASCO",
+      "entidad": "TABASCO",
+      "metaClues": 19,
+      "cluesConInventario": 19,
+      "cluesMedicamentos": 19,
+      "cluesMaterialCuracion": 19,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "TAMAULIPAS",
+      "entidad": "TAMAULIPAS",
+      "metaClues": 18,
+      "cluesConInventario": 18,
+      "cluesMedicamentos": 18,
+      "cluesMaterialCuracion": 18,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "TLAXCALA",
+      "entidad": "TLAXCALA",
+      "metaClues": 12,
+      "cluesConInventario": 12,
+      "cluesMedicamentos": 12,
+      "cluesMaterialCuracion": 12,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "ZACATECAS",
+      "entidad": "ZACATECAS",
+      "metaClues": 17,
+      "cluesConInventario": 17,
+      "cluesMedicamentos": 17,
+      "cluesMaterialCuracion": 17,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "PUEBLA",
+      "entidad": "PUEBLA",
+      "metaClues": 53,
+      "cluesConInventario": 52,
+      "cluesMedicamentos": 52,
+      "cluesMaterialCuracion": 52,
+      "inventarioCompleto": 98.1
+    },
+    {
+      "id": "GUERRERO",
+      "entidad": "GUERRERO",
+      "metaClues": 41,
+      "cluesConInventario": 41,
+      "cluesMedicamentos": 41,
+      "cluesMaterialCuracion": 41,
+      "inventarioCompleto": 100.0
+    },
+    {
+      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "metaClues": 55,
+      "cluesConInventario": 53,
+      "cluesMedicamentos": 53,
+      "cluesMaterialCuracion": 53,
+      "inventarioCompleto": 96.4
+    },
+    {
+      "id": "HIDALGO",
+      "entidad": "HIDALGO",
+      "metaClues": 18,
+      "cluesConInventario": 17,
+      "cluesMedicamentos": 17,
+      "cluesMaterialCuracion": 17,
+      "inventarioCompleto": 94.4
+    },
+    {
+      "id": "OAXACA",
+      "entidad": "OAXACA",
+      "metaClues": 37,
+      "cluesConInventario": 34,
+      "cluesMedicamentos": 34,
+      "cluesMaterialCuracion": 34,
+      "inventarioCompleto": 91.9
+    },
+    {
+      "id": "BAJA CALIFORNIA",
+      "entidad": "BAJA CALIFORNIA",
+      "metaClues": 9,
+      "cluesConInventario": 8,
+      "cluesMedicamentos": 8,
+      "cluesMaterialCuracion": 8,
+      "inventarioCompleto": 88.9
+    }
+  ],
+  "notReported": [
+    {
+      "id": "nr-1",
+      "clues": "BCIMB000355",
+      "nombreUnidad": "HOSPITAL GENERAL DE MEXICALI",
+      "entidad": "BAJA CALIFORNIA",
+      "municipio": "",
+      "tipoUnidad": "Primer Nivel",
+      "diasSinReporte": 0,
+      "ultimaFechaRegistro": "Sin registro en ciclo actual"
+    },
+    {
+      "id": "nr-2",
+      "clues": "HGIMB002036",
+      "nombreUnidad": "HOSPITAL INTEGRAL CINTA LARGA",
+      "entidad": "HIDALGO",
+      "municipio": "",
+      "tipoUnidad": "Primer Nivel",
+      "diasSinReporte": 0,
+      "ultimaFechaRegistro": "Sin registro en ciclo actual"
+    },
+    {
+      "id": "nr-3",
+      "clues": "OCIMB007181",
+      "nombreUnidad": "HOSPITAL ESPECIALIZADO DE 30 CAMAS DE JUCHITAN",
+      "entidad": "OAXACA",
+      "municipio": "",
+      "tipoUnidad": "Primer Nivel",
+      "diasSinReporte": 0,
+      "ultimaFechaRegistro": "Sin registro en ciclo actual"
+    },
+    {
+      "id": "nr-4",
+      "clues": "OCIMB008634",
+      "nombreUnidad": "HC LOMA BONITA",
+      "entidad": "OAXACA",
+      "municipio": "",
+      "tipoUnidad": "Primer Nivel",
+      "diasSinReporte": 0,
+      "ultimaFechaRegistro": "Sin registro en ciclo actual"
+    },
+    {
+      "id": "nr-5",
+      "clues": "OCIMB009416",
+      "nombreUnidad": "HC TEOTITLÁN DE FLORES MAGÓN",
+      "entidad": "OAXACA",
+      "municipio": "",
+      "tipoUnidad": "Primer Nivel",
+      "diasSinReporte": 0,
+      "ultimaFechaRegistro": "Sin registro en ciclo actual"
+    },
+    {
+      "id": "nr-6",
+      "clues": "PLIMB000351",
+      "nombreUnidad": "HOSPITAL COMUNITARIO DE AYOTOXCO",
+      "entidad": "PUEBLA",
+      "municipio": "",
+      "tipoUnidad": "Primer Nivel",
+      "diasSinReporte": 0,
+      "ultimaFechaRegistro": "Sin registro en ciclo actual"
+    },
+    {
+      "id": "nr-7",
+      "clues": "VZIMB004046",
+      "nombreUnidad": "HOSPITAL GENERAL DE SANTIAGO TUXTLA",
+      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "municipio": "",
+      "tipoUnidad": "Primer Nivel",
+      "diasSinReporte": 0,
+      "ultimaFechaRegistro": "Sin registro en ciclo actual"
+    },
+    {
+      "id": "nr-8",
+      "clues": "VZIMB006315",
+      "nombreUnidad": "HOSPITAL GENERAL DE OLUTA-ACAYUCAN",
+      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "municipio": "",
+      "tipoUnidad": "Primer Nivel",
+      "diasSinReporte": 0,
+      "ultimaFechaRegistro": "Sin registro en ciclo actual"
+    }
+  ],
+  "incomplete": []
+}

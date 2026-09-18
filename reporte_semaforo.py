@@ -1,3 +1,4 @@
+import json
 import pandas as pd
 import os
 #import webbrowser
@@ -397,10 +398,63 @@ function imprimirPDF() {{
 # GUARDAR Y ABRIR
 # =========================
 ruta_html = Path(__file__).resolve().parent / "index.html"
-
 with open(ruta_html, "w", encoding="utf-8") as f:
     f.write(html)
 
+json_out = Path(__file__).resolve().parent / "reporte-de-inventario-de-unidades-médicas" / "public" / "reporte-inventario-data.json"
+json_out.parent.mkdir(parents=True, exist_ok=True)
+
+entities_payload = [
+    {
+        "id": str(row["entidad"]).strip() if "entidad" in row else str(idx),
+        "entidad": str(row["entidad"]).strip() if "entidad" in row else "",
+        "metaClues": int(row["meta de clues"] if "meta de clues" in row else row["meta_de_clues"] if "meta_de_clues" in row else 0),
+        "cluesConInventario": int(row["clues con inventario"] if "clues con inventario" in row else row["clues_con_inventario"] if "clues_con_inventario" in row else 0),
+        "cluesMedicamentos": int(row["clues medicamentos 010 040"] if "clues medicamentos 010 040" in row else row["clues_medicamentos_010_040"] if "clues_medicamentos_010_040" in row else 0),
+        "cluesMaterialCuracion": int(row["clues material curacion 060"] if "clues material curacion 060" in row else row["clues_material_curacion_060"] if "clues_material_curacion_060" in row else 0),
+        "inventarioCompleto": float(row["inventario completo"] if "inventario completo" in row else row["inventario_completo"] if "inventario_completo" in row else 0),
+    }
+    for idx, row in enumerate(metas.to_dict(orient="records"))
+]
+
+not_reported_payload = [
+    {
+        "id": f"nr-{idx+1}",
+        "clues": str(row["clues imb"] if "clues imb" in row else row["clues_imb"]).strip(),
+        "nombreUnidad": str(row["nombre de la unidad"] if "nombre de la unidad" in row else row["nombre_de_la_unidad"]).strip(),
+        "entidad": str(row["entidad"]).strip() if "entidad" in row else "",
+        "municipio": "",
+        "tipoUnidad": "Primer Nivel",
+        "diasSinReporte": int(row.get("conteo", 0) or 0),
+        "ultimaFechaRegistro": "Sin registro en ciclo actual",
+    }
+    for idx, row in enumerate(no_reportaron.to_dict(orient="records"))
+]
+
+incomplete_payload = [
+    {
+        "id": f"inc-{idx+1}",
+        "clues": str(row["clues imb"] if "clues imb" in row else row["clues_imb"]).strip(),
+        "nombreUnidad": str(row["nombre de la unidad"] if "nombre de la unidad" in row else row["nombre_de_la_unidad"]).strip(),
+        "entidad": str(row["entidad"]).strip() if "entidad" in row else "",
+        "municipio": "",
+        "tipoUnidad": "Primer Nivel",
+        "motivoIncompleto": "Reporte incompleto",
+        "avanceMedicamentos": 100 if row.get("conteo", 0) > 0 else 0,
+        "avanceMaterial": 100 if row.get("conteo", 0) > 0 else 0,
+        "ultimaFechaRegistro": fecha_actualizacion,
+    }
+    for idx, row in enumerate(incompletos.to_dict(orient="records"))
+]
+
+with open(json_out, "w", encoding="utf-8") as f:
+    json.dump({
+        "entities": entities_payload,
+        "notReported": not_reported_payload,
+        "incomplete": incomplete_payload,
+    }, f, ensure_ascii=False, indent=2)
+
 print(f"Reporte generado en: {ruta_html}")
+print(f"Datos JSON exportados en: {json_out}")
 
 #webbrowser.open("file://" + os.path.realpath(ruta_html))
