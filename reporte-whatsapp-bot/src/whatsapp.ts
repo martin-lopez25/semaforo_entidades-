@@ -3,12 +3,22 @@ import makeWASocket, {
   useMultiFileAuthState,
   type WASocket,
 } from '@whiskeysockets/baileys';
+import { readFile } from 'node:fs/promises';
 import { Boom } from '@hapi/boom';
 import pino from 'pino';
 import qrcode from 'qrcode-terminal';
 import path from 'node:path';
 
 const logger = pino({ level: 'silent' });
+
+function normalizeGroupName(value: string): string {
+  return value
+    .normalize('NFKC')
+    .replace(/[\p{P}\p{S}]/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLocaleLowerCase();
+}
 
 export async function connectWhatsApp(authDirectory: string): Promise<WASocket> {
   const { state, saveCreds } = await useMultiFileAuthState(authDirectory);
@@ -50,10 +60,11 @@ export function groupJid(value: string): string {
 
 export async function resolveGroupJid(socket: WASocket, groupName: string): Promise<string> {
   const groups = await socket.groupFetchAllParticipating();
-  const normalizedName = groupName.trim().toLocaleLowerCase();
-  const match = Object.entries(groups).find(([, metadata]) =>
-    metadata.subject?.trim().toLocaleLowerCase() === normalizedName
-  );
+  const normalizedName = normalizeGroupName(groupName);
+  const match = Object.entries(groups).find(([, metadata]) => {
+    const subject = metadata.subject ?? '';
+    return normalizeGroupName(subject) === normalizedName;
+  });
 
   if (!match) {
     const available = Object.values(groups)
@@ -67,9 +78,15 @@ export async function resolveGroupJid(socket: WASocket, groupName: string): Prom
   return groupJid(match[0]);
 }
 
-export async function sendImage(socket: WASocket, group: string, imagePath: string, caption: string): Promise<void> {
-  await socket.sendMessage(groupJid(group), {
-    image: { url: path.resolve(imagePath) },
+export async function sendImage(socket: WASocket, group: string, imagePath: string, caption: string): Promise<{ key: unknown }> {
+  const resolvedPath = path.resolve(imagePath);
+  const imageBuffer = await readFile(resolvedPath);
+  const result = await socket.sendMessage(groupJid(group), {
+    image: imageBuffer,
+    mimetype: 'image/png',
+    fileName: 'reporte-inventario.png',
     caption,
   });
+
+  return { key: result?.key ?? null };
 }
