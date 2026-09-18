@@ -109,6 +109,4 @@ if errorlevel 1 (
 )
 
 echo Actualizacion completada correctamente.
-echo La ventana se cerrara en 5 segundos...
-timeout /t 5 /nobreak >nul
-exit /b 0
+pause

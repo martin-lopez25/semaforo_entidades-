@@ -11,7 +11,7 @@ const capturesDirectory = path.join(rootDirectory, 'capturas');
 const reportUrl = requiredEnv('REPORT_URL');
 const groupName = requiredEnv('WHATSAPP_GRUPO_NOMBRE');
 const section = (process.env.REPORT_SECTION ?? 'inventory') as ReportSection;
-const schedule = process.env.CRON_SCHEDULE ?? '0 * * * *';
+const schedule = process.env.CRON_SCHEDULE ?? '30 * * * *';
 const timezone = process.env.TIMEZONE ?? 'America/Mexico_City';
 
 function requiredEnv(name: string): string {
