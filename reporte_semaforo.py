@@ -449,6 +449,7 @@ incomplete_payload = [
 
 with open(json_out, "w", encoding="utf-8") as f:
     json.dump({
+        "lastUpdated": fecha_actualizacion,
         "entities": entities_payload,
         "notReported": not_reported_payload,
         "incomplete": incomplete_payload,
