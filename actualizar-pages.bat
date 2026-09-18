@@ -33,6 +33,13 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
+for /f "delims=" %%A in ('powershell -NoProfile -Command "(Get-Content '%APP_PATH%\public\reporte-inventario-data.json' -Raw | ConvertFrom-Json).lastUpdated"') do set "VITE_REPORT_LAST_UPDATED=%%A"
+if not defined VITE_REPORT_LAST_UPDATED (
+  echo ERROR: no se pudo obtener la fecha de actualizacion.
+  pause
+  exit /b 1
+)
+echo Fecha fija de la build: %VITE_REPORT_LAST_UPDATED%
 call npm run build
 if errorlevel 1 (
   echo ERROR: no se pudo construir el frontend.

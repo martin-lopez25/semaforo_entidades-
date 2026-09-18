@@ -38,7 +38,9 @@ export default function App() {
   const [activeSection, setActiveSection] = useState<string>('inventory');
 
   // Timestamp from the last data generation, not from the page load.
-  const [lastUpdatedText, setLastUpdatedText] = useState<string>('');
+  const [lastUpdatedText, setLastUpdatedText] = useState<string>(
+    import.meta.env.VITE_REPORT_LAST_UPDATED?.replace(' ', ' · ') ?? ''
+  );
 
   // Capture modal state
   const [isCaptureModalOpen, setIsCaptureModalOpen] = useState(false);

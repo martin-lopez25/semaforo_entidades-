@@ -1,5 +1,5 @@
 import { chromium } from 'playwright';
-import { mkdir } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 export type ReportSection = 'inventory' | 'not-reported' | 'incomplete' | 'chart' | 'full';
@@ -33,9 +33,27 @@ export async function captureReport(
     await page.goto(buildUrl(reportUrl, config.hash), { waitUntil: 'networkidle' });
     await page.waitForTimeout(1500);
 
+    if (section !== 'inventory' && section !== 'full') {
+      await page.locator(`a[href="${config.hash}"]`).click();
+      await page.locator(config.selector).waitFor({ state: 'visible', timeout: 15000 });
+    }
+
     const target = page.locator(config.selector);
     await target.waitFor({ state: 'visible', timeout: 15000 });
-    await target.screenshot({ path: outputPath });
+
+    await page.locator('button[title="Capturar reporte como imagen PNG"]').click();
+    if (section === 'full') {
+      await page.getByRole('button', { name: 'Reporte completo', exact: true }).click();
+    }
+
+    const preview = page.locator('img[alt="Vista previa de reporte"]');
+    await preview.waitFor({ state: 'visible', timeout: 30000 });
+    const dataUrl = await preview.getAttribute('src');
+    if (!dataUrl?.startsWith('data:image/png;base64,')) {
+      throw new Error('La pagina no genero una imagen PNG valida.');
+    }
+
+    await writeFile(outputPath, Buffer.from(dataUrl.split(',')[1], 'base64'));
 
     return { outputPath, label: config.label };
   } finally {
