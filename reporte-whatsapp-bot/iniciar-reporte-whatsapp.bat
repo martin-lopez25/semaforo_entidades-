@@ -2,6 +2,8 @@
 setlocal EnableExtensions
 
 set "BOT_PATH=%~dp0"
+set "LOG_PATH=%BOT_PATH%logs\reporte-whatsapp.log"
+mkdir "%BOT_PATH%logs" 2>nul
 cd /d "%BOT_PATH%"
 
 where node >nul 2>&1
@@ -28,22 +30,13 @@ if not exist "dist\index.js" (
   )
 )
 
-echo Bot de WhatsApp iniciado.
-echo Esta ventana debe permanecer abierta.
-echo Presiona Ctrl+C para detenerlo.
+echo Iniciando el bot en segundo plano...
+echo Log: %LOG_PATH%
 echo.
 
-:RESTART
-npm start
-set "EXIT_CODE=%ERRORLEVEL%"
+powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -Command "& { $ErrorActionPreference = 'Stop'; $log = '%LOG_PATH%'; $bot = '%BOT_PATH%'; while ($true) { try { $stamp = (Get-Date).ToString('yyyy-MM-dd HH:mm:ss'); Add-Content -Path $log -Value (\"[$stamp] Iniciando bot...\"); Set-Location $bot; npm start 2>&1 | Tee-Object -FilePath $log -Append; Add-Content -Path $log -Value ('[ ' + (Get-Date).ToString('yyyy-MM-dd HH:mm:ss') + ' ] El bot se cerró. Reiniciando en 10 segundos...'); Start-Sleep -Seconds 10; } catch { Add-Content -Path $log -Value ('[ ' + (Get-Date).ToString('yyyy-MM-dd HH:mm:ss') + ' ] Error fatal: ' + $_.Exception.Message); Start-Sleep -Seconds 10; } } }"
 
-if "%EXIT_CODE%"=="0" (
-  echo El bot se detuvo correctamente.
-  pause
-  exit /b 0
-)
-
-echo El bot se cerro con codigo %EXIT_CODE%.
-echo Reiniciando en 10 segundos...
-timeout /t 10 /nobreak >nul
-goto RESTART
+echo El bot fue lanzado en segundo plano.
+echo Si quieres detenerlo, cierra el proceso "node.exe" o usa:
+echo   taskkill /F /IM node.exe
+exit /b 0
