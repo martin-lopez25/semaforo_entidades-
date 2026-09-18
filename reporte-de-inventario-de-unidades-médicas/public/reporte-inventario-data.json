@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "18/09/2026 17:17",
+  "lastUpdated": "18/09/2026 17:18",
   "entities": [
+    {
+      "id": "BAJA CALIFORNIA",
+      "entidad": "BAJA CALIFORNIA",
+      "metaClues": 9,
+      "cluesConInventario": 9,
+      "cluesMedicamentos": 9,
+      "cluesMaterialCuracion": 9,
+      "inventarioCompleto": 100.0
+    },
     {
       "id": "BAJA CALIFORNIA SUR",
       "entidad": "BAJA CALIFORNIA SUR",
@@ -101,6 +110,15 @@
       "inventarioCompleto": 100.0
     },
     {
+      "id": "PUEBLA",
+      "entidad": "PUEBLA",
+      "metaClues": 53,
+      "cluesConInventario": 53,
+      "cluesMedicamentos": 53,
+      "cluesMaterialCuracion": 53,
+      "inventarioCompleto": 100.0
+    },
+    {
       "id": "QUINTANA ROO",
       "entidad": "QUINTANA ROO",
       "metaClues": 13,
@@ -182,15 +200,6 @@
       "inventarioCompleto": 100.0
     },
     {
-      "id": "PUEBLA",
-      "entidad": "PUEBLA",
-      "metaClues": 53,
-      "cluesConInventario": 52,
-      "cluesMedicamentos": 52,
-      "cluesMaterialCuracion": 52,
-      "inventarioCompleto": 98.1
-    },
-    {
       "id": "GUERRERO",
       "entidad": "GUERRERO",
       "metaClues": 41,
@@ -207,30 +216,11 @@
       "cluesMedicamentos": 35,
       "cluesMaterialCuracion": 35,
       "inventarioCompleto": 94.6
-    },
-    {
-      "id": "BAJA CALIFORNIA",
-      "entidad": "BAJA CALIFORNIA",
-      "metaClues": 9,
-      "cluesConInventario": 8,
-      "cluesMedicamentos": 8,
-      "cluesMaterialCuracion": 8,
-      "inventarioCompleto": 88.9
     }
   ],
   "notReported": [
     {
       "id": "nr-1",
-      "clues": "BCIMB000355",
-      "nombreUnidad": "HOSPITAL GENERAL DE MEXICALI",
-      "entidad": "BAJA CALIFORNIA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-2",
       "clues": "OCIMB008634",
       "nombreUnidad": "HC LOMA BONITA",
       "entidad": "OAXACA",
@@ -240,20 +230,10 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-3",
+      "id": "nr-2",
       "clues": "OCIMB009416",
       "nombreUnidad": "HC TEOTITLÁN DE FLORES MAGÓN",
       "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-4",
-      "clues": "PLIMB000351",
-      "nombreUnidad": "HOSPITAL COMUNITARIO DE AYOTOXCO",
-      "entidad": "PUEBLA",
       "municipio": "",
       "tipoUnidad": "Primer Nivel",
       "diasSinReporte": 0,
