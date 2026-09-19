@@ -58,6 +58,17 @@ export function groupJid(value: string): string {
   return normalized;
 }
 
+export function phoneJid(value: string): string {
+  let digits = value.replace(/\D/g, '');
+  if (digits.length === 12 && digits.startsWith('52')) {
+    digits = `521${digits.slice(2)}`;
+  }
+  if (!/^\d{10,15}$/.test(digits)) {
+    throw new Error('WHATSAPP_NUMERO_ADICIONAL debe incluir un numero con codigo de pais.');
+  }
+  return `${digits}@s.whatsapp.net`;
+}
+
 export async function resolveGroupJid(socket: WASocket, groupName: string): Promise<string> {
   const groups = await socket.groupFetchAllParticipating();
   const normalizedName = normalizeGroupName(groupName);
@@ -78,10 +89,10 @@ export async function resolveGroupJid(socket: WASocket, groupName: string): Prom
   return groupJid(match[0]);
 }
 
-export async function sendImage(socket: WASocket, group: string, imagePath: string, caption: string): Promise<{ key: unknown }> {
+export async function sendImage(socket: WASocket, recipient: string, imagePath: string, caption: string): Promise<{ key: unknown }> {
   const resolvedPath = path.resolve(imagePath);
   const imageBuffer = await readFile(resolvedPath);
-  const result = await socket.sendMessage(groupJid(group), {
+  const result = await socket.sendMessage(recipient, {
     image: imageBuffer,
     mimetype: 'image/png',
     fileName: 'reporte-inventario.png',

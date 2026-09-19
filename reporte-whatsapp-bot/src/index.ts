@@ -3,13 +3,14 @@ import cron from 'node-cron';
 import path from 'node:path';
 import { mkdir } from 'node:fs/promises';
 import { captureReport, type ReportSection } from './capture.js';
-import { connectWhatsApp, resolveGroupJid, sendImage } from './whatsapp.js';
+import { connectWhatsApp, phoneJid, resolveGroupJid, sendImage } from './whatsapp.js';
 
 const rootDirectory = path.resolve(import.meta.dirname, '..');
 const authDirectory = path.join(rootDirectory, 'auth_reporte');
 const capturesDirectory = path.join(rootDirectory, 'capturas');
 const reportUrl = requiredEnv('REPORT_URL');
 const groupName = requiredEnv('WHATSAPP_GRUPO_NOMBRE');
+const additionalNumber = requiredEnv('WHATSAPP_NUMERO_ADICIONAL');
 const section = (process.env.REPORT_SECTION ?? 'inventory') as ReportSection;
 const schedule = process.env.CRON_SCHEDULE ?? '30 * * * *';
 const timezone = process.env.TIMEZONE ?? 'America/Mexico_City';
@@ -27,6 +28,7 @@ async function main(): Promise<void> {
 
   const socket = await connectWhatsApp(authDirectory);
   const groupJid = await resolveGroupJid(socket, groupName);
+  const additionalJid = phoneJid(additionalNumber);
   console.log(`Grupo seleccionado: ${groupName} (${groupJid})`);
   let running = false;
 
@@ -40,6 +42,7 @@ async function main(): Promise<void> {
     try {
       const capture = await captureReport(reportUrl, section, capturePath);
       await sendImage(socket, groupJid, capture.outputPath, `Reporte de inventario: ${capture.label}`);
+      await sendImage(socket, additionalJid, capture.outputPath, `Reporte de inventario: ${capture.label}`);
       console.log(`PNG enviado correctamente: ${capture.outputPath}`);
     } catch (error) {
       console.error('Error al generar o enviar el reporte:', error);

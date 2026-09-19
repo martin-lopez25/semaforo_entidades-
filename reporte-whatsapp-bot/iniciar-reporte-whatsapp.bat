@@ -1,7 +1,8 @@
 @echo off
 setlocal EnableExtensions
 
-set "BOT_PATH=%~dp0"
+set "BOT_PATH=C:\Users\jose.valdez\Downloads\reporte_pao\semaforo_entidades-\reporte-whatsapp-bot"
+set "ENV_PATH=%BOT_PATH%\.env"
 set "LOG_PATH=%BOT_PATH%logs\reporte-whatsapp.log"
 mkdir "%BOT_PATH%logs" 2>nul
 cd /d "%BOT_PATH%"
@@ -13,9 +14,9 @@ if errorlevel 1 (
   exit /b 1
 )
 
-if not exist ".env" (
+if not exist "%ENV_PATH%" (
   echo ERROR: no existe el archivo .env.
-  echo Copia .env.example como .env y configura el grupo de WhatsApp.
+  echo Ruta esperada: %ENV_PATH%
   pause
   exit /b 1
 )
