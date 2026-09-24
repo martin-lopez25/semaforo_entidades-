@@ -21,14 +21,12 @@ if not exist "%ENV_PATH%" (
   exit /b 1
 )
 
-if not exist "dist\index.js" (
-  echo No existe la compilacion. Construyendo el bot...
-  call npm run build
-  if errorlevel 1 (
-    echo ERROR: no se pudo construir el bot.
-    pause
-    exit /b 1
-  )
+echo Construyendo el bot con el codigo actual...
+call npm run build
+if errorlevel 1 (
+  echo ERROR: no se pudo construir el bot.
+  pause
+  exit /b 1
 )
 
 echo Iniciando el bot en segundo plano...
