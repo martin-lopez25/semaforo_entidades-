@@ -221,7 +221,7 @@ export default function App() {
             </div>
 
             <img
-              src="/cat.jpg"
+              src={`${import.meta.env.BASE_URL}cat.jpg`}
               alt="OIIA"
               className="w-9 h-9 object-contain rounded-sm shrink-0 cursor-pointer"
               onClick={handleCatClick}
@@ -354,7 +354,7 @@ export default function App() {
           aria-label="Animación OIIA"
         >
           <img
-            src="/OIIA-Website-loop.gif"
+            src={`${import.meta.env.BASE_URL}OIIA-Website-loop.gif`}
             alt="Animación OIIA"
             className="w-screen h-screen object-contain"
           />
