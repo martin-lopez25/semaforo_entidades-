@@ -13,6 +13,27 @@ if errorlevel 1 (
   exit /b 1
 )
 
+echo Sincronizando la rama %BRANCH% con GitHub...
+git checkout %BRANCH%
+if errorlevel 1 (
+  echo ERROR: no se pudo cambiar a la rama %BRANCH%.
+  pause
+  exit /b 1
+)
+git fetch origin
+if errorlevel 1 (
+  echo ERROR: no se pudieron descargar los cambios de GitHub.
+  pause
+  exit /b 1
+)
+git pull --rebase origin %BRANCH%
+if errorlevel 1 (
+  echo ERROR: no se pudieron integrar los cambios de GitHub.
+  echo Revisa y resuelve los conflictos manualmente antes de volver a ejecutar este archivo.
+  pause
+  exit /b 1
+)
+
 for /d %%D in ("%REPO_PATH%\reporte-de-inventario-de-unidades-*") do set "APP_PATH=%%~fD"
 if not defined APP_PATH (
   echo ERROR: no se encontro la carpeta del frontend.
@@ -44,7 +65,8 @@ if errorlevel 1 (
   exit /b 1
 )
 
-for /f "delims=" %%A in ('powershell -NoProfile -Command "(Get-Content '%APP_PATH%\public\reporte-inventario-data.json' -Raw ^| ConvertFrom-Json).lastUpdated"') do set "VITE_REPORT_LAST_UPDATED=%%A"
+set "VITE_REPORT_LAST_UPDATED="
+for /f "delims=" %%A in ('powershell -NoProfile -Command "$data = Get-Content -LiteralPath '%APP_PATH%\public\reporte-inventario-data.json' -Raw ^| ConvertFrom-Json; Write-Output $data.lastUpdated"') do set "VITE_REPORT_LAST_UPDATED=%%A"
 if not defined VITE_REPORT_LAST_UPDATED (
   echo ERROR: no se pudo obtener la fecha de actualizacion.
   pause
@@ -84,7 +106,6 @@ if errorlevel 1 (
 )
 
 echo Agregando cambios a Git...
-git checkout %BRANCH% 2>nul || git checkout -b %BRANCH%
 git add -A
 
 git diff --cached --quiet
@@ -103,9 +124,20 @@ if errorlevel 1 (
 echo Subiendo cambios a GitHub...
 git push -u origin %BRANCH%
 if errorlevel 1 (
-  echo ERROR: fallo el push a GitHub.
-  pause
-  exit /b 1
+  echo El remoto cambio durante la ejecucion. Sincronizando nuevamente...
+  git pull --rebase origin %BRANCH%
+  if errorlevel 1 (
+    echo ERROR: no se pudieron integrar los cambios remotos.
+    echo Revisa y resuelve los conflictos manualmente antes de volver a ejecutar este archivo.
+    pause
+    exit /b 1
+  )
+  git push -u origin %BRANCH%
+  if errorlevel 1 (
+    echo ERROR: fallo el segundo intento de push a GitHub.
+    pause
+    exit /b 1
+  )
 )
 
 echo Actualizacion completada correctamente.
