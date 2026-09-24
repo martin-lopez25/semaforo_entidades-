@@ -60,7 +60,9 @@ export function groupJid(value: string): string {
 
 export function phoneJid(value: string): string {
   let digits = value.replace(/\D/g, '');
-  if (digits.length === 12 && digits.startsWith('52')) {
+  if (digits.length === 10) {
+    digits = `521${digits}`;
+  } else if (digits.length === 12 && digits.startsWith('52')) {
     digits = `521${digits.slice(2)}`;
   }
   if (!/^\d{10,15}$/.test(digits)) {

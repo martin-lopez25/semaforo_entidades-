@@ -14,6 +14,8 @@ const additionalNumber = requiredEnv('WHATSAPP_NUMERO_ADICIONAL');
 const section = (process.env.REPORT_SECTION ?? 'inventory') as ReportSection;
 const schedule = process.env.CRON_SCHEDULE ?? '30 * * * *';
 const timezone = process.env.TIMEZONE ?? 'America/Mexico_City';
+const sendToGroup = process.env.SEND_TO_GROUP !== 'false';
+const sendToAdditional = process.env.SEND_TO_ADDITIONAL !== 'false';
 
 function requiredEnv(name: string): string {
   const value = process.env[name]?.trim();
@@ -41,8 +43,13 @@ async function main(): Promise<void> {
     const capturePath = path.join(capturesDirectory, `reporte-${section}.png`);
     try {
       const capture = await captureReport(reportUrl, section, capturePath);
-      await sendImage(socket, groupJid, capture.outputPath, `Reporte de inventario: ${capture.label}`);
-      await sendImage(socket, additionalJid, capture.outputPath, `Reporte de inventario: ${capture.label}`);
+      const caption = 'holis mando el Reporte de inventario: Inventario por entidad federativa';
+      if (sendToGroup) {
+        await sendImage(socket, groupJid, capture.outputPath, caption);
+      }
+      if (sendToAdditional) {
+        await sendImage(socket, additionalJid, capture.outputPath, caption);
+      }
       console.log(`PNG enviado correctamente: ${capture.outputPath}`);
     } catch (error) {
       console.error('Error al generar o enviar el reporte:', error);
