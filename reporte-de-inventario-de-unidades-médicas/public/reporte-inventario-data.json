@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "24/09/2026 10:37",
+  "lastUpdated": "24/09/2026 10:41",
   "entities": [
     {
       "id": "QUINTANA ROO",
@@ -8,7 +8,7 @@
       "cluesConInventario": 11,
       "cluesMedicamentos": 11,
       "cluesMaterialCuracion": 11,
-      "inventarioCompleto": 84.6
+      "inventarioCompleto": 11.0
     },
     {
       "id": "MICHOACAN DE OCAMPO",
@@ -17,7 +17,7 @@
       "cluesConInventario": 19,
       "cluesMedicamentos": 19,
       "cluesMaterialCuracion": 19,
-      "inventarioCompleto": 70.4
+      "inventarioCompleto": 19.0
     },
     {
       "id": "TABASCO",
@@ -26,7 +26,7 @@
       "cluesConInventario": 12,
       "cluesMedicamentos": 12,
       "cluesMaterialCuracion": 12,
-      "inventarioCompleto": 63.2
+      "inventarioCompleto": 12.0
     },
     {
       "id": "MEXICO",
@@ -35,7 +35,7 @@
       "cluesConInventario": 36,
       "cluesMedicamentos": 36,
       "cluesMaterialCuracion": 36,
-      "inventarioCompleto": 51.4
+      "inventarioCompleto": 36.0
     },
     {
       "id": "GUERRERO",
@@ -44,7 +44,7 @@
       "cluesConInventario": 21,
       "cluesMedicamentos": 20,
       "cluesMaterialCuracion": 21,
-      "inventarioCompleto": 50.0
+      "inventarioCompleto": 20.5
     },
     {
       "id": "BAJA CALIFORNIA SUR",
@@ -53,7 +53,7 @@
       "cluesConInventario": 3,
       "cluesMedicamentos": 3,
       "cluesMaterialCuracion": 3,
-      "inventarioCompleto": 42.9
+      "inventarioCompleto": 3.0
     },
     {
       "id": "SAN LUIS POTOSI",
@@ -62,7 +62,7 @@
       "cluesConInventario": 6,
       "cluesMedicamentos": 6,
       "cluesMaterialCuracion": 6,
-      "inventarioCompleto": 40.0
+      "inventarioCompleto": 6.0
     },
     {
       "id": "CAMPECHE",
@@ -71,7 +71,7 @@
       "cluesConInventario": 4,
       "cluesMedicamentos": 4,
       "cluesMaterialCuracion": 4,
-      "inventarioCompleto": 33.3
+      "inventarioCompleto": 4.0
     },
     {
       "id": "HIDALGO",
@@ -80,7 +80,7 @@
       "cluesConInventario": 6,
       "cluesMedicamentos": 6,
       "cluesMaterialCuracion": 6,
-      "inventarioCompleto": 33.3
+      "inventarioCompleto": 6.0
     },
     {
       "id": "TLAXCALA",
@@ -89,7 +89,7 @@
       "cluesConInventario": 4,
       "cluesMedicamentos": 4,
       "cluesMaterialCuracion": 4,
-      "inventarioCompleto": 33.3
+      "inventarioCompleto": 4.0
     },
     {
       "id": "CIUDAD DE MEXICO",
@@ -98,7 +98,7 @@
       "cluesConInventario": 9,
       "cluesMedicamentos": 9,
       "cluesMaterialCuracion": 9,
-      "inventarioCompleto": 28.1
+      "inventarioCompleto": 9.0
     },
     {
       "id": "CHIAPAS",
@@ -107,7 +107,7 @@
       "cluesConInventario": 11,
       "cluesMedicamentos": 11,
       "cluesMaterialCuracion": 11,
-      "inventarioCompleto": 27.5
+      "inventarioCompleto": 11.0
     },
     {
       "id": "SINALOA",
@@ -116,7 +116,7 @@
       "cluesConInventario": 5,
       "cluesMedicamentos": 5,
       "cluesMaterialCuracion": 5,
-      "inventarioCompleto": 23.8
+      "inventarioCompleto": 5.0
     },
     {
       "id": "BAJA CALIFORNIA",
@@ -125,7 +125,7 @@
       "cluesConInventario": 2,
       "cluesMedicamentos": 2,
       "cluesMaterialCuracion": 2,
-      "inventarioCompleto": 22.2
+      "inventarioCompleto": 2.0
     },
     {
       "id": "ZACATECAS",
@@ -134,7 +134,7 @@
       "cluesConInventario": 3,
       "cluesMedicamentos": 3,
       "cluesMaterialCuracion": 3,
-      "inventarioCompleto": 17.6
+      "inventarioCompleto": 3.0
     },
     {
       "id": "COLIMA",
@@ -143,7 +143,7 @@
       "cluesConInventario": 1,
       "cluesMedicamentos": 1,
       "cluesMaterialCuracion": 1,
-      "inventarioCompleto": 16.7
+      "inventarioCompleto": 1.0
     },
     {
       "id": "SONORA",
@@ -152,7 +152,7 @@
       "cluesConInventario": 3,
       "cluesMedicamentos": 3,
       "cluesMaterialCuracion": 3,
-      "inventarioCompleto": 16.7
+      "inventarioCompleto": 3.0
     },
     {
       "id": "TAMAULIPAS",
@@ -161,7 +161,7 @@
       "cluesConInventario": 3,
       "cluesMedicamentos": 3,
       "cluesMaterialCuracion": 3,
-      "inventarioCompleto": 16.7
+      "inventarioCompleto": 3.0
     },
     {
       "id": "PUEBLA",
@@ -170,7 +170,7 @@
       "cluesConInventario": 7,
       "cluesMedicamentos": 7,
       "cluesMaterialCuracion": 7,
-      "inventarioCompleto": 13.2
+      "inventarioCompleto": 7.0
     },
     {
       "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -179,7 +179,7 @@
       "cluesConInventario": 7,
       "cluesMedicamentos": 7,
       "cluesMaterialCuracion": 7,
-      "inventarioCompleto": 12.7
+      "inventarioCompleto": 7.0
     },
     {
       "id": "OAXACA",
@@ -188,7 +188,7 @@
       "cluesConInventario": 4,
       "cluesMedicamentos": 4,
       "cluesMaterialCuracion": 4,
-      "inventarioCompleto": 10.8
+      "inventarioCompleto": 4.0
     },
     {
       "id": "HRAES",
@@ -4131,7 +4131,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "24/09/2026 10:37"
+      "ultimaFechaRegistro": "24/09/2026 10:41"
     }
   ]
 }

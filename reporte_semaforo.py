@@ -412,7 +412,18 @@ entities_payload = [
         "cluesConInventario": int(row["clues con inventario"] if "clues con inventario" in row else row["clues_con_inventario"] if "clues_con_inventario" in row else 0),
         "cluesMedicamentos": int(row["clues medicamentos 010 040"] if "clues medicamentos 010 040" in row else row["clues_medicamentos_010_040"] if "clues_medicamentos_010_040" in row else 0),
         "cluesMaterialCuracion": int(row["clues material curacion 060"] if "clues material curacion 060" in row else row["clues_material_curacion_060"] if "clues_material_curacion_060" in row else 0),
-        "inventarioCompleto": float(row["inventario completo"] if "inventario completo" in row else row["inventario_completo"] if "inventario_completo" in row else 0),
+        "inventarioCompleto": float(
+            (
+                row["clues medicamentos 010 040"]
+                if "clues medicamentos 010 040" in row
+                else row["clues_medicamentos_010_040"]
+            )
+            + (
+                row["clues material curacion 060"]
+                if "clues material curacion 060" in row
+                else row["clues_material_curacion_060"]
+            )
+        ) / 2,
     }
     for idx, row in enumerate(metas.to_dict(orient="records"))
 ]
