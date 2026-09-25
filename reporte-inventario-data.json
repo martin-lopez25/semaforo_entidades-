@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "24/09/2026 17:30",
+  "lastUpdated": "24/09/2026 18:30",
   "entities": [
+    {
+      "id": "BAJA CALIFORNIA",
+      "entidad": "BAJA CALIFORNIA",
+      "metaClues": 9,
+      "cluesConInventario": 9,
+      "cluesMedicamentos": 9,
+      "cluesMaterialCuracion": 9,
+      "inventarioCompleto": 9.0
+    },
     {
       "id": "BAJA CALIFORNIA SUR",
       "entidad": "BAJA CALIFORNIA SUR",
@@ -9,6 +18,51 @@
       "cluesMedicamentos": 7,
       "cluesMaterialCuracion": 7,
       "inventarioCompleto": 7.0
+    },
+    {
+      "id": "CHIAPAS",
+      "entidad": "CHIAPAS",
+      "metaClues": 40,
+      "cluesConInventario": 40,
+      "cluesMedicamentos": 40,
+      "cluesMaterialCuracion": 40,
+      "inventarioCompleto": 40.0
+    },
+    {
+      "id": "HIDALGO",
+      "entidad": "HIDALGO",
+      "metaClues": 18,
+      "cluesConInventario": 18,
+      "cluesMedicamentos": 18,
+      "cluesMaterialCuracion": 18,
+      "inventarioCompleto": 18.0
+    },
+    {
+      "id": "HRAES",
+      "entidad": "HRAES",
+      "metaClues": 2,
+      "cluesConInventario": 2,
+      "cluesMedicamentos": 2,
+      "cluesMaterialCuracion": 2,
+      "inventarioCompleto": 2.0
+    },
+    {
+      "id": "MEXICO",
+      "entidad": "MEXICO",
+      "metaClues": 70,
+      "cluesConInventario": 70,
+      "cluesMedicamentos": 70,
+      "cluesMaterialCuracion": 70,
+      "inventarioCompleto": 70.0
+    },
+    {
+      "id": "PUEBLA",
+      "entidad": "PUEBLA",
+      "metaClues": 53,
+      "cluesConInventario": 53,
+      "cluesMedicamentos": 53,
+      "cluesMaterialCuracion": 53,
+      "inventarioCompleto": 53.0
     },
     {
       "id": "QUINTANA ROO",
@@ -20,6 +74,15 @@
       "inventarioCompleto": 13.0
     },
     {
+      "id": "SAN LUIS POTOSI",
+      "entidad": "SAN LUIS POTOSI",
+      "metaClues": 15,
+      "cluesConInventario": 15,
+      "cluesMedicamentos": 15,
+      "cluesMaterialCuracion": 15,
+      "inventarioCompleto": 15.0
+    },
+    {
       "id": "SINALOA",
       "entidad": "SINALOA",
       "metaClues": 21,
@@ -27,6 +90,42 @@
       "cluesMedicamentos": 21,
       "cluesMaterialCuracion": 21,
       "inventarioCompleto": 21.0
+    },
+    {
+      "id": "TABASCO",
+      "entidad": "TABASCO",
+      "metaClues": 19,
+      "cluesConInventario": 19,
+      "cluesMedicamentos": 19,
+      "cluesMaterialCuracion": 19,
+      "inventarioCompleto": 19.0
+    },
+    {
+      "id": "TAMAULIPAS",
+      "entidad": "TAMAULIPAS",
+      "metaClues": 18,
+      "cluesConInventario": 18,
+      "cluesMedicamentos": 18,
+      "cluesMaterialCuracion": 18,
+      "inventarioCompleto": 18.0
+    },
+    {
+      "id": "TLAXCALA",
+      "entidad": "TLAXCALA",
+      "metaClues": 12,
+      "cluesConInventario": 12,
+      "cluesMedicamentos": 12,
+      "cluesMaterialCuracion": 12,
+      "inventarioCompleto": 12.0
+    },
+    {
+      "id": "GUERRERO",
+      "entidad": "GUERRERO",
+      "metaClues": 41,
+      "cluesConInventario": 41,
+      "cluesMedicamentos": 40,
+      "cluesMaterialCuracion": 41,
+      "inventarioCompleto": 40.5
     },
     {
       "id": "MICHOACAN DE OCAMPO",
@@ -38,17 +137,8 @@
       "inventarioCompleto": 26.0
     },
     {
-      "id": "TABASCO",
-      "entidad": "TABASCO",
-      "metaClues": 19,
-      "cluesConInventario": 18,
-      "cluesMedicamentos": 18,
-      "cluesMaterialCuracion": 18,
-      "inventarioCompleto": 18.0
-    },
-    {
-      "id": "HIDALGO",
-      "entidad": "HIDALGO",
+      "id": "SONORA",
+      "entidad": "SONORA",
       "metaClues": 18,
       "cluesConInventario": 17,
       "cluesMedicamentos": 17,
@@ -56,13 +146,13 @@
       "inventarioCompleto": 17.0
     },
     {
-      "id": "MEXICO",
-      "entidad": "MEXICO",
-      "metaClues": 70,
-      "cluesConInventario": 65,
-      "cluesMedicamentos": 65,
-      "cluesMaterialCuracion": 65,
-      "inventarioCompleto": 65.0
+      "id": "NAYARIT",
+      "entidad": "NAYARIT",
+      "metaClues": 14,
+      "cluesConInventario": 13,
+      "cluesMedicamentos": 13,
+      "cluesMaterialCuracion": 13,
+      "inventarioCompleto": 13.0
     },
     {
       "id": "CAMPECHE",
@@ -74,139 +164,49 @@
       "inventarioCompleto": 11.0
     },
     {
-      "id": "TLAXCALA",
-      "entidad": "TLAXCALA",
-      "metaClues": 12,
-      "cluesConInventario": 11,
-      "cluesMedicamentos": 11,
-      "cluesMaterialCuracion": 11,
-      "inventarioCompleto": 11.0
-    },
-    {
-      "id": "PUEBLA",
-      "entidad": "PUEBLA",
-      "metaClues": 53,
-      "cluesConInventario": 47,
-      "cluesMedicamentos": 47,
-      "cluesMaterialCuracion": 47,
-      "inventarioCompleto": 47.0
-    },
-    {
-      "id": "NAYARIT",
-      "entidad": "NAYARIT",
-      "metaClues": 14,
-      "cluesConInventario": 12,
-      "cluesMedicamentos": 12,
-      "cluesMaterialCuracion": 12,
-      "inventarioCompleto": 12.0
-    },
-    {
-      "id": "GUERRERO",
-      "entidad": "GUERRERO",
-      "metaClues": 41,
-      "cluesConInventario": 35,
-      "cluesMedicamentos": 34,
-      "cluesMaterialCuracion": 35,
-      "inventarioCompleto": 34.5
-    },
-    {
-      "id": "CHIAPAS",
-      "entidad": "CHIAPAS",
-      "metaClues": 40,
-      "cluesConInventario": 33,
-      "cluesMedicamentos": 33,
-      "cluesMaterialCuracion": 33,
-      "inventarioCompleto": 33.0
-    },
-    {
-      "id": "BAJA CALIFORNIA",
-      "entidad": "BAJA CALIFORNIA",
-      "metaClues": 9,
-      "cluesConInventario": 7,
-      "cluesMedicamentos": 7,
-      "cluesMaterialCuracion": 7,
-      "inventarioCompleto": 7.0
-    },
-    {
-      "id": "ZACATECAS",
-      "entidad": "ZACATECAS",
-      "metaClues": 17,
-      "cluesConInventario": 13,
-      "cluesMedicamentos": 13,
-      "cluesMaterialCuracion": 13,
-      "inventarioCompleto": 13.0
+      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "metaClues": 55,
+      "cluesConInventario": 50,
+      "cluesMedicamentos": 50,
+      "cluesMaterialCuracion": 50,
+      "inventarioCompleto": 50.0
     },
     {
       "id": "CIUDAD DE MEXICO",
       "entidad": "CIUDAD DE MEXICO",
       "metaClues": 32,
-      "cluesConInventario": 22,
-      "cluesMedicamentos": 22,
-      "cluesMaterialCuracion": 22,
-      "inventarioCompleto": 22.0
+      "cluesConInventario": 29,
+      "cluesMedicamentos": 29,
+      "cluesMaterialCuracion": 29,
+      "inventarioCompleto": 29.0
+    },
+    {
+      "id": "ZACATECAS",
+      "entidad": "ZACATECAS",
+      "metaClues": 17,
+      "cluesConInventario": 15,
+      "cluesMedicamentos": 15,
+      "cluesMaterialCuracion": 15,
+      "inventarioCompleto": 15.0
     },
     {
       "id": "COLIMA",
       "entidad": "COLIMA",
       "metaClues": 6,
-      "cluesConInventario": 4,
-      "cluesMedicamentos": 4,
-      "cluesMaterialCuracion": 4,
-      "inventarioCompleto": 4.0
-    },
-    {
-      "id": "SAN LUIS POTOSI",
-      "entidad": "SAN LUIS POTOSI",
-      "metaClues": 15,
-      "cluesConInventario": 10,
-      "cluesMedicamentos": 10,
-      "cluesMaterialCuracion": 10,
-      "inventarioCompleto": 10.0
-    },
-    {
-      "id": "SONORA",
-      "entidad": "SONORA",
-      "metaClues": 18,
-      "cluesConInventario": 12,
-      "cluesMedicamentos": 12,
-      "cluesMaterialCuracion": 12,
-      "inventarioCompleto": 12.0
-    },
-    {
-      "id": "TAMAULIPAS",
-      "entidad": "TAMAULIPAS",
-      "metaClues": 18,
-      "cluesConInventario": 12,
-      "cluesMedicamentos": 12,
-      "cluesMaterialCuracion": 12,
-      "inventarioCompleto": 12.0
-    },
-    {
-      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "metaClues": 55,
-      "cluesConInventario": 33,
-      "cluesMedicamentos": 33,
-      "cluesMaterialCuracion": 33,
-      "inventarioCompleto": 33.0
+      "cluesConInventario": 5,
+      "cluesMedicamentos": 5,
+      "cluesMaterialCuracion": 5,
+      "inventarioCompleto": 5.0
     },
     {
       "id": "OAXACA",
       "entidad": "OAXACA",
       "metaClues": 37,
-      "cluesConInventario": 21,
-      "cluesMedicamentos": 21,
-      "cluesMaterialCuracion": 21,
-      "inventarioCompleto": 21.0
-    },
-    {
-      "id": "HRAES",
-      "entidad": "HRAES",
-      "metaClues": 2,
-      "cluesConInventario": 1,
-      "cluesMedicamentos": 1,
-      "cluesMaterialCuracion": 1,
-      "inventarioCompleto": 1.0
+      "cluesConInventario": 29,
+      "cluesMedicamentos": 29,
+      "cluesMaterialCuracion": 29,
+      "inventarioCompleto": 29.0
     },
     {
       "id": "MORELOS",
@@ -221,26 +221,6 @@
   "notReported": [
     {
       "id": "nr-1",
-      "clues": "BCIMB000676",
-      "nombreUnidad": "HOSPITAL GENERAL DE TECATE",
-      "entidad": "BAJA CALIFORNIA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-2",
-      "clues": "BCIMB001352",
-      "nombreUnidad": "HOSPITAL MATERNO INFANTIL DE TIJUANA",
-      "entidad": "BAJA CALIFORNIA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-3",
       "clues": "CCIMB000172",
       "nombreUnidad": "H.G. MA. SOCORRO QUIROGA AGUILAR",
       "entidad": "CAMPECHE",
@@ -250,17 +230,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-4",
-      "clues": "CMIMB001141",
-      "nombreUnidad": "HOSPITAL GENERAL DE MANZANILLO",
-      "entidad": "COLIMA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-5",
+      "id": "nr-2",
       "clues": "CMIMB001153",
       "nombreUnidad": "HOSPITAL MATERNO INFANTIL",
       "entidad": "COLIMA",
@@ -270,97 +240,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-6",
-      "clues": "CSIMB001300",
-      "nombreUnidad": "H. B. C. DE LAS MARGARITAS",
-      "entidad": "CHIAPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-7",
-      "clues": "CSIMB001732",
-      "nombreUnidad": "HOSPITAL GENERAL PALENQUE",
-      "entidad": "CHIAPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-8",
-      "clues": "CSIMB002152",
-      "nombreUnidad": "HOSPITAL BÁSICO COMUNITARIO SALTO DE AGUA",
-      "entidad": "CHIAPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-9",
-      "clues": "CSIMB003506",
-      "nombreUnidad": "HOSPITAL REGIONAL DE ALTA ESPECIALIDAD CIUDAD SALUD",
-      "entidad": "HRAES",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-10",
-      "clues": "CSIMB003680",
-      "nombreUnidad": "HOSPITAL GENERAL TAPACHULA",
-      "entidad": "CHIAPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-11",
-      "clues": "CSIMB003926",
-      "nombreUnidad": "HOSPITAL BÁSICO COMUNITARIO DE AMATÁN",
-      "entidad": "CHIAPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-12",
-      "clues": "CSIMB004713",
-      "nombreUnidad": "H. B. C. DE LARRAINZAR",
-      "entidad": "CHIAPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-13",
-      "clues": "CSIMB006533",
-      "nombreUnidad": "HOSPITAL CHIAPAS NOS UNE DR. JESUS GILBERTO GOMEZ MAZA",
-      "entidad": "CHIAPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-14",
-      "clues": "DFIMB000026",
-      "nombreUnidad": "HOSPITAL PEDIÁTRICO AZCAPOTZALCO",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-15",
+      "id": "nr-3",
       "clues": "DFIMB000422",
       "nombreUnidad": "HOSPITAL PEDIÁTRICO VILLA",
       "entidad": "CIUDAD DE MEXICO",
@@ -370,27 +250,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-16",
-      "clues": "DFIMB001933",
-      "nombreUnidad": "HOSPITAL GENERAL DR. GREGORIO SALAS FLORES",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-17",
-      "clues": "DFIMB002003",
-      "nombreUnidad": "HOSPITAL PEDIÁTRICO TACUBAYA",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-18",
+      "id": "nr-4",
       "clues": "DFIMB002015",
       "nombreUnidad": "HOSPITAL PEDIÁTRICO LEGARIA",
       "entidad": "CIUDAD DE MEXICO",
@@ -400,37 +260,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-19",
-      "clues": "DFIMB002020",
-      "nombreUnidad": "HOSPITAL GENERAL DR. RUBÉN LEÑERO",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-20",
-      "clues": "DFIMB002085",
-      "nombreUnidad": "CLÍNICA HOSPITAL DE ESPECIALIDADES TOXICOLÓGICAS VENUSTIANO CARRANZA",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-21",
-      "clues": "DFIMB002341",
-      "nombreUnidad": "HOSPITAL GENERAL TOPILEJO",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-22",
+      "id": "nr-5",
       "clues": "DFIMB002435",
       "nombreUnidad": "HOSPITAL GENERAL DE CUAJIMALPA",
       "entidad": "CIUDAD DE MEXICO",
@@ -440,137 +270,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-23",
-      "clues": "DFIMB002674",
-      "nombreUnidad": "HOSPITAL GENERAL AJUSCO MEDIO",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-24",
-      "clues": "GRIMB000024",
-      "nombreUnidad": "HOSP. GRAL. RENACIMIENTO",
-      "entidad": "GUERRERO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-25",
-      "clues": "GRIMB004311",
-      "nombreUnidad": "DR. BERNARDO SEPULVEDA GUTIÉRREZ",
-      "entidad": "GUERRERO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-26",
-      "clues": "GRIMB005320",
-      "nombreUnidad": "HOSPITAL BÁSICO COMUNITARIO PETATLAN",
-      "entidad": "GUERRERO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-27",
-      "clues": "GRIMB008926",
-      "nombreUnidad": "HOSPITAL GENERAL DE ACAPULCO",
-      "entidad": "GUERRERO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-28",
-      "clues": "GRIMB009042",
-      "nombreUnidad": "HOSPITAL GENERAL REGIONAL DR. GUILLERMO SOBERÓN ACEVEDO",
-      "entidad": "GUERRERO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-29",
-      "clues": "GRIMB009906",
-      "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DE TELOLOAPAN GRO.",
-      "entidad": "GUERRERO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-30",
-      "clues": "HGIMB002036",
-      "nombreUnidad": "HOSPITAL INTEGRAL CINTA LARGA",
-      "entidad": "HIDALGO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-31",
-      "clues": "MCIMB000890",
-      "nombreUnidad": "HOSPITAL MUNICIPAL SANTA CRUZ ATIZAPÁN BICENTENARIO",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-32",
-      "clues": "MCIMB005102",
-      "nombreUnidad": "HOSPITAL JOSÉ MARÍA COSS BICENTENARIO",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-33",
-      "clues": "MCIMB006946",
-      "nombreUnidad": "H.G. DR. NICOLÁS SAN JUAN",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-34",
-      "clues": "MCIMB009022",
-      "nombreUnidad": "H.G. JILOTEPEC",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-35",
-      "clues": "MCIMB009162",
-      "nombreUnidad": "HOSPITAL MUNICIPAL TEMOAYA",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-36",
+      "id": "nr-6",
       "clues": "MNIMB003013",
       "nombreUnidad": "HOSPITAL GENERAL ZITACUARO",
       "entidad": "MICHOACAN DE OCAMPO",
@@ -580,7 +280,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-37",
+      "id": "nr-7",
       "clues": "MSIMB000292",
       "nombreUnidad": "HOSPITAL GENERAL DE CUAUTLA",
       "entidad": "MORELOS",
@@ -590,7 +290,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-38",
+      "id": "nr-8",
       "clues": "MSIMB000386",
       "nombreUnidad": "HG DE CUERNAVACA DR. JOSE G. PARRES",
       "entidad": "MORELOS",
@@ -600,7 +300,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-39",
+      "id": "nr-9",
       "clues": "MSIMB000806",
       "nombreUnidad": "HG DE JOJUTLA DR. ERNESTO MEANA SAN ROMÁN",
       "entidad": "MORELOS",
@@ -610,7 +310,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-40",
+      "id": "nr-10",
       "clues": "MSIMB001243",
       "nombreUnidad": "HG DE TETECALA DR. RODOLFO BECERRIL DE LA PAZ",
       "entidad": "MORELOS",
@@ -620,7 +320,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-41",
+      "id": "nr-11",
       "clues": "MSIMB001820",
       "nombreUnidad": "HC PUENTE DE IXTLA DR. FERNANDO R. VIZCARRA",
       "entidad": "MORELOS",
@@ -630,7 +330,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-42",
+      "id": "nr-12",
       "clues": "MSIMB001844",
       "nombreUnidad": "HOSPITAL DE LA MUJER",
       "entidad": "MORELOS",
@@ -640,7 +340,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-43",
+      "id": "nr-13",
       "clues": "MSIMB001856",
       "nombreUnidad": "HOSPITAL GENERAL DE TEMIXCO",
       "entidad": "MORELOS",
@@ -650,7 +350,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-44",
+      "id": "nr-14",
       "clues": "MSIMB001861",
       "nombreUnidad": "HC DE OCUITUCO",
       "entidad": "MORELOS",
@@ -660,7 +360,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-45",
+      "id": "nr-15",
       "clues": "MSIMB002112",
       "nombreUnidad": "HC DE JONACATEPEC",
       "entidad": "MORELOS",
@@ -670,7 +370,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-46",
+      "id": "nr-16",
       "clues": "MSIMB002235",
       "nombreUnidad": "HOSPITAL DEL NIÑO MORELENSE",
       "entidad": "MORELOS",
@@ -680,7 +380,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-47",
+      "id": "nr-17",
       "clues": "MSIMB002351",
       "nombreUnidad": "HOSPITAL GENERAL DE AXOCHIAPAN",
       "entidad": "MORELOS",
@@ -690,7 +390,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-48",
+      "id": "nr-18",
       "clues": "NTIMB002523",
       "nombreUnidad": "HOSPITAL BASICO COMUNITARIO DE TONDOROQUE",
       "entidad": "NAYARIT",
@@ -700,47 +400,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-49",
-      "clues": "NTIMB002622",
-      "nombreUnidad": "HOSPITAL BÁSICO COMUNITARIO DE COMPOSTELA",
-      "entidad": "NAYARIT",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-50",
-      "clues": "OCIMB000135",
-      "nombreUnidad": "HC NOCHIXTLAN",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-51",
-      "clues": "OCIMB000350",
-      "nombreUnidad": "HC HOSPITAL INTEGRAL COMUNITARIO CHALCATONGO",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-52",
-      "clues": "OCIMB000386",
-      "nombreUnidad": "HC TAMAZULAPAN",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-53",
+      "id": "nr-19",
       "clues": "OCIMB000490",
       "nombreUnidad": "HG HUAJUAPAN ENF. MARÍA DEL PILAR SÁNCHEZ VILLAVICENCIO",
       "entidad": "OAXACA",
@@ -750,7 +410,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-54",
+      "id": "nr-20",
       "clues": "OCIMB001330",
       "nombreUnidad": "H PSIQUIÁTRICO GRANJA CRUZ DEL SUR",
       "entidad": "OAXACA",
@@ -760,17 +420,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-55",
-      "clues": "OCIMB007181",
-      "nombreUnidad": "HOSPITAL ESPECIALIZADO DE 30 CAMAS DE JUCHITAN",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-56",
+      "id": "nr-21",
       "clues": "OCIMB007572",
       "nombreUnidad": "HG CIUDAD IXTEPEC",
       "entidad": "OAXACA",
@@ -780,7 +430,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-57",
+      "id": "nr-22",
       "clues": "OCIMB007864",
       "nombreUnidad": "HC TLACOTEPEC",
       "entidad": "OAXACA",
@@ -790,17 +440,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-58",
-      "clues": "OCIMB008045",
-      "nombreUnidad": "HC LA PAZ TEOJOMULCO-TEXMELUCAN",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-59",
+      "id": "nr-23",
       "clues": "OCIMB008190",
       "nombreUnidad": "HC TAMAZOLA",
       "entidad": "OAXACA",
@@ -810,7 +450,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-60",
+      "id": "nr-24",
       "clues": "OCIMB008815",
       "nombreUnidad": "HG PUERTO ESCONDIDO",
       "entidad": "OAXACA",
@@ -820,17 +460,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-61",
-      "clues": "OCIMB009100",
-      "nombreUnidad": "HC RÍO GRANDE",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-62",
+      "id": "nr-25",
       "clues": "OCIMB009416",
       "nombreUnidad": "HC TEOTITLÁN DE FLORES MAGÓN",
       "entidad": "OAXACA",
@@ -840,7 +470,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-63",
+      "id": "nr-26",
       "clues": "OCIMB009561",
       "nombreUnidad": "HC SAN PEDRO HUAMELULA",
       "entidad": "OAXACA",
@@ -850,157 +480,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-64",
-      "clues": "OCIMB009643",
-      "nombreUnidad": "IXTLÁN DE JUÁREZ",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-65",
-      "clues": "OCIMB009660",
-      "nombreUnidad": "HOSPITAL GENERAL DE SAN JUAN BAUTISTA TUXTEPEC",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-66",
-      "clues": "PLIMB003093",
-      "nombreUnidad": "HOSPITAL COMUNITARIO TULCINGO DE VALLE",
-      "entidad": "PUEBLA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-67",
-      "clues": "PLIMB003571",
-      "nombreUnidad": "HOSPITAL INTEGRAL ZAPOTITLAN DE MENDEZ",
-      "entidad": "PUEBLA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-68",
-      "clues": "PLIMB004131",
-      "nombreUnidad": "HOSPITAL COMUNITARIO VICENTE GUERRERO",
-      "entidad": "PUEBLA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-69",
-      "clues": "PLIMB004143",
-      "nombreUnidad": "HOSPITAL COMUNITARIO TLACOTEPEC DE PORFIRÍO DÍAZ",
-      "entidad": "PUEBLA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-70",
-      "clues": "PLIMB007170",
-      "nombreUnidad": "HOSPITAL GENERAL TECAMACHALCO",
-      "entidad": "PUEBLA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-71",
-      "clues": "PLIMB007416",
-      "nombreUnidad": "HOSPITAL INTEGRAL VENUSTIANO CARRANZA",
-      "entidad": "PUEBLA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-72",
-      "clues": "SPIMB000585",
-      "nombreUnidad": "HOSPITAL GENERAL DE RÍOVERDE",
-      "entidad": "SAN LUIS POTOSI",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-73",
-      "clues": "SPIMB001920",
-      "nombreUnidad": "HOSPITAL COMUNITARIO EBANO",
-      "entidad": "SAN LUIS POTOSI",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-74",
-      "clues": "SPIMB002574",
-      "nombreUnidad": "HOSPITAL REGIONAL DE ALTA ESPECIALIDAD DR.IGNACIO MORONES PRIETO",
-      "entidad": "SAN LUIS POTOSI",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-75",
-      "clues": "SPIMB002801",
-      "nombreUnidad": "HOSPITAL COMUNITARIO DE TAMUIN",
-      "entidad": "SAN LUIS POTOSI",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-76",
-      "clues": "SPIMB002965",
-      "nombreUnidad": "HOSPITAL DE LA NIÑEZ Y LA MUJER DR. ALBERTO LÓPEZ HERMOSA",
-      "entidad": "SAN LUIS POTOSI",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-77",
-      "clues": "SRIMB000016",
-      "nombreUnidad": "HOSPITAL COMUNITARIO VICAM SWITCH",
-      "entidad": "SONORA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-78",
-      "clues": "SRIMB000050",
-      "nombreUnidad": "HOSPITAL COMUNITARIO ALAMOS",
-      "entidad": "SONORA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-79",
+      "id": "nr-27",
       "clues": "SRIMB000453",
       "nombreUnidad": "HOSPITAL GENERAL CD. OBREGÓN",
       "entidad": "SONORA",
@@ -1010,167 +490,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-80",
-      "clues": "SRIMB000844",
-      "nombreUnidad": "HOSPITAL GENERAL GUAYMAS",
-      "entidad": "SONORA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-81",
-      "clues": "SRIMB001351",
-      "nombreUnidad": "HOSPITAL COMUNITARIO MOCTEZUMA",
-      "entidad": "SONORA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-82",
-      "clues": "SRIMB001766",
-      "nombreUnidad": "HOSPITAL GENERAL DE SAN LUIS RÍO COLORADO",
-      "entidad": "SONORA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-83",
-      "clues": "TCIMB002920",
-      "nombreUnidad": "HOSPITAL GENERAL DE VILLA BENITO JUÁREZ",
-      "entidad": "TABASCO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-84",
-      "clues": "TLIMB001820",
-      "nombreUnidad": "HOSPITAL GENERAL TLAXCALA LIC. ANSELMO CERVANTES HERNANDEZ",
-      "entidad": "TLAXCALA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-85",
-      "clues": "TSIMB000082",
-      "nombreUnidad": "HOSPITAL INTEGRAL ALDAMA",
-      "entidad": "TAMAULIPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-86",
-      "clues": "TSIMB001260",
-      "nombreUnidad": "HOSPITAL GENERAL REYNOSA DR. JOSÉ MARÍA CANTÚ GARZA",
-      "entidad": "TAMAULIPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-87",
-      "clues": "TSIMB001955",
-      "nombreUnidad": "HOSPITAL GENERAL DR. NORBERTO TREVIÑO ZAPATA",
-      "entidad": "TAMAULIPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-88",
-      "clues": "TSIMB002416",
-      "nombreUnidad": "HOSPITAL GENERAL DE MATAMOROS",
-      "entidad": "TAMAULIPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-89",
-      "clues": "TSIMB002520",
-      "nombreUnidad": "HOSPITAL GENERAL DE TAMPICO DR. CARLOS CANSECO",
-      "entidad": "TAMAULIPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-90",
-      "clues": "TSIMB002713",
-      "nombreUnidad": "HOSPITAL GENERAL MATERNO INFANTIL DE REYNOSA",
-      "entidad": "TAMAULIPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-91",
-      "clues": "VZIMB000254",
-      "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DE ALVARADO",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-92",
-      "clues": "VZIMB000691",
-      "nombreUnidad": "HOSPITAL DE LA COMUNIDAD CATEMACO",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-93",
-      "clues": "VZIMB000826",
-      "nombreUnidad": "HOSPITAL REGIONAL DE COATZACOALCOS DR.VALENTIN GÓMEZ FARIAS",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-94",
-      "clues": "VZIMB001000",
-      "nombreUnidad": "HOSPITAL GENERAL COSAMALOAPAN  DR. VÍCTOR MANUEL PITALUA GONZÁLEZ",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-95",
-      "clues": "VZIMB001881",
-      "nombreUnidad": "HOSPITAL GENERAL HUATUSCO DR. DARÍO MENDEZ LIMA",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-96",
+      "id": "nr-28",
       "clues": "VZIMB002120",
       "nombreUnidad": "HOSPITAL COMUNITARIO DE IXHUATLAN DEL SURESTE",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -1180,7 +500,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-97",
+      "id": "nr-29",
       "clues": "VZIMB002844",
       "nombreUnidad": "HOSPITAL GENERAL DE MINATITLAN",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -1190,7 +510,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-98",
+      "id": "nr-30",
       "clues": "VZIMB003491",
       "nombreUnidad": "HOSPITAL GENERAL PAPANTLA  DR. JOSÉ BUILL BELENGUER",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -1200,17 +520,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-99",
-      "clues": "VZIMB003701",
-      "nombreUnidad": "HOSPITAL DE LA COMUNIDAD PLAYA VICENTE",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-100",
+      "id": "nr-31",
       "clues": "VZIMB003870",
       "nombreUnidad": "HOSPITAL REGIONAL RÍO BLANCO",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -1220,87 +530,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-101",
-      "clues": "VZIMB004775",
-      "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DE TEOCELO",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-102",
-      "clues": "VZIMB005393",
-      "nombreUnidad": "HOSPITAL GENERAL TUXPAN DR. EMILIO ALCAZAR",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-103",
-      "clues": "VZIMB005533",
-      "nombreUnidad": "HOSPITAL DE ALTA ESPECIALIDAD DE VERACRUZ",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-104",
-      "clues": "VZIMB006023",
-      "nombreUnidad": "HOSPITAL DE LA COMUNIDAD LA LAGUNA  POBLADO 6",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-105",
-      "clues": "VZIMB006105",
-      "nombreUnidad": "HOSPITAL GENERAL DE CARDEL",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-106",
-      "clues": "VZIMB006122",
-      "nombreUnidad": "HOSPITAL COMUNITARIO DE TONALAPAN",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-107",
-      "clues": "VZIMB006180",
-      "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DE CERRO AZUL",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-108",
-      "clues": "VZIMB006192",
-      "nombreUnidad": "HOSPITAL GENERAL TLALIXCOYAN",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-109",
+      "id": "nr-32",
       "clues": "VZIMB007592",
       "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DR. PEDRO CORONEL PÉREZ",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -1310,57 +540,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-110",
-      "clues": "VZIMB007860",
-      "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DE JOSÉ AZUETA",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-111",
-      "clues": "VZIMB007930",
-      "nombreUnidad": "HOSPITAL GENERAL COSOLEACAQUE",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-112",
-      "clues": "VZIMB008946",
-      "nombreUnidad": "HOSPITAL MATERNO INFANTIL DE COATZACOALCOS",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-113",
-      "clues": "ZSIMB000492",
-      "nombreUnidad": "HOSPITAL COMUNITARIO JALPA (DR CALIXTO MEDINA MEDINA)",
-      "entidad": "ZACATECAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-114",
-      "clues": "ZSIMB002015",
-      "nombreUnidad": "HOSPITAL COMUNITARIO SOMBRERETE",
-      "entidad": "ZACATECAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-115",
+      "id": "nr-33",
       "clues": "ZSIMB002126",
       "nombreUnidad": "HOSPITAL DE LA MUJER",
       "entidad": "ZACATECAS",
@@ -1370,7 +550,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-116",
+      "id": "nr-34",
       "clues": "ZSIMB002295",
       "nombreUnidad": "HOSPITAL GENERAL LORETO",
       "entidad": "ZACATECAS",
@@ -1391,7 +571,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "24/09/2026 17:30"
+      "ultimaFechaRegistro": "24/09/2026 18:30"
     }
   ]
 }
