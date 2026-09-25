@@ -21,15 +21,27 @@ function requiredEnv(name: string): string {
   return value;
 }
 
+function isConnectionClosedError(error: unknown): boolean {
+  if (!(error instanceof Error)) return false;
+  return error.message.includes('Connection Closed') || error.message.includes('428');
+}
+
 async function main(): Promise<void> {
   await mkdir(capturesDirectory, { recursive: true });
   console.log(`Seccion configurada: ${section}`);
   console.log(`Programacion: ${schedule} (${timezone})`);
 
-  const socket = await connectWhatsApp(authDirectory);
-  const groupJid = await resolveGroupJid(socket, groupName);
+  let socket = await connectWhatsApp(authDirectory);
+  let groupJid = await resolveGroupJid(socket, groupName);
   console.log(`Grupo seleccionado: ${groupName} (${groupJid})`);
   let running = false;
+
+  const reconnect = async (): Promise<void> => {
+    console.warn('Conexion cerrada. Reconectando WhatsApp con la sesion existente...');
+    socket = await connectWhatsApp(authDirectory);
+    groupJid = await resolveGroupJid(socket, groupName);
+    console.log(`WhatsApp reconectado. Grupo seleccionado: ${groupName} (${groupJid})`);
+  };
 
   const sendReport = async (): Promise<void> => {
     if (running) {
@@ -41,7 +53,13 @@ async function main(): Promise<void> {
     try {
       const capture = await captureReport(reportUrl, section, capturePath);
       const caption = 'holis mando el Reporte de inventario: Inventario por entidad federativa';
-      await sendImage(socket, groupJid, capture.outputPath, caption);
+      try {
+        await sendImage(socket, groupJid, capture.outputPath, caption);
+      } catch (error) {
+        if (!isConnectionClosedError(error)) throw error;
+        await reconnect();
+        await sendImage(socket, groupJid, capture.outputPath, caption);
+      }
       console.log(`PNG enviado correctamente: ${capture.outputPath}`);
     } catch (error) {
       console.error('Error al generar o enviar el reporte:', error);
