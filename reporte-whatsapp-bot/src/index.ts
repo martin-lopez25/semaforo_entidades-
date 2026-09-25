@@ -3,19 +3,17 @@ import cron from 'node-cron';
 import path from 'node:path';
 import { mkdir } from 'node:fs/promises';
 import { captureReport, type ReportSection } from './capture.js';
-import { connectWhatsApp, phoneJid, resolveGroupJid, sendImage } from './whatsapp.js';
+import { connectWhatsApp, resolveGroupJid, sendImage } from './whatsapp.js';
 
 const rootDirectory = path.resolve(import.meta.dirname, '..');
 const authDirectory = path.join(rootDirectory, 'auth_reporte');
 const capturesDirectory = path.join(rootDirectory, 'capturas');
 const reportUrl = requiredEnv('REPORT_URL');
 const groupName = requiredEnv('WHATSAPP_GRUPO_NOMBRE');
-const additionalNumber = requiredEnv('WHATSAPP_NUMERO_ADICIONAL');
 const section = (process.env.REPORT_SECTION ?? 'inventory') as ReportSection;
 const schedule = process.env.CRON_SCHEDULE ?? '30 * * * *';
+const shutdownSchedule = process.env.AUTO_SHUTDOWN_SCHEDULE ?? '0 22 * * *';
 const timezone = process.env.TIMEZONE ?? 'America/Mexico_City';
-const sendToGroup = process.env.SEND_TO_GROUP !== 'false';
-const sendToAdditional = process.env.SEND_TO_ADDITIONAL !== 'false';
 
 function requiredEnv(name: string): string {
   const value = process.env[name]?.trim();
@@ -30,7 +28,6 @@ async function main(): Promise<void> {
 
   const socket = await connectWhatsApp(authDirectory);
   const groupJid = await resolveGroupJid(socket, groupName);
-  const additionalJid = phoneJid(additionalNumber);
   console.log(`Grupo seleccionado: ${groupName} (${groupJid})`);
   let running = false;
 
@@ -44,12 +41,7 @@ async function main(): Promise<void> {
     try {
       const capture = await captureReport(reportUrl, section, capturePath);
       const caption = 'holis mando el Reporte de inventario: Inventario por entidad federativa';
-      if (sendToGroup) {
-        await sendImage(socket, groupJid, capture.outputPath, caption);
-      }
-      if (sendToAdditional) {
-        await sendImage(socket, additionalJid, capture.outputPath, caption);
-      }
+      await sendImage(socket, groupJid, capture.outputPath, caption);
       console.log(`PNG enviado correctamente: ${capture.outputPath}`);
     } catch (error) {
       console.error('Error al generar o enviar el reporte:', error);
@@ -63,6 +55,11 @@ async function main(): Promise<void> {
   }
 
   cron.schedule(schedule, () => void sendReport(), { timezone });
+  cron.schedule(shutdownSchedule, () => {
+    console.log('Apagado programado del bot. La sesion de WhatsApp se conserva.');
+    process.exit(0);
+  }, { timezone });
+  console.log(`Apagado programado: ${shutdownSchedule} (${timezone})`);
   console.log('Bot activo. Presiona Ctrl+C para detenerlo.');
 }
 
