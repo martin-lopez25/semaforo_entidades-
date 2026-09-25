@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "25/09/2026 09:30",
+  "lastUpdated": "25/09/2026 10:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -20,6 +20,15 @@
       "inventarioCompleto": 7.0
     },
     {
+      "id": "CAMPECHE",
+      "entidad": "CAMPECHE",
+      "metaClues": 12,
+      "cluesConInventario": 12,
+      "cluesMedicamentos": 12,
+      "cluesMaterialCuracion": 12,
+      "inventarioCompleto": 12.0
+    },
+    {
       "id": "CHIAPAS",
       "entidad": "CHIAPAS",
       "metaClues": 40,
@@ -27,6 +36,15 @@
       "cluesMedicamentos": 40,
       "cluesMaterialCuracion": 40,
       "inventarioCompleto": 40.0
+    },
+    {
+      "id": "COLIMA",
+      "entidad": "COLIMA",
+      "metaClues": 6,
+      "cluesConInventario": 6,
+      "cluesMedicamentos": 6,
+      "cluesMaterialCuracion": 6,
+      "inventarioCompleto": 6.0
     },
     {
       "id": "HIDALGO",
@@ -155,6 +173,15 @@
       "inventarioCompleto": 12.0
     },
     {
+      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "metaClues": 55,
+      "cluesConInventario": 54,
+      "cluesMedicamentos": 54,
+      "cluesMaterialCuracion": 54,
+      "inventarioCompleto": 54.0
+    },
+    {
       "id": "GUERRERO",
       "entidad": "GUERRERO",
       "metaClues": 41,
@@ -164,22 +191,13 @@
       "inventarioCompleto": 41.0
     },
     {
-      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "metaClues": 55,
-      "cluesConInventario": 53,
-      "cluesMedicamentos": 53,
-      "cluesMaterialCuracion": 53,
-      "inventarioCompleto": 53.0
-    },
-    {
-      "id": "CAMPECHE",
-      "entidad": "CAMPECHE",
-      "metaClues": 12,
-      "cluesConInventario": 11,
-      "cluesMedicamentos": 11,
-      "cluesMaterialCuracion": 11,
-      "inventarioCompleto": 11.0
+      "id": "ZACATECAS",
+      "entidad": "ZACATECAS",
+      "metaClues": 17,
+      "cluesConInventario": 16,
+      "cluesMedicamentos": 16,
+      "cluesMaterialCuracion": 16,
+      "inventarioCompleto": 16.0
     },
     {
       "id": "CIUDAD DE MEXICO",
@@ -191,56 +209,18 @@
       "inventarioCompleto": 29.0
     },
     {
-      "id": "ZACATECAS",
-      "entidad": "ZACATECAS",
-      "metaClues": 17,
-      "cluesConInventario": 15,
-      "cluesMedicamentos": 15,
-      "cluesMaterialCuracion": 15,
-      "inventarioCompleto": 15.0
-    },
-    {
       "id": "OAXACA",
       "entidad": "OAXACA",
       "metaClues": 37,
-      "cluesConInventario": 31,
-      "cluesMedicamentos": 31,
-      "cluesMaterialCuracion": 31,
-      "inventarioCompleto": 31.0
-    },
-    {
-      "id": "COLIMA",
-      "entidad": "COLIMA",
-      "metaClues": 6,
-      "cluesConInventario": 5,
-      "cluesMedicamentos": 5,
-      "cluesMaterialCuracion": 5,
-      "inventarioCompleto": 5.0
+      "cluesConInventario": 32,
+      "cluesMedicamentos": 32,
+      "cluesMaterialCuracion": 32,
+      "inventarioCompleto": 32.0
     }
   ],
   "notReported": [
     {
       "id": "nr-1",
-      "clues": "CCIMB000172",
-      "nombreUnidad": "H.G. MA. SOCORRO QUIROGA AGUILAR",
-      "entidad": "CAMPECHE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-2",
-      "clues": "CMIMB001153",
-      "nombreUnidad": "HOSPITAL MATERNO INFANTIL",
-      "entidad": "COLIMA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-3",
       "clues": "DFIMB000422",
       "nombreUnidad": "HOSPITAL PEDIÁTRICO VILLA",
       "entidad": "CIUDAD DE MEXICO",
@@ -250,7 +230,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-4",
+      "id": "nr-2",
       "clues": "DFIMB002015",
       "nombreUnidad": "HOSPITAL PEDIÁTRICO LEGARIA",
       "entidad": "CIUDAD DE MEXICO",
@@ -260,7 +240,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-5",
+      "id": "nr-3",
       "clues": "DFIMB002435",
       "nombreUnidad": "HOSPITAL GENERAL DE CUAJIMALPA",
       "entidad": "CIUDAD DE MEXICO",
@@ -270,7 +250,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-6",
+      "id": "nr-4",
       "clues": "OCIMB000490",
       "nombreUnidad": "HG HUAJUAPAN ENF. MARÍA DEL PILAR SÁNCHEZ VILLAVICENCIO",
       "entidad": "OAXACA",
@@ -280,7 +260,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-7",
+      "id": "nr-5",
       "clues": "OCIMB001330",
       "nombreUnidad": "H PSIQUIÁTRICO GRANJA CRUZ DEL SUR",
       "entidad": "OAXACA",
@@ -290,7 +270,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-8",
+      "id": "nr-6",
       "clues": "OCIMB007864",
       "nombreUnidad": "HC TLACOTEPEC",
       "entidad": "OAXACA",
@@ -300,17 +280,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-9",
-      "clues": "OCIMB008190",
-      "nombreUnidad": "HC TAMAZOLA",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-10",
+      "id": "nr-7",
       "clues": "OCIMB008815",
       "nombreUnidad": "HG PUERTO ESCONDIDO",
       "entidad": "OAXACA",
@@ -320,7 +290,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-11",
+      "id": "nr-8",
       "clues": "OCIMB009416",
       "nombreUnidad": "HC TEOTITLÁN DE FLORES MAGÓN",
       "entidad": "OAXACA",
@@ -330,17 +300,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-12",
-      "clues": "VZIMB003491",
-      "nombreUnidad": "HOSPITAL GENERAL PAPANTLA  DR. JOSÉ BUILL BELENGUER",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-13",
+      "id": "nr-9",
       "clues": "VZIMB007592",
       "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DR. PEDRO CORONEL PÉREZ",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -350,17 +310,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-14",
-      "clues": "ZSIMB002126",
-      "nombreUnidad": "HOSPITAL DE LA MUJER",
-      "entidad": "ZACATECAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-15",
+      "id": "nr-10",
       "clues": "ZSIMB002295",
       "nombreUnidad": "HOSPITAL GENERAL LORETO",
       "entidad": "ZACATECAS",
