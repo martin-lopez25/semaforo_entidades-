@@ -3,8 +3,8 @@ setlocal EnableExtensions
 
 set "BOT_PATH=C:\Users\jose.valdez\Downloads\reporte_pao\semaforo_entidades-\reporte-whatsapp-bot"
 set "ENV_PATH=%BOT_PATH%\.env"
-set "LOG_PATH=%BOT_PATH%logs\reporte-whatsapp.log"
-mkdir "%BOT_PATH%logs" 2>nul
+set "LOG_PATH=%BOT_PATH%\logs\reporte-whatsapp.log"
+mkdir "%BOT_PATH%\logs" 2>nul
 cd /d "%BOT_PATH%"
 
 where node >nul 2>&1
