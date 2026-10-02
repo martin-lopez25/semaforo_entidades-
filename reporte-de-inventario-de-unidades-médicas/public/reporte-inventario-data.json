@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "01/10/2026 19:30",
+  "lastUpdated": "01/10/2026 20:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -212,10 +212,10 @@
       "id": "OAXACA",
       "entidad": "OAXACA",
       "metaClues": 37,
-      "cluesConInventario": 30,
-      "cluesMedicamentos": 30,
-      "cluesMaterialCuracion": 30,
-      "inventarioCompleto": 30.0
+      "cluesConInventario": 31,
+      "cluesMedicamentos": 31,
+      "cluesMaterialCuracion": 31,
+      "inventarioCompleto": 31.0
     }
   ],
   "notReported": [
@@ -351,16 +351,6 @@
     },
     {
       "id": "nr-14",
-      "clues": "OCIMB009660",
-      "nombreUnidad": "HOSPITAL GENERAL DE SAN JUAN BAUTISTA TUXTEPEC",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-15",
       "clues": "PLIMB004102",
       "nombreUnidad": "HOSPITAL COMUNITARIO MECAPALAPA",
       "entidad": "PUEBLA",
@@ -370,7 +360,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-16",
+      "id": "nr-15",
       "clues": "SPIMB000240",
       "nombreUnidad": "HOSPITAL GENERAL CD. VALLES",
       "entidad": "SAN LUIS POTOSI",
@@ -380,7 +370,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-17",
+      "id": "nr-16",
       "clues": "TLIMB002095",
       "nombreUnidad": "HOSPITAL DE LA MUJER",
       "entidad": "TLAXCALA",
@@ -390,7 +380,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-18",
+      "id": "nr-17",
       "clues": "VZIMB003870",
       "nombreUnidad": "HOSPITAL REGIONAL RÍO BLANCO",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -400,7 +390,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-19",
+      "id": "nr-18",
       "clues": "VZIMB004944",
       "nombreUnidad": "HOSPITAL GENERAL DE  TIERRA BLANCA JESÚS GARCÍA CORONA",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -410,7 +400,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-20",
+      "id": "nr-19",
       "clues": "VZIMB006163",
       "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DE ENTABLADERO",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -420,7 +410,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-21",
+      "id": "nr-20",
       "clues": "VZIMB006180",
       "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DE CERRO AZUL",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -441,7 +431,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "01/10/2026 19:30"
+      "ultimaFechaRegistro": "01/10/2026 20:30"
     }
   ]
 }
