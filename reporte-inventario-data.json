@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "02/10/2026 13:30",
+  "lastUpdated": "02/10/2026 14:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -164,6 +164,15 @@
       "inventarioCompleto": 12.0
     },
     {
+      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "metaClues": 55,
+      "cluesConInventario": 55,
+      "cluesMedicamentos": 55,
+      "cluesMaterialCuracion": 55,
+      "inventarioCompleto": 55.0
+    },
+    {
       "id": "ZACATECAS",
       "entidad": "ZACATECAS",
       "metaClues": 17,
@@ -171,15 +180,6 @@
       "cluesMedicamentos": 17,
       "cluesMaterialCuracion": 17,
       "inventarioCompleto": 17.0
-    },
-    {
-      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "metaClues": 55,
-      "cluesConInventario": 54,
-      "cluesMedicamentos": 54,
-      "cluesMaterialCuracion": 54,
-      "inventarioCompleto": 54.0
     },
     {
       "id": "GUERRERO",
@@ -191,6 +191,15 @@
       "inventarioCompleto": 40.5
     },
     {
+      "id": "OAXACA",
+      "entidad": "OAXACA",
+      "metaClues": 37,
+      "cluesConInventario": 36,
+      "cluesMedicamentos": 36,
+      "cluesMaterialCuracion": 36,
+      "inventarioCompleto": 36.0
+    },
+    {
       "id": "MEXICO",
       "entidad": "MEXICO",
       "metaClues": 70,
@@ -198,15 +207,6 @@
       "cluesMedicamentos": 68,
       "cluesMaterialCuracion": 68,
       "inventarioCompleto": 68.0
-    },
-    {
-      "id": "OAXACA",
-      "entidad": "OAXACA",
-      "metaClues": 37,
-      "cluesConInventario": 35,
-      "cluesMedicamentos": 35,
-      "cluesMaterialCuracion": 35,
-      "inventarioCompleto": 35.0
     },
     {
       "id": "SAN LUIS POTOSI",
@@ -241,16 +241,6 @@
     },
     {
       "id": "nr-3",
-      "clues": "OCIMB000490",
-      "nombreUnidad": "HG HUAJUAPAN ENF. MARÍA DEL PILAR SÁNCHEZ VILLAVICENCIO",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-4",
       "clues": "OCIMB008815",
       "nombreUnidad": "HG PUERTO ESCONDIDO",
       "entidad": "OAXACA",
@@ -260,20 +250,10 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-5",
+      "id": "nr-4",
       "clues": "SPIMB000240",
       "nombreUnidad": "HOSPITAL GENERAL CD. VALLES",
       "entidad": "SAN LUIS POTOSI",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-6",
-      "clues": "VZIMB004944",
-      "nombreUnidad": "HOSPITAL GENERAL DE  TIERRA BLANCA JESÚS GARCÍA CORONA",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
       "municipio": "",
       "tipoUnidad": "Primer Nivel",
       "diasSinReporte": 0,
@@ -291,7 +271,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "02/10/2026 13:30"
+      "ultimaFechaRegistro": "02/10/2026 14:30"
     }
   ]
 }
