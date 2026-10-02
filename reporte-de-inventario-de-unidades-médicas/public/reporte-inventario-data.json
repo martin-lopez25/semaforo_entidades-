@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "02/10/2026 09:30",
+  "lastUpdated": "02/10/2026 10:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -38,6 +38,15 @@
       "inventarioCompleto": 40.0
     },
     {
+      "id": "CIUDAD DE MEXICO",
+      "entidad": "CIUDAD DE MEXICO",
+      "metaClues": 32,
+      "cluesConInventario": 32,
+      "cluesMedicamentos": 32,
+      "cluesMaterialCuracion": 32,
+      "inventarioCompleto": 32.0
+    },
+    {
       "id": "COLIMA",
       "entidad": "COLIMA",
       "metaClues": 6,
@@ -47,6 +56,15 @@
       "inventarioCompleto": 6.0
     },
     {
+      "id": "HIDALGO",
+      "entidad": "HIDALGO",
+      "metaClues": 18,
+      "cluesConInventario": 18,
+      "cluesMedicamentos": 18,
+      "cluesMaterialCuracion": 18,
+      "inventarioCompleto": 18.0
+    },
+    {
       "id": "HRAES",
       "entidad": "HRAES",
       "metaClues": 2,
@@ -54,6 +72,15 @@
       "cluesMedicamentos": 2,
       "cluesMaterialCuracion": 2,
       "inventarioCompleto": 2.0
+    },
+    {
+      "id": "MICHOACAN DE OCAMPO",
+      "entidad": "MICHOACAN DE OCAMPO",
+      "metaClues": 27,
+      "cluesConInventario": 27,
+      "cluesMedicamentos": 27,
+      "cluesMaterialCuracion": 27,
+      "inventarioCompleto": 27.0
     },
     {
       "id": "MORELOS",
@@ -72,6 +99,15 @@
       "cluesMedicamentos": 14,
       "cluesMaterialCuracion": 14,
       "inventarioCompleto": 14.0
+    },
+    {
+      "id": "PUEBLA",
+      "entidad": "PUEBLA",
+      "metaClues": 53,
+      "cluesConInventario": 53,
+      "cluesMedicamentos": 53,
+      "cluesMaterialCuracion": 53,
+      "inventarioCompleto": 53.0
     },
     {
       "id": "QUINTANA ROO",
@@ -119,6 +155,15 @@
       "inventarioCompleto": 18.0
     },
     {
+      "id": "TLAXCALA",
+      "entidad": "TLAXCALA",
+      "metaClues": 12,
+      "cluesConInventario": 12,
+      "cluesMedicamentos": 12,
+      "cluesMaterialCuracion": 12,
+      "inventarioCompleto": 12.0
+    },
+    {
       "id": "ZACATECAS",
       "entidad": "ZACATECAS",
       "metaClues": 17,
@@ -128,13 +173,13 @@
       "inventarioCompleto": 17.0
     },
     {
-      "id": "PUEBLA",
-      "entidad": "PUEBLA",
-      "metaClues": 53,
-      "cluesConInventario": 52,
-      "cluesMedicamentos": 52,
-      "cluesMaterialCuracion": 52,
-      "inventarioCompleto": 52.0
+      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "metaClues": 55,
+      "cluesConInventario": 54,
+      "cluesMedicamentos": 54,
+      "cluesMaterialCuracion": 54,
+      "inventarioCompleto": 54.0
     },
     {
       "id": "GUERRERO",
@@ -146,24 +191,6 @@
       "inventarioCompleto": 40.5
     },
     {
-      "id": "CIUDAD DE MEXICO",
-      "entidad": "CIUDAD DE MEXICO",
-      "metaClues": 32,
-      "cluesConInventario": 31,
-      "cluesMedicamentos": 31,
-      "cluesMaterialCuracion": 31,
-      "inventarioCompleto": 31.0
-    },
-    {
-      "id": "MICHOACAN DE OCAMPO",
-      "entidad": "MICHOACAN DE OCAMPO",
-      "metaClues": 27,
-      "cluesConInventario": 26,
-      "cluesMedicamentos": 26,
-      "cluesMaterialCuracion": 26,
-      "inventarioCompleto": 26.0
-    },
-    {
       "id": "MEXICO",
       "entidad": "MEXICO",
       "metaClues": 70,
@@ -173,6 +200,15 @@
       "inventarioCompleto": 67.0
     },
     {
+      "id": "OAXACA",
+      "entidad": "OAXACA",
+      "metaClues": 37,
+      "cluesConInventario": 35,
+      "cluesMedicamentos": 35,
+      "cluesMaterialCuracion": 35,
+      "inventarioCompleto": 35.0
+    },
+    {
       "id": "SAN LUIS POTOSI",
       "entidad": "SAN LUIS POTOSI",
       "metaClues": 15,
@@ -180,77 +216,11 @@
       "cluesMedicamentos": 14,
       "cluesMaterialCuracion": 14,
       "inventarioCompleto": 14.0
-    },
-    {
-      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "metaClues": 55,
-      "cluesConInventario": 51,
-      "cluesMedicamentos": 51,
-      "cluesMaterialCuracion": 51,
-      "inventarioCompleto": 51.0
-    },
-    {
-      "id": "TLAXCALA",
-      "entidad": "TLAXCALA",
-      "metaClues": 12,
-      "cluesConInventario": 11,
-      "cluesMedicamentos": 11,
-      "cluesMaterialCuracion": 11,
-      "inventarioCompleto": 11.0
-    },
-    {
-      "id": "HIDALGO",
-      "entidad": "HIDALGO",
-      "metaClues": 18,
-      "cluesConInventario": 16,
-      "cluesMedicamentos": 16,
-      "cluesMaterialCuracion": 16,
-      "inventarioCompleto": 16.0
-    },
-    {
-      "id": "OAXACA",
-      "entidad": "OAXACA",
-      "metaClues": 37,
-      "cluesConInventario": 31,
-      "cluesMedicamentos": 31,
-      "cluesMaterialCuracion": 31,
-      "inventarioCompleto": 31.0
     }
   ],
   "notReported": [
     {
       "id": "nr-1",
-      "clues": "DFIMB002003",
-      "nombreUnidad": "HOSPITAL PEDIÁTRICO TACUBAYA",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-2",
-      "clues": "HGIMB001481",
-      "nombreUnidad": "HOSPITAL GENERAL DEL VALLE DEL MEZQUITAL IXMIQUILPAN",
-      "entidad": "HIDALGO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-3",
-      "clues": "HGIMB002036",
-      "nombreUnidad": "HOSPITAL INTEGRAL CINTA LARGA",
-      "entidad": "HIDALGO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-4",
       "clues": "MCIMB000890",
       "nombreUnidad": "HOSPITAL MUNICIPAL SANTA CRUZ ATIZAPÁN BICENTENARIO",
       "entidad": "MEXICO",
@@ -260,7 +230,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-5",
+      "id": "nr-2",
       "clues": "MCIMB009174",
       "nombreUnidad": "HOSPITAL GENERAL IXTAPAN DE LA SAL",
       "entidad": "MEXICO",
@@ -270,7 +240,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-6",
+      "id": "nr-3",
       "clues": "MCIMB011945",
       "nombreUnidad": "H.G. TEXCOCO GUADALUPE VICTORIA BICENTENARIO",
       "entidad": "MEXICO",
@@ -280,17 +250,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-7",
-      "clues": "MNIMB001403",
-      "nombreUnidad": "HOSPITAL DE LA MUJER",
-      "entidad": "MICHOACAN DE OCAMPO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-8",
+      "id": "nr-4",
       "clues": "OCIMB000490",
       "nombreUnidad": "HG HUAJUAPAN ENF. MARÍA DEL PILAR SÁNCHEZ VILLAVICENCIO",
       "entidad": "OAXACA",
@@ -300,37 +260,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-9",
-      "clues": "OCIMB000881",
-      "nombreUnidad": "HG OAXACA DR. AURELIO VALDIVIESO",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-10",
-      "clues": "OCIMB007625",
-      "nombreUnidad": "HG TEHUANTEPEC",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-11",
-      "clues": "OCIMB008190",
-      "nombreUnidad": "HC TAMAZOLA",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-12",
+      "id": "nr-5",
       "clues": "OCIMB008815",
       "nombreUnidad": "HG PUERTO ESCONDIDO",
       "entidad": "OAXACA",
@@ -340,27 +270,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-13",
-      "clues": "OCIMB009416",
-      "nombreUnidad": "HC TEOTITLÁN DE FLORES MAGÓN",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-14",
-      "clues": "PLIMB004102",
-      "nombreUnidad": "HOSPITAL COMUNITARIO MECAPALAPA",
-      "entidad": "PUEBLA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-15",
+      "id": "nr-6",
       "clues": "SPIMB000240",
       "nombreUnidad": "HOSPITAL GENERAL CD. VALLES",
       "entidad": "SAN LUIS POTOSI",
@@ -370,49 +280,9 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-16",
-      "clues": "TLIMB002095",
-      "nombreUnidad": "HOSPITAL DE LA MUJER",
-      "entidad": "TLAXCALA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-17",
-      "clues": "VZIMB003870",
-      "nombreUnidad": "HOSPITAL REGIONAL RÍO BLANCO",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-18",
+      "id": "nr-7",
       "clues": "VZIMB004944",
       "nombreUnidad": "HOSPITAL GENERAL DE  TIERRA BLANCA JESÚS GARCÍA CORONA",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-19",
-      "clues": "VZIMB006163",
-      "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DE ENTABLADERO",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-20",
-      "clues": "VZIMB006180",
-      "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DE CERRO AZUL",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
       "municipio": "",
       "tipoUnidad": "Primer Nivel",
@@ -431,7 +301,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "02/10/2026 09:30"
+      "ultimaFechaRegistro": "02/10/2026 10:30"
     }
   ]
 }

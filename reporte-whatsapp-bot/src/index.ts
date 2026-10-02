@@ -1,13 +1,15 @@
 import 'dotenv/config';
+import { createHash } from 'node:crypto';
 import cron from 'node-cron';
 import path from 'node:path';
-import { mkdir } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { captureReport, type ReportSection } from './capture.js';
 import { connectWhatsApp, resolveGroupJid, sendImage } from './whatsapp.js';
 
 const rootDirectory = path.resolve(import.meta.dirname, '..');
 const authDirectory = path.join(rootDirectory, 'auth_reporte');
 const capturesDirectory = path.join(rootDirectory, 'capturas');
+const fingerprintPath = path.join(capturesDirectory, 'reporte-data.sha256');
 const reportUrl = requiredEnv('REPORT_URL');
 const groupName = requiredEnv('WHATSAPP_GRUPO_NOMBRE');
 const section = (process.env.REPORT_SECTION ?? 'inventory') as ReportSection;
@@ -19,6 +21,41 @@ function requiredEnv(name: string): string {
   const value = process.env[name]?.trim();
   if (!value) throw new Error(`Falta configurar ${name} en .env`);
   return value;
+}
+
+async function getReportDataFingerprint(): Promise<string> {
+  const dataUrl = new URL('./reporte-inventario-data.json', reportUrl);
+  dataUrl.searchParams.set('_botCheck', Date.now().toString());
+  const response = await fetch(dataUrl, { headers: { 'Cache-Control': 'no-cache' } });
+  if (!response.ok) {
+    throw new Error(`No se pudieron consultar los datos del reporte: ${response.status}`);
+  }
+
+  const payload: unknown = await response.json();
+  if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
+    throw new Error('El archivo de datos del reporte no tiene un formato valido.');
+  }
+
+  const data = payload as Record<string, unknown>;
+  if (!Array.isArray(data.entities) || !Array.isArray(data.notReported) || !Array.isArray(data.incomplete)) {
+    throw new Error('El archivo de datos no contiene todas las listas esperadas.');
+  }
+
+  const reportData = JSON.stringify({
+    entities: data.entities,
+    notReported: data.notReported,
+    incomplete: data.incomplete,
+  });
+  return createHash('sha256').update(reportData).digest('hex');
+}
+
+async function readSavedFingerprint(): Promise<string | undefined> {
+  try {
+    return (await readFile(fingerprintPath, 'utf8')).trim() || undefined;
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') return undefined;
+    throw error;
+  }
 }
 
 function isConnectionClosedError(error: unknown): boolean {
@@ -51,6 +88,13 @@ async function main(): Promise<void> {
     running = true;
     const capturePath = path.join(capturesDirectory, `reporte-${section}.png`);
     try {
+      const fingerprint = await getReportDataFingerprint();
+      const previousFingerprint = await readSavedFingerprint();
+      if (fingerprint === previousFingerprint) {
+        console.log('Los datos no cambiaron; se omiten la captura y el envio.');
+        return;
+      }
+
       const capture = await captureReport(reportUrl, section, capturePath);
       const caption = 'holis mando el Reporte de inventario: Inventario por entidad federativa';
       try {
@@ -60,6 +104,7 @@ async function main(): Promise<void> {
         await reconnect();
         await sendImage(socket, groupJid, capture.outputPath, caption);
       }
+      await writeFile(fingerprintPath, `${fingerprint}\n`, 'utf8');
       console.log(`PNG enviado correctamente: ${capture.outputPath}`);
     } catch (error) {
       console.error('Error al generar o enviar el reporte:', error);
