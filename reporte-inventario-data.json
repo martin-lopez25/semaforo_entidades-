@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "01/10/2026 20:30",
+  "lastUpdated": "01/10/2026 21:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -431,7 +431,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "01/10/2026 20:30"
+      "ultimaFechaRegistro": "01/10/2026 21:30"
     }
   ]
 }
