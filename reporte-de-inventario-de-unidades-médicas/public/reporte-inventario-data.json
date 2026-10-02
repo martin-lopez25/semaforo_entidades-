@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "02/10/2026 10:30",
+  "lastUpdated": "02/10/2026 11:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -194,10 +194,10 @@
       "id": "MEXICO",
       "entidad": "MEXICO",
       "metaClues": 70,
-      "cluesConInventario": 67,
-      "cluesMedicamentos": 67,
-      "cluesMaterialCuracion": 67,
-      "inventarioCompleto": 67.0
+      "cluesConInventario": 68,
+      "cluesMedicamentos": 68,
+      "cluesMaterialCuracion": 68,
+      "inventarioCompleto": 68.0
     },
     {
       "id": "OAXACA",
@@ -241,16 +241,6 @@
     },
     {
       "id": "nr-3",
-      "clues": "MCIMB011945",
-      "nombreUnidad": "H.G. TEXCOCO GUADALUPE VICTORIA BICENTENARIO",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-4",
       "clues": "OCIMB000490",
       "nombreUnidad": "HG HUAJUAPAN ENF. MARÍA DEL PILAR SÁNCHEZ VILLAVICENCIO",
       "entidad": "OAXACA",
@@ -260,7 +250,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-5",
+      "id": "nr-4",
       "clues": "OCIMB008815",
       "nombreUnidad": "HG PUERTO ESCONDIDO",
       "entidad": "OAXACA",
@@ -270,7 +260,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-6",
+      "id": "nr-5",
       "clues": "SPIMB000240",
       "nombreUnidad": "HOSPITAL GENERAL CD. VALLES",
       "entidad": "SAN LUIS POTOSI",
@@ -280,7 +270,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-7",
+      "id": "nr-6",
       "clues": "VZIMB004944",
       "nombreUnidad": "HOSPITAL GENERAL DE  TIERRA BLANCA JESÚS GARCÍA CORONA",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -301,7 +291,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "02/10/2026 10:30"
+      "ultimaFechaRegistro": "02/10/2026 11:30"
     }
   ]
 }
