@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "02/10/2026 17:30",
+  "lastUpdated": "02/10/2026 18:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -119,6 +119,15 @@
       "inventarioCompleto": 13.0
     },
     {
+      "id": "SAN LUIS POTOSI",
+      "entidad": "SAN LUIS POTOSI",
+      "metaClues": 15,
+      "cluesConInventario": 15,
+      "cluesMedicamentos": 15,
+      "cluesMaterialCuracion": 15,
+      "inventarioCompleto": 15.0
+    },
+    {
       "id": "SINALOA",
       "entidad": "SINALOA",
       "metaClues": 21,
@@ -182,13 +191,22 @@
       "inventarioCompleto": 17.0
     },
     {
+      "id": "MEXICO",
+      "entidad": "MEXICO",
+      "metaClues": 70,
+      "cluesConInventario": 69,
+      "cluesMedicamentos": 69,
+      "cluesMaterialCuracion": 69,
+      "inventarioCompleto": 69.0
+    },
+    {
       "id": "GUERRERO",
       "entidad": "GUERRERO",
       "metaClues": 41,
       "cluesConInventario": 41,
       "cluesMedicamentos": 41,
-      "cluesMaterialCuracion": 40,
-      "inventarioCompleto": 40.5
+      "cluesMaterialCuracion": 41,
+      "inventarioCompleto": 41.0
     },
     {
       "id": "OAXACA",
@@ -198,39 +216,11 @@
       "cluesMedicamentos": 36,
       "cluesMaterialCuracion": 36,
       "inventarioCompleto": 36.0
-    },
-    {
-      "id": "MEXICO",
-      "entidad": "MEXICO",
-      "metaClues": 70,
-      "cluesConInventario": 68,
-      "cluesMedicamentos": 68,
-      "cluesMaterialCuracion": 68,
-      "inventarioCompleto": 68.0
-    },
-    {
-      "id": "SAN LUIS POTOSI",
-      "entidad": "SAN LUIS POTOSI",
-      "metaClues": 15,
-      "cluesConInventario": 14,
-      "cluesMedicamentos": 14,
-      "cluesMaterialCuracion": 14,
-      "inventarioCompleto": 14.0
     }
   ],
   "notReported": [
     {
       "id": "nr-1",
-      "clues": "MCIMB000890",
-      "nombreUnidad": "HOSPITAL MUNICIPAL SANTA CRUZ ATIZAPÁN BICENTENARIO",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-2",
       "clues": "MCIMB009174",
       "nombreUnidad": "HOSPITAL GENERAL IXTAPAN DE LA SAL",
       "entidad": "MEXICO",
@@ -240,7 +230,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-3",
+      "id": "nr-2",
       "clues": "OCIMB008815",
       "nombreUnidad": "HG PUERTO ESCONDIDO",
       "entidad": "OAXACA",
@@ -248,30 +238,7 @@
       "tipoUnidad": "Primer Nivel",
       "diasSinReporte": 0,
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-4",
-      "clues": "SPIMB000240",
-      "nombreUnidad": "HOSPITAL GENERAL CD. VALLES",
-      "entidad": "SAN LUIS POTOSI",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
     }
   ],
-  "incomplete": [
-    {
-      "id": "inc-1",
-      "clues": "GRIMB008926",
-      "nombreUnidad": "HOSPITAL GENERAL DE ACAPULCO",
-      "entidad": "GUERRERO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "motivoIncompleto": "Reporte incompleto",
-      "avanceMedicamentos": 100,
-      "avanceMaterial": 100,
-      "ultimaFechaRegistro": "02/10/2026 17:30"
-    }
-  ]
+  "incomplete": []
 }
