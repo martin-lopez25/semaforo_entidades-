@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "08/10/2026 12:30",
+  "lastUpdated": "08/10/2026 13:30",
   "entities": [
     {
       "id": "QUINTANA ROO",
@@ -2621,7 +2621,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "08/10/2026 12:30"
+      "ultimaFechaRegistro": "08/10/2026 13:30"
     },
     {
       "id": "inc-2",
@@ -2633,7 +2633,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "08/10/2026 12:30"
+      "ultimaFechaRegistro": "08/10/2026 13:30"
     }
   ]
 }
