@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "09/10/2026 10:30",
+  "lastUpdated": "09/10/2026 11:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA SUR",
@@ -45,6 +45,15 @@
       "cluesMedicamentos": 11,
       "cluesMaterialCuracion": 11,
       "inventarioCompleto": 11.0
+    },
+    {
+      "id": "NAYARIT",
+      "entidad": "NAYARIT",
+      "metaClues": 14,
+      "cluesConInventario": 14,
+      "cluesMedicamentos": 14,
+      "cluesMaterialCuracion": 14,
+      "inventarioCompleto": 14.0
     },
     {
       "id": "QUINTANA ROO",
@@ -110,6 +119,15 @@
       "inventarioCompleto": 12.0
     },
     {
+      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "metaClues": 55,
+      "cluesConInventario": 55,
+      "cluesMedicamentos": 55,
+      "cluesMaterialCuracion": 55,
+      "inventarioCompleto": 55.0
+    },
+    {
       "id": "ZACATECAS",
       "entidad": "ZACATECAS",
       "metaClues": 17,
@@ -126,15 +144,6 @@
       "cluesMedicamentos": 69,
       "cluesMaterialCuracion": 69,
       "inventarioCompleto": 69.0
-    },
-    {
-      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "metaClues": 55,
-      "cluesConInventario": 54,
-      "cluesMedicamentos": 54,
-      "cluesMaterialCuracion": 54,
-      "inventarioCompleto": 54.0
     },
     {
       "id": "PUEBLA",
@@ -158,19 +167,10 @@
       "id": "OAXACA",
       "entidad": "OAXACA",
       "metaClues": 37,
-      "cluesConInventario": 35,
-      "cluesMedicamentos": 34,
-      "cluesMaterialCuracion": 35,
-      "inventarioCompleto": 34.5
-    },
-    {
-      "id": "NAYARIT",
-      "entidad": "NAYARIT",
-      "metaClues": 14,
-      "cluesConInventario": 13,
-      "cluesMedicamentos": 13,
-      "cluesMaterialCuracion": 13,
-      "inventarioCompleto": 13.0
+      "cluesConInventario": 36,
+      "cluesMedicamentos": 35,
+      "cluesMaterialCuracion": 36,
+      "inventarioCompleto": 35.5
     },
     {
       "id": "MICHOACAN DE OCAMPO",
@@ -311,16 +311,6 @@
     },
     {
       "id": "nr-10",
-      "clues": "NTIMB000353",
-      "nombreUnidad": "HOSPITAL INTEGRAL IXTLÁN DEL RÍO",
-      "entidad": "NAYARIT",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-11",
       "clues": "OCIMB000490",
       "nombreUnidad": "HG HUAJUAPAN ENF. MARÍA DEL PILAR SÁNCHEZ VILLAVICENCIO",
       "entidad": "OAXACA",
@@ -330,30 +320,10 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-12",
-      "clues": "OCIMB000881",
-      "nombreUnidad": "HG OAXACA DR. AURELIO VALDIVIESO",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-13",
+      "id": "nr-11",
       "clues": "PLIMB004143",
       "nombreUnidad": "HOSPITAL COMUNITARIO TLACOTEPEC DE PORFIRÍO DÍAZ",
       "entidad": "PUEBLA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-14",
-      "clues": "VZIMB006151",
-      "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DE LLANO DE EN MEDIO",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
       "municipio": "",
       "tipoUnidad": "Primer Nivel",
       "diasSinReporte": 0,
@@ -371,7 +341,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "09/10/2026 10:30"
+      "ultimaFechaRegistro": "09/10/2026 11:30"
     }
   ]
 }
