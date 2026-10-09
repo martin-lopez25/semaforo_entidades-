@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "09/10/2026 14:30",
+  "lastUpdated": "09/10/2026 15:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -191,6 +191,15 @@
       "inventarioCompleto": 35.5
     },
     {
+      "id": "CIUDAD DE MEXICO",
+      "entidad": "CIUDAD DE MEXICO",
+      "metaClues": 32,
+      "cluesConInventario": 30,
+      "cluesMedicamentos": 30,
+      "cluesMaterialCuracion": 30,
+      "inventarioCompleto": 30.0
+    },
+    {
       "id": "MICHOACAN DE OCAMPO",
       "entidad": "MICHOACAN DE OCAMPO",
       "metaClues": 27,
@@ -198,15 +207,6 @@
       "cluesMedicamentos": 25,
       "cluesMaterialCuracion": 25,
       "inventarioCompleto": 25.0
-    },
-    {
-      "id": "CIUDAD DE MEXICO",
-      "entidad": "CIUDAD DE MEXICO",
-      "metaClues": 32,
-      "cluesConInventario": 29,
-      "cluesMedicamentos": 29,
-      "cluesMaterialCuracion": 29,
-      "inventarioCompleto": 29.0
     },
     {
       "id": "HRAES",
@@ -251,16 +251,6 @@
     },
     {
       "id": "nr-4",
-      "clues": "DFIMB002674",
-      "nombreUnidad": "HOSPITAL GENERAL AJUSCO MEDIO",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-5",
       "clues": "MCIMB011945",
       "nombreUnidad": "H.G. TEXCOCO GUADALUPE VICTORIA BICENTENARIO",
       "entidad": "MEXICO",
@@ -270,7 +260,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-6",
+      "id": "nr-5",
       "clues": "MNIMB003013",
       "nombreUnidad": "HOSPITAL GENERAL ZITACUARO",
       "entidad": "MICHOACAN DE OCAMPO",
@@ -280,7 +270,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-7",
+      "id": "nr-6",
       "clues": "MNIMB003952",
       "nombreUnidad": "HOSPITAL COMUNITARIO CARACUARO-NOCUPETARO",
       "entidad": "MICHOACAN DE OCAMPO",
@@ -290,7 +280,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-8",
+      "id": "nr-7",
       "clues": "OCIMB000490",
       "nombreUnidad": "HG HUAJUAPAN ENF. MARÍA DEL PILAR SÁNCHEZ VILLAVICENCIO",
       "entidad": "OAXACA",
@@ -300,7 +290,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-9",
+      "id": "nr-8",
       "clues": "PLIMB004143",
       "nombreUnidad": "HOSPITAL COMUNITARIO TLACOTEPEC DE PORFIRÍO DÍAZ",
       "entidad": "PUEBLA",
@@ -321,7 +311,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "09/10/2026 14:30"
+      "ultimaFechaRegistro": "09/10/2026 15:30"
     }
   ]
 }
