@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "08/10/2026 21:30",
+  "lastUpdated": "09/10/2026 09:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA SUR",
@@ -581,7 +581,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "08/10/2026 21:30"
+      "ultimaFechaRegistro": "09/10/2026 09:30"
     },
     {
       "id": "inc-2",
@@ -593,7 +593,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "08/10/2026 21:30"
+      "ultimaFechaRegistro": "09/10/2026 09:30"
     }
   ]
 }
