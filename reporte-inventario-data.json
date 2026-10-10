@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "09/10/2026 17:30",
+  "lastUpdated": "09/10/2026 18:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -56,6 +56,15 @@
       "inventarioCompleto": 18.0
     },
     {
+      "id": "MICHOACAN DE OCAMPO",
+      "entidad": "MICHOACAN DE OCAMPO",
+      "metaClues": 27,
+      "cluesConInventario": 27,
+      "cluesMedicamentos": 27,
+      "cluesMaterialCuracion": 27,
+      "inventarioCompleto": 27.0
+    },
+    {
       "id": "MORELOS",
       "entidad": "MORELOS",
       "metaClues": 11,
@@ -72,6 +81,15 @@
       "cluesMedicamentos": 14,
       "cluesMaterialCuracion": 14,
       "inventarioCompleto": 14.0
+    },
+    {
+      "id": "OAXACA",
+      "entidad": "OAXACA",
+      "metaClues": 37,
+      "cluesConInventario": 37,
+      "cluesMedicamentos": 36,
+      "cluesMaterialCuracion": 37,
+      "inventarioCompleto": 36.5
     },
     {
       "id": "QUINTANA ROO",
@@ -182,31 +200,13 @@
       "inventarioCompleto": 41.0
     },
     {
-      "id": "OAXACA",
-      "entidad": "OAXACA",
-      "metaClues": 37,
-      "cluesConInventario": 36,
-      "cluesMedicamentos": 35,
-      "cluesMaterialCuracion": 36,
-      "inventarioCompleto": 35.5
-    },
-    {
       "id": "CIUDAD DE MEXICO",
       "entidad": "CIUDAD DE MEXICO",
       "metaClues": 32,
-      "cluesConInventario": 30,
-      "cluesMedicamentos": 30,
-      "cluesMaterialCuracion": 30,
-      "inventarioCompleto": 30.0
-    },
-    {
-      "id": "MICHOACAN DE OCAMPO",
-      "entidad": "MICHOACAN DE OCAMPO",
-      "metaClues": 27,
-      "cluesConInventario": 25,
-      "cluesMedicamentos": 25,
-      "cluesMaterialCuracion": 25,
-      "inventarioCompleto": 25.0
+      "cluesConInventario": 31,
+      "cluesMedicamentos": 31,
+      "cluesMaterialCuracion": 31,
+      "inventarioCompleto": 31.0
     },
     {
       "id": "HRAES",
@@ -231,16 +231,6 @@
     },
     {
       "id": "nr-2",
-      "clues": "DFIMB001933",
-      "nombreUnidad": "HOSPITAL GENERAL DR. GREGORIO SALAS FLORES",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-3",
       "clues": "DFIMB002003",
       "nombreUnidad": "HOSPITAL PEDIÁTRICO TACUBAYA",
       "entidad": "CIUDAD DE MEXICO",
@@ -250,7 +240,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-4",
+      "id": "nr-3",
       "clues": "MCIMB011945",
       "nombreUnidad": "H.G. TEXCOCO GUADALUPE VICTORIA BICENTENARIO",
       "entidad": "MEXICO",
@@ -260,37 +250,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-5",
-      "clues": "MNIMB003013",
-      "nombreUnidad": "HOSPITAL GENERAL ZITACUARO",
-      "entidad": "MICHOACAN DE OCAMPO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-6",
-      "clues": "MNIMB003952",
-      "nombreUnidad": "HOSPITAL COMUNITARIO CARACUARO-NOCUPETARO",
-      "entidad": "MICHOACAN DE OCAMPO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-7",
-      "clues": "OCIMB000490",
-      "nombreUnidad": "HG HUAJUAPAN ENF. MARÍA DEL PILAR SÁNCHEZ VILLAVICENCIO",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-8",
+      "id": "nr-4",
       "clues": "PLIMB004143",
       "nombreUnidad": "HOSPITAL COMUNITARIO TLACOTEPEC DE PORFIRÍO DÍAZ",
       "entidad": "PUEBLA",
@@ -311,7 +271,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "09/10/2026 17:30"
+      "ultimaFechaRegistro": "09/10/2026 18:30"
     }
   ]
 }
