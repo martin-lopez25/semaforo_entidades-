@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "09/10/2026 21:30",
+  "lastUpdated": "15/10/2026 10:56",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -45,6 +45,15 @@
       "cluesMedicamentos": 6,
       "cluesMaterialCuracion": 6,
       "inventarioCompleto": 6.0
+    },
+    {
+      "id": "GUERRERO",
+      "entidad": "GUERRERO",
+      "metaClues": 40,
+      "cluesConInventario": 41,
+      "cluesMedicamentos": 41,
+      "cluesMaterialCuracion": 41,
+      "inventarioCompleto": 41.0
     },
     {
       "id": "HIDALGO",
@@ -191,15 +200,6 @@
       "inventarioCompleto": 52.0
     },
     {
-      "id": "GUERRERO",
-      "entidad": "GUERRERO",
-      "metaClues": 41,
-      "cluesConInventario": 41,
-      "cluesMedicamentos": 41,
-      "cluesMaterialCuracion": 41,
-      "inventarioCompleto": 41.0
-    },
-    {
       "id": "CIUDAD DE MEXICO",
       "entidad": "CIUDAD DE MEXICO",
       "metaClues": 32,
@@ -271,7 +271,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "09/10/2026 21:30"
+      "ultimaFechaRegistro": "15/10/2026 10:56"
     }
   ]
 }

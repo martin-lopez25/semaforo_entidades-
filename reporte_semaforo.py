@@ -41,8 +41,8 @@ fecha_actualizacion = datetime.now().strftime("%d/%m/%Y %H:%M")
 # RUTA DINÁMICA
 # =========================
 posibles_carpetas = [
-    Path(fr"C:\Users\{usuario}\IMSS-BIENESTAR\División de Procesamiento de información - Comando Florence Nightingale\Proyectos\74 Limpieza de bases de abasto\Data"),
-    Path(fr"C:\Users\{usuario}\OneDrive - IMSS-BIENESTAR\División de Procesamiento de información - Comando Florence Nightingale\Proyectos\74 Limpieza de bases de abasto\Data")
+    Path(fr"C:\Users\{usuario}\IMSS-BIENESTAR\División de Procesamiento de información - Comando Florence Nightingale\Proyectos\074 Limpieza de bases de abasto\Data"),
+    Path(fr"C:\Users\{usuario}\OneDrive - IMSS-BIENESTAR\División de Procesamiento de información - Comando Florence Nightingale\Proyectos\074 Limpieza de bases de abasto\Data")
 ]
 
 carpeta = next((p for p in posibles_carpetas if p.exists()), None)
