@@ -12,7 +12,7 @@ const capturesDirectory = path.join(rootDirectory, 'capturas');
 const fingerprintPath = path.join(capturesDirectory, 'reporte-data.sha256');
 const reportUrl = requiredEnv('REPORT_URL');
 const groupName = requiredEnv('WHATSAPP_GRUPO_NOMBRE');
-const section = (process.env.REPORT_SECTION ?? 'inventory') as ReportSection;
+const sections: ReportSection[] = ['inventory', 'not-reported', 'incomplete'];
 const schedule = process.env.CRON_SCHEDULE ?? '30 * * * *';
 const shutdownSchedule = process.env.AUTO_SHUTDOWN_SCHEDULE ?? '0 22 * * *';
 const timezone = process.env.TIMEZONE ?? 'America/Mexico_City';
@@ -42,6 +42,7 @@ async function getReportDataFingerprint(): Promise<string> {
   }
 
   const reportData = JSON.stringify({
+    sections,
     entities: data.entities,
     notReported: data.notReported,
     incomplete: data.incomplete,
@@ -65,7 +66,7 @@ function isConnectionClosedError(error: unknown): boolean {
 
 async function main(): Promise<void> {
   await mkdir(capturesDirectory, { recursive: true });
-  console.log(`Seccion configurada: ${section}`);
+  console.log(`Secciones configuradas: ${sections.join(', ')}`);
   console.log(`Programacion: ${schedule} (${timezone})`);
 
   let socket = await connectWhatsApp(authDirectory);
@@ -86,7 +87,6 @@ async function main(): Promise<void> {
       return;
     }
     running = true;
-    const capturePath = path.join(capturesDirectory, `reporte-${section}.png`);
     try {
       const fingerprint = await getReportDataFingerprint();
       const previousFingerprint = await readSavedFingerprint();
@@ -95,17 +95,20 @@ async function main(): Promise<void> {
         return;
       }
 
-      const capture = await captureReport(reportUrl, section, capturePath);
-      const caption = 'holis mando el Reporte de inventario: Inventario por entidad federativa';
-      try {
-        await sendImage(socket, groupJid, capture.outputPath, caption);
-      } catch (error) {
-        if (!isConnectionClosedError(error)) throw error;
-        await reconnect();
-        await sendImage(socket, groupJid, capture.outputPath, caption);
+      for (const section of sections) {
+        const capturePath = path.join(capturesDirectory, `reporte-${section}.png`);
+        const capture = await captureReport(reportUrl, section, capturePath);
+        const caption = `Reporte de inventario: ${capture.label}`;
+        try {
+          await sendImage(socket, groupJid, capture.outputPath, caption);
+        } catch (error) {
+          if (!isConnectionClosedError(error)) throw error;
+          await reconnect();
+          await sendImage(socket, groupJid, capture.outputPath, caption);
+        }
+        console.log(`PNG enviado correctamente (${section}): ${capture.outputPath}`);
       }
       await writeFile(fingerprintPath, `${fingerprint}\n`, 'utf8');
-      console.log(`PNG enviado correctamente: ${capture.outputPath}`);
     } catch (error) {
       console.error('Error al generar o enviar el reporte:', error);
     } finally {

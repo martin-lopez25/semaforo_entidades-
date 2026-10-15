@@ -97,7 +97,7 @@ export async function sendImage(socket: WASocket, recipient: string, imagePath: 
   const result = await socket.sendMessage(recipient, {
     image: imageBuffer,
     mimetype: 'image/png',
-    fileName: 'reporte-inventario.png',
+    fileName: path.basename(resolvedPath),
     caption,
   });
 

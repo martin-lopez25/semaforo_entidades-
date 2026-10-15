@@ -1,6 +1,6 @@
 # Reporte WhatsApp Bot
 
-Proceso independiente del chatbot principal. Abre la pagina publicada, captura una seccion y envia el PNG por WhatsApp cada hora.
+Proceso independiente del chatbot principal. Abre la pagina publicada, captura inventario, CLUES que no reportaron y CLUES incompletos, y envia los tres PNG por WhatsApp cada hora.
 
 ## Configuracion
 
@@ -11,9 +11,7 @@ Proceso independiente del chatbot principal. Abre la pagina publicada, captura u
 5. Ejecuta `npm run dev` y escanea el QR con el numero origen del reporte.
 6. La sesion se guarda en `auth_reporte/`, separada del chatbot.
 
-`REPORT_SECTION` acepta `inventory`, `not-reported`, `incomplete`, `chart` o `full`.
-
-El proceso envia la imagen al inicio de cada hora con `CRON_SCHEDULE=0 * * * *`. Para probarlo inmediatamente, usa `RUN_ON_START=true`.
+El proceso envia las tres imagenes segun `CRON_SCHEDULE`. Para enviarlas inmediatamente al arrancar, usa `RUN_ON_START=true`.
 
 Para construir y ejecutar con Node:
 
