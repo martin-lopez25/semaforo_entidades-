@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "15/10/2026 14:30",
+  "lastUpdated": "15/10/2026 15:30",
   "entities": [
     {
       "id": "QUINTANA ROO",
@@ -3311,7 +3311,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "15/10/2026 14:30"
+      "ultimaFechaRegistro": "15/10/2026 15:30"
     },
     {
       "id": "inc-2",
@@ -3323,7 +3323,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "15/10/2026 14:30"
+      "ultimaFechaRegistro": "15/10/2026 15:30"
     },
     {
       "id": "inc-3",
@@ -3335,7 +3335,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "15/10/2026 14:30"
+      "ultimaFechaRegistro": "15/10/2026 15:30"
     }
   ]
 }
