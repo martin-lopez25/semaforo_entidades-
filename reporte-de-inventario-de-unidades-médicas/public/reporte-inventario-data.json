@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "15/10/2026 20:30",
+  "lastUpdated": "15/10/2026 21:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -621,7 +621,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "15/10/2026 20:30"
+      "ultimaFechaRegistro": "15/10/2026 21:30"
     },
     {
       "id": "inc-2",
@@ -633,7 +633,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "15/10/2026 20:30"
+      "ultimaFechaRegistro": "15/10/2026 21:30"
     },
     {
       "id": "inc-3",
@@ -645,7 +645,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "15/10/2026 20:30"
+      "ultimaFechaRegistro": "15/10/2026 21:30"
     },
     {
       "id": "inc-4",
@@ -657,7 +657,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "15/10/2026 20:30"
+      "ultimaFechaRegistro": "15/10/2026 21:30"
     },
     {
       "id": "inc-5",
@@ -669,7 +669,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "15/10/2026 20:30"
+      "ultimaFechaRegistro": "15/10/2026 21:30"
     },
     {
       "id": "inc-6",
@@ -681,7 +681,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "15/10/2026 20:30"
+      "ultimaFechaRegistro": "15/10/2026 21:30"
     }
   ]
 }
