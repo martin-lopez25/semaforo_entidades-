@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "16/10/2026 12:30",
+  "lastUpdated": "16/10/2026 13:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -56,6 +56,15 @@
       "inventarioCompleto": 41.0
     },
     {
+      "id": "HIDALGO",
+      "entidad": "HIDALGO",
+      "metaClues": 18,
+      "cluesConInventario": 18,
+      "cluesMedicamentos": 18,
+      "cluesMaterialCuracion": 18,
+      "inventarioCompleto": 18.0
+    },
+    {
       "id": "HRAES",
       "entidad": "HRAES",
       "metaClues": 2,
@@ -63,6 +72,15 @@
       "cluesMedicamentos": 2,
       "cluesMaterialCuracion": 2,
       "inventarioCompleto": 2.0
+    },
+    {
+      "id": "MEXICO",
+      "entidad": "MEXICO",
+      "metaClues": 70,
+      "cluesConInventario": 70,
+      "cluesMedicamentos": 70,
+      "cluesMaterialCuracion": 70,
+      "inventarioCompleto": 70.0
     },
     {
       "id": "MORELOS",
@@ -110,6 +128,15 @@
       "inventarioCompleto": 15.0
     },
     {
+      "id": "SINALOA",
+      "entidad": "SINALOA",
+      "metaClues": 21,
+      "cluesConInventario": 21,
+      "cluesMedicamentos": 21,
+      "cluesMaterialCuracion": 20,
+      "inventarioCompleto": 20.5
+    },
+    {
       "id": "SONORA",
       "entidad": "SONORA",
       "metaClues": 18,
@@ -146,22 +173,22 @@
       "inventarioCompleto": 12.0
     },
     {
-      "id": "MEXICO",
-      "entidad": "MEXICO",
-      "metaClues": 70,
-      "cluesConInventario": 69,
-      "cluesMedicamentos": 69,
-      "cluesMaterialCuracion": 69,
-      "inventarioCompleto": 69.0
+      "id": "ZACATECAS",
+      "entidad": "ZACATECAS",
+      "metaClues": 17,
+      "cluesConInventario": 17,
+      "cluesMedicamentos": 17,
+      "cluesMaterialCuracion": 16,
+      "inventarioCompleto": 16.5
     },
     {
       "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
       "metaClues": 55,
       "cluesConInventario": 54,
-      "cluesMedicamentos": 53,
+      "cluesMedicamentos": 54,
       "cluesMaterialCuracion": 54,
-      "inventarioCompleto": 53.5
+      "inventarioCompleto": 54.0
     },
     {
       "id": "MICHOACAN DE OCAMPO",
@@ -173,31 +200,13 @@
       "inventarioCompleto": 26.0
     },
     {
-      "id": "SINALOA",
-      "entidad": "SINALOA",
-      "metaClues": 21,
-      "cluesConInventario": 20,
-      "cluesMedicamentos": 20,
-      "cluesMaterialCuracion": 19,
-      "inventarioCompleto": 19.5
-    },
-    {
-      "id": "HIDALGO",
-      "entidad": "HIDALGO",
-      "metaClues": 18,
-      "cluesConInventario": 17,
-      "cluesMedicamentos": 17,
-      "cluesMaterialCuracion": 17,
-      "inventarioCompleto": 17.0
-    },
-    {
-      "id": "ZACATECAS",
-      "entidad": "ZACATECAS",
-      "metaClues": 17,
-      "cluesConInventario": 16,
-      "cluesMedicamentos": 16,
-      "cluesMaterialCuracion": 15,
-      "inventarioCompleto": 15.5
+      "id": "OAXACA",
+      "entidad": "OAXACA",
+      "metaClues": 37,
+      "cluesConInventario": 34,
+      "cluesMedicamentos": 34,
+      "cluesMaterialCuracion": 34,
+      "inventarioCompleto": 34.0
     },
     {
       "id": "CIUDAD DE MEXICO",
@@ -207,15 +216,6 @@
       "cluesMedicamentos": 29,
       "cluesMaterialCuracion": 29,
       "inventarioCompleto": 29.0
-    },
-    {
-      "id": "OAXACA",
-      "entidad": "OAXACA",
-      "metaClues": 37,
-      "cluesConInventario": 26,
-      "cluesMedicamentos": 26,
-      "cluesMaterialCuracion": 26,
-      "inventarioCompleto": 26.0
     }
   ],
   "notReported": [
@@ -251,26 +251,6 @@
     },
     {
       "id": "nr-4",
-      "clues": "HGIMB004824",
-      "nombreUnidad": "HOSPITAL GENERAL TULA",
-      "entidad": "HIDALGO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-5",
-      "clues": "MCIMB012073",
-      "nombreUnidad": "HOSPITAL GENERAL HUEYPOXTLA HERMENEGILDO GALEANA BICENTENARIO",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-6",
       "clues": "MNIMB003013",
       "nombreUnidad": "HOSPITAL GENERAL ZITACUARO",
       "entidad": "MICHOACAN DE OCAMPO",
@@ -280,37 +260,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-7",
-      "clues": "OCIMB000386",
-      "nombreUnidad": "HC TAMAZULAPAN",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-8",
-      "clues": "OCIMB000881",
-      "nombreUnidad": "HG OAXACA DR. AURELIO VALDIVIESO",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-9",
-      "clues": "OCIMB001313",
-      "nombreUnidad": "HE DE LA NIÑEZ OAXAQUEÑA",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-10",
+      "id": "nr-5",
       "clues": "OCIMB003401",
       "nombreUnidad": "HG POCHUTLA",
       "entidad": "OAXACA",
@@ -320,7 +270,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-11",
+      "id": "nr-6",
       "clues": "OCIMB003500",
       "nombreUnidad": "HC SAN PEDRO TAPANATEPEC",
       "entidad": "OAXACA",
@@ -330,57 +280,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-12",
-      "clues": "OCIMB007012",
-      "nombreUnidad": "HG JUCHITAN DR. MACEDONIO BENITEZ FUENTES",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-13",
-      "clues": "OCIMB008651",
-      "nombreUnidad": "HG SALINA CRUZ",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-14",
-      "clues": "OCIMB008815",
-      "nombreUnidad": "HG PUERTO ESCONDIDO",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-15",
-      "clues": "OCIMB009071",
-      "nombreUnidad": "HG PUTLA AMIGO DE LA NIÑEZ Y DE LA MADRE",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-16",
-      "clues": "OCIMB009462",
-      "nombreUnidad": "HC SANTA MARIA HUATULCO",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-17",
+      "id": "nr-7",
       "clues": "OCIMB009631",
       "nombreUnidad": "HOSPITAL GENERAL DE LA MUJER Y LA NIÑEZ OAXAQUEÑA",
       "entidad": "OAXACA",
@@ -390,30 +290,10 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-18",
-      "clues": "SLIMB000895",
-      "nombreUnidad": "HOSPITAL INTEGRAL CHOIX",
-      "entidad": "SINALOA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-19",
+      "id": "nr-8",
       "clues": "VZIMB006315",
       "nombreUnidad": "HOSPITAL GENERAL DE OLUTA-ACAYUCAN",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-20",
-      "clues": "ZSIMB002015",
-      "nombreUnidad": "HOSPITAL COMUNITARIO SOMBRERETE",
-      "entidad": "ZACATECAS",
       "municipio": "",
       "tipoUnidad": "Primer Nivel",
       "diasSinReporte": 0,
@@ -431,7 +311,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 12:30"
+      "ultimaFechaRegistro": "16/10/2026 13:30"
     },
     {
       "id": "inc-2",
@@ -443,22 +323,10 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 12:30"
+      "ultimaFechaRegistro": "16/10/2026 13:30"
     },
     {
       "id": "inc-3",
-      "clues": "VZIMB007930",
-      "nombreUnidad": "HOSPITAL GENERAL COSOLEACAQUE",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "motivoIncompleto": "Reporte incompleto",
-      "avanceMedicamentos": 100,
-      "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 12:30"
-    },
-    {
-      "id": "inc-4",
       "clues": "ZSIMB000900",
       "nombreUnidad": "HOSPITAL COMUNITARIO OJOCALIENTE",
       "entidad": "ZACATECAS",
@@ -467,7 +335,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 12:30"
+      "ultimaFechaRegistro": "16/10/2026 13:30"
     }
   ]
 }
