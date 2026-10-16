@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "16/10/2026 16:30",
+  "lastUpdated": "16/10/2026 17:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -261,7 +261,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 16:30"
+      "ultimaFechaRegistro": "16/10/2026 17:30"
     },
     {
       "id": "inc-2",
@@ -273,7 +273,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 16:30"
+      "ultimaFechaRegistro": "16/10/2026 17:30"
     }
   ]
 }
