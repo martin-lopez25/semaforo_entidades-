@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "16/10/2026 15:30",
+  "lastUpdated": "16/10/2026 16:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -83,6 +83,15 @@
       "inventarioCompleto": 70.0
     },
     {
+      "id": "MICHOACAN DE OCAMPO",
+      "entidad": "MICHOACAN DE OCAMPO",
+      "metaClues": 27,
+      "cluesConInventario": 27,
+      "cluesMedicamentos": 27,
+      "cluesMaterialCuracion": 27,
+      "inventarioCompleto": 27.0
+    },
+    {
       "id": "MORELOS",
       "entidad": "MORELOS",
       "metaClues": 11,
@@ -133,8 +142,8 @@
       "metaClues": 21,
       "cluesConInventario": 21,
       "cluesMedicamentos": 21,
-      "cluesMaterialCuracion": 20,
-      "inventarioCompleto": 20.5
+      "cluesMaterialCuracion": 21,
+      "inventarioCompleto": 21.0
     },
     {
       "id": "SONORA",
@@ -173,6 +182,15 @@
       "inventarioCompleto": 12.0
     },
     {
+      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "metaClues": 55,
+      "cluesConInventario": 55,
+      "cluesMedicamentos": 55,
+      "cluesMaterialCuracion": 55,
+      "inventarioCompleto": 55.0
+    },
+    {
       "id": "ZACATECAS",
       "entidad": "ZACATECAS",
       "metaClues": 17,
@@ -182,22 +200,13 @@
       "inventarioCompleto": 16.5
     },
     {
-      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "metaClues": 55,
-      "cluesConInventario": 54,
-      "cluesMedicamentos": 54,
-      "cluesMaterialCuracion": 54,
-      "inventarioCompleto": 54.0
-    },
-    {
-      "id": "MICHOACAN DE OCAMPO",
-      "entidad": "MICHOACAN DE OCAMPO",
-      "metaClues": 27,
-      "cluesConInventario": 26,
-      "cluesMedicamentos": 26,
-      "cluesMaterialCuracion": 26,
-      "inventarioCompleto": 26.0
+      "id": "CIUDAD DE MEXICO",
+      "entidad": "CIUDAD DE MEXICO",
+      "metaClues": 32,
+      "cluesConInventario": 31,
+      "cluesMedicamentos": 31,
+      "cluesMaterialCuracion": 31,
+      "inventarioCompleto": 31.0
     },
     {
       "id": "OAXACA",
@@ -207,40 +216,11 @@
       "cluesMedicamentos": 35,
       "cluesMaterialCuracion": 35,
       "inventarioCompleto": 35.0
-    },
-    {
-      "id": "CIUDAD DE MEXICO",
-      "entidad": "CIUDAD DE MEXICO",
-      "metaClues": 32,
-      "cluesConInventario": 29,
-      "cluesMedicamentos": 29,
-      "cluesMaterialCuracion": 29,
-      "inventarioCompleto": 29.0
     }
   ],
   "notReported": [
     {
       "id": "nr-1",
-      "clues": "DFIMB000422",
-      "nombreUnidad": "HOSPITAL PEDIÁTRICO VILLA",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-2",
-      "clues": "DFIMB000760",
-      "nombreUnidad": "HOSPITAL PEDIÁTRICO IZTACALCO",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-3",
       "clues": "DFIMB002003",
       "nombreUnidad": "HOSPITAL PEDIÁTRICO TACUBAYA",
       "entidad": "CIUDAD DE MEXICO",
@@ -250,17 +230,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-4",
-      "clues": "MNIMB003013",
-      "nombreUnidad": "HOSPITAL GENERAL ZITACUARO",
-      "entidad": "MICHOACAN DE OCAMPO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-5",
+      "id": "nr-2",
       "clues": "OCIMB003401",
       "nombreUnidad": "HG POCHUTLA",
       "entidad": "OAXACA",
@@ -270,20 +240,10 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-6",
+      "id": "nr-3",
       "clues": "OCIMB009631",
       "nombreUnidad": "HOSPITAL GENERAL DE LA MUJER Y LA NIÑEZ OAXAQUEÑA",
       "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-7",
-      "clues": "VZIMB006315",
-      "nombreUnidad": "HOSPITAL GENERAL DE OLUTA-ACAYUCAN",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
       "municipio": "",
       "tipoUnidad": "Primer Nivel",
       "diasSinReporte": 0,
@@ -301,22 +261,10 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 15:30"
+      "ultimaFechaRegistro": "16/10/2026 16:30"
     },
     {
       "id": "inc-2",
-      "clues": "SLIMB002481",
-      "nombreUnidad": "HOSPITAL GENERAL LA CRUZ",
-      "entidad": "SINALOA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "motivoIncompleto": "Reporte incompleto",
-      "avanceMedicamentos": 100,
-      "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 15:30"
-    },
-    {
-      "id": "inc-3",
       "clues": "ZSIMB000900",
       "nombreUnidad": "HOSPITAL COMUNITARIO OJOCALIENTE",
       "entidad": "ZACATECAS",
@@ -325,7 +273,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 15:30"
+      "ultimaFechaRegistro": "16/10/2026 16:30"
     }
   ]
 }
