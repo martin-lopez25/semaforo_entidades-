@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "16/10/2026 13:30",
+  "lastUpdated": "16/10/2026 14:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -203,10 +203,10 @@
       "id": "OAXACA",
       "entidad": "OAXACA",
       "metaClues": 37,
-      "cluesConInventario": 34,
-      "cluesMedicamentos": 34,
-      "cluesMaterialCuracion": 34,
-      "inventarioCompleto": 34.0
+      "cluesConInventario": 35,
+      "cluesMedicamentos": 35,
+      "cluesMaterialCuracion": 35,
+      "inventarioCompleto": 35.0
     },
     {
       "id": "CIUDAD DE MEXICO",
@@ -271,16 +271,6 @@
     },
     {
       "id": "nr-6",
-      "clues": "OCIMB003500",
-      "nombreUnidad": "HC SAN PEDRO TAPANATEPEC",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-7",
       "clues": "OCIMB009631",
       "nombreUnidad": "HOSPITAL GENERAL DE LA MUJER Y LA NIÑEZ OAXAQUEÑA",
       "entidad": "OAXACA",
@@ -290,7 +280,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-8",
+      "id": "nr-7",
       "clues": "VZIMB006315",
       "nombreUnidad": "HOSPITAL GENERAL DE OLUTA-ACAYUCAN",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -311,7 +301,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 13:30"
+      "ultimaFechaRegistro": "16/10/2026 14:30"
     },
     {
       "id": "inc-2",
@@ -323,7 +313,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 13:30"
+      "ultimaFechaRegistro": "16/10/2026 14:30"
     },
     {
       "id": "inc-3",
@@ -335,7 +325,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 13:30"
+      "ultimaFechaRegistro": "16/10/2026 14:30"
     }
   ]
 }
