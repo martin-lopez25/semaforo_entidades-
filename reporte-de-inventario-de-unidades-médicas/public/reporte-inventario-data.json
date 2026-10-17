@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "16/10/2026 17:30",
+  "lastUpdated": "16/10/2026 18:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -200,6 +200,15 @@
       "inventarioCompleto": 16.5
     },
     {
+      "id": "OAXACA",
+      "entidad": "OAXACA",
+      "metaClues": 37,
+      "cluesConInventario": 36,
+      "cluesMedicamentos": 36,
+      "cluesMaterialCuracion": 36,
+      "inventarioCompleto": 36.0
+    },
+    {
       "id": "CIUDAD DE MEXICO",
       "entidad": "CIUDAD DE MEXICO",
       "metaClues": 32,
@@ -207,15 +216,6 @@
       "cluesMedicamentos": 31,
       "cluesMaterialCuracion": 31,
       "inventarioCompleto": 31.0
-    },
-    {
-      "id": "OAXACA",
-      "entidad": "OAXACA",
-      "metaClues": 37,
-      "cluesConInventario": 35,
-      "cluesMedicamentos": 35,
-      "cluesMaterialCuracion": 35,
-      "inventarioCompleto": 35.0
     }
   ],
   "notReported": [
@@ -231,16 +231,6 @@
     },
     {
       "id": "nr-2",
-      "clues": "OCIMB003401",
-      "nombreUnidad": "HG POCHUTLA",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-3",
       "clues": "OCIMB009631",
       "nombreUnidad": "HOSPITAL GENERAL DE LA MUJER Y LA NIÑEZ OAXAQUEÑA",
       "entidad": "OAXACA",
@@ -261,7 +251,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 17:30"
+      "ultimaFechaRegistro": "16/10/2026 18:30"
     },
     {
       "id": "inc-2",
@@ -273,7 +263,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 17:30"
+      "ultimaFechaRegistro": "16/10/2026 18:30"
     }
   ]
 }
