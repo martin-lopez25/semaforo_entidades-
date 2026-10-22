@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "16/10/2026 21:30",
+  "lastUpdated": "22/10/2026 09:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -36,6 +36,15 @@
       "cluesMedicamentos": 40,
       "cluesMaterialCuracion": 40,
       "inventarioCompleto": 40.0
+    },
+    {
+      "id": "CIUDAD DE MEXICO",
+      "entidad": "CIUDAD DE MEXICO",
+      "metaClues": 32,
+      "cluesConInventario": 32,
+      "cluesMedicamentos": 32,
+      "cluesMaterialCuracion": 32,
+      "inventarioCompleto": 32.0
     },
     {
       "id": "COLIMA",
@@ -110,13 +119,22 @@
       "inventarioCompleto": 14.0
     },
     {
+      "id": "OAXACA",
+      "entidad": "OAXACA",
+      "metaClues": 37,
+      "cluesConInventario": 37,
+      "cluesMedicamentos": 37,
+      "cluesMaterialCuracion": 37,
+      "inventarioCompleto": 37.0
+    },
+    {
       "id": "PUEBLA",
       "entidad": "PUEBLA",
       "metaClues": 53,
       "cluesConInventario": 53,
-      "cluesMedicamentos": 52,
+      "cluesMedicamentos": 53,
       "cluesMaterialCuracion": 53,
-      "inventarioCompleto": 52.5
+      "inventarioCompleto": 53.0
     },
     {
       "id": "QUINTANA ROO",
@@ -198,63 +216,12 @@
       "cluesMedicamentos": 17,
       "cluesMaterialCuracion": 16,
       "inventarioCompleto": 16.5
-    },
-    {
-      "id": "OAXACA",
-      "entidad": "OAXACA",
-      "metaClues": 37,
-      "cluesConInventario": 36,
-      "cluesMedicamentos": 36,
-      "cluesMaterialCuracion": 36,
-      "inventarioCompleto": 36.0
-    },
-    {
-      "id": "CIUDAD DE MEXICO",
-      "entidad": "CIUDAD DE MEXICO",
-      "metaClues": 32,
-      "cluesConInventario": 31,
-      "cluesMedicamentos": 31,
-      "cluesMaterialCuracion": 31,
-      "inventarioCompleto": 31.0
     }
   ],
-  "notReported": [
-    {
-      "id": "nr-1",
-      "clues": "DFIMB002003",
-      "nombreUnidad": "HOSPITAL PEDIÁTRICO TACUBAYA",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-2",
-      "clues": "OCIMB009631",
-      "nombreUnidad": "HOSPITAL GENERAL DE LA MUJER Y LA NIÑEZ OAXAQUEÑA",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    }
-  ],
+  "notReported": [],
   "incomplete": [
     {
       "id": "inc-1",
-      "clues": "PLIMB000351",
-      "nombreUnidad": "HOSPITAL COMUNITARIO DE AYOTOXCO",
-      "entidad": "PUEBLA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "motivoIncompleto": "Reporte incompleto",
-      "avanceMedicamentos": 100,
-      "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 21:30"
-    },
-    {
-      "id": "inc-2",
       "clues": "ZSIMB000900",
       "nombreUnidad": "HOSPITAL COMUNITARIO OJOCALIENTE",
       "entidad": "ZACATECAS",
@@ -263,7 +230,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "16/10/2026 21:30"
+      "ultimaFechaRegistro": "22/10/2026 09:30"
     }
   ]
 }
