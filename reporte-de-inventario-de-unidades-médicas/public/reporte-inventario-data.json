@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "23/10/2026 09:30",
+  "lastUpdated": "23/10/2026 10:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -38,6 +38,15 @@
       "inventarioCompleto": 40.0
     },
     {
+      "id": "CIUDAD DE MEXICO",
+      "entidad": "CIUDAD DE MEXICO",
+      "metaClues": 32,
+      "cluesConInventario": 32,
+      "cluesMedicamentos": 32,
+      "cluesMaterialCuracion": 32,
+      "inventarioCompleto": 32.0
+    },
+    {
       "id": "COLIMA",
       "entidad": "COLIMA",
       "metaClues": 6,
@@ -45,6 +54,15 @@
       "cluesMedicamentos": 6,
       "cluesMaterialCuracion": 6,
       "inventarioCompleto": 6.0
+    },
+    {
+      "id": "GUERRERO",
+      "entidad": "GUERRERO",
+      "metaClues": 40,
+      "cluesConInventario": 41,
+      "cluesMedicamentos": 41,
+      "cluesMaterialCuracion": 41,
+      "inventarioCompleto": 41.0
     },
     {
       "id": "HIDALGO",
@@ -63,6 +81,15 @@
       "cluesMedicamentos": 2,
       "cluesMaterialCuracion": 2,
       "inventarioCompleto": 2.0
+    },
+    {
+      "id": "MEXICO",
+      "entidad": "MEXICO",
+      "metaClues": 70,
+      "cluesConInventario": 70,
+      "cluesMedicamentos": 70,
+      "cluesMaterialCuracion": 70,
+      "inventarioCompleto": 70.0
     },
     {
       "id": "MORELOS",
@@ -146,15 +173,6 @@
       "inventarioCompleto": 17.0
     },
     {
-      "id": "MEXICO",
-      "entidad": "MEXICO",
-      "metaClues": 70,
-      "cluesConInventario": 69,
-      "cluesMedicamentos": 69,
-      "cluesMaterialCuracion": 69,
-      "inventarioCompleto": 69.0
-    },
-    {
       "id": "PUEBLA",
       "entidad": "PUEBLA",
       "metaClues": 53,
@@ -162,24 +180,6 @@
       "cluesMedicamentos": 52,
       "cluesMaterialCuracion": 51,
       "inventarioCompleto": 51.5
-    },
-    {
-      "id": "GUERRERO",
-      "entidad": "GUERRERO",
-      "metaClues": 40,
-      "cluesConInventario": 40,
-      "cluesMedicamentos": 40,
-      "cluesMaterialCuracion": 40,
-      "inventarioCompleto": 40.0
-    },
-    {
-      "id": "CIUDAD DE MEXICO",
-      "entidad": "CIUDAD DE MEXICO",
-      "metaClues": 32,
-      "cluesConInventario": 31,
-      "cluesMedicamentos": 31,
-      "cluesMaterialCuracion": 31,
-      "inventarioCompleto": 31.0
     },
     {
       "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -200,6 +200,15 @@
       "inventarioCompleto": 26.0
     },
     {
+      "id": "NAYARIT",
+      "entidad": "NAYARIT",
+      "metaClues": 14,
+      "cluesConInventario": 13,
+      "cluesMedicamentos": 13,
+      "cluesMaterialCuracion": 13,
+      "inventarioCompleto": 13.0
+    },
+    {
       "id": "SONORA",
       "entidad": "SONORA",
       "metaClues": 18,
@@ -207,50 +216,11 @@
       "cluesMedicamentos": 16,
       "cluesMaterialCuracion": 16,
       "inventarioCompleto": 16.0
-    },
-    {
-      "id": "NAYARIT",
-      "entidad": "NAYARIT",
-      "metaClues": 14,
-      "cluesConInventario": 12,
-      "cluesMedicamentos": 12,
-      "cluesMaterialCuracion": 12,
-      "inventarioCompleto": 12.0
     }
   ],
   "notReported": [
     {
       "id": "nr-1",
-      "clues": "DFIMB002003",
-      "nombreUnidad": "HOSPITAL PEDIÁTRICO TACUBAYA",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-2",
-      "clues": "GRIMB006930",
-      "nombreUnidad": "HOSPITAL BÁSICO COMUNITARIO XALITLA",
-      "entidad": "GUERRERO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-3",
-      "clues": "MCIMB011945",
-      "nombreUnidad": "H.G. TEXCOCO GUADALUPE VICTORIA BICENTENARIO",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-4",
       "clues": "MNIMB002091",
       "nombreUnidad": "HOSPITAL GENERAL SAHUAYO",
       "entidad": "MICHOACAN DE OCAMPO",
@@ -260,17 +230,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-5",
-      "clues": "NTIMB001654",
-      "nombreUnidad": "HOSPITAL GENERAL SAN FRANCISCO",
-      "entidad": "NAYARIT",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-6",
+      "id": "nr-2",
       "clues": "NTIMB002523",
       "nombreUnidad": "HOSPITAL BASICO COMUNITARIO DE TONDOROQUE",
       "entidad": "NAYARIT",
@@ -280,7 +240,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-7",
+      "id": "nr-3",
       "clues": "PLIMB005794",
       "nombreUnidad": "HOSPITAL COMUNITARIO QUIMIXTLAN",
       "entidad": "PUEBLA",
@@ -290,7 +250,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-8",
+      "id": "nr-4",
       "clues": "SRIMB001766",
       "nombreUnidad": "HOSPITAL GENERAL DE SAN LUIS RÍO COLORADO",
       "entidad": "SONORA",
@@ -300,7 +260,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-9",
+      "id": "nr-5",
       "clues": "SRIMB002174",
       "nombreUnidad": "HOSPITAL GENERAL DE CABORCA",
       "entidad": "SONORA",
@@ -310,7 +270,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-10",
+      "id": "nr-6",
       "clues": "VZIMB003870",
       "nombreUnidad": "HOSPITAL REGIONAL RÍO BLANCO",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -320,7 +280,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-11",
+      "id": "nr-7",
       "clues": "VZIMB004944",
       "nombreUnidad": "HOSPITAL GENERAL DE  TIERRA BLANCA JESÚS GARCÍA CORONA",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -341,7 +301,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "23/10/2026 09:30"
+      "ultimaFechaRegistro": "23/10/2026 10:30"
     },
     {
       "id": "inc-2",
@@ -353,7 +313,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "23/10/2026 09:30"
+      "ultimaFechaRegistro": "23/10/2026 10:30"
     }
   ]
 }
