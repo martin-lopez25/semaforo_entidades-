@@ -33,7 +33,7 @@ echo Iniciando el bot en segundo plano...
 echo Log: %LOG_PATH%
 echo.
 
-powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -Command "& { $ErrorActionPreference = 'Stop'; $log = '%LOG_PATH%'; $bot = '%BOT_PATH%'; while ($true) { try { $stamp = (Get-Date).ToString('yyyy-MM-dd HH:mm:ss'); Add-Content -Path $log -Value (\"[$stamp] Iniciando bot...\"); Set-Location $bot; npm start 2>&1 | Tee-Object -FilePath $log -Append; Add-Content -Path $log -Value ('[ ' + (Get-Date).ToString('yyyy-MM-dd HH:mm:ss') + ' ] El bot se cerró. Reiniciando en 10 segundos...'); Start-Sleep -Seconds 10; } catch { Add-Content -Path $log -Value ('[ ' + (Get-Date).ToString('yyyy-MM-dd HH:mm:ss') + ' ] Error fatal: ' + $_.Exception.Message); Start-Sleep -Seconds 10; } } }"
+start "" powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -Command "& { $ErrorActionPreference = 'Continue'; $log = '%LOG_PATH%'; $bot = '%BOT_PATH%'; while ($true) { try { $stamp = (Get-Date).ToString('yyyy-MM-dd HH:mm:ss'); Add-Content -Path $log -Value (\"[$stamp] Iniciando bot...\"); Set-Location $bot; npm start 2>&1 | Tee-Object -FilePath $log -Append; if ($LASTEXITCODE -eq 0) { Add-Content -Path $log -Value ('[ ' + (Get-Date).ToString('yyyy-MM-dd HH:mm:ss') + ' ] Apagado limpio. No se reinicia.'); break }; Add-Content -Path $log -Value ('[ ' + (Get-Date).ToString('yyyy-MM-dd HH:mm:ss') + ' ] El bot se cerró. Reiniciando en 10 segundos...'); Start-Sleep -Seconds 10; } catch { Add-Content -Path $log -Value ('[ ' + (Get-Date).ToString('yyyy-MM-dd HH:mm:ss') + ' ] Error fatal: ' + $_.Exception.Message); Start-Sleep -Seconds 10; } } }"
 
 echo El bot fue lanzado en segundo plano.
 echo Si quieres detenerlo, cierra el proceso "node.exe" o usa:
