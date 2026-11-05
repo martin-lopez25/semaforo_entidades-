@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "30/10/2026 21:30",
+  "lastUpdated": "05/11/2026 09:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -38,6 +38,15 @@
       "inventarioCompleto": 40.0
     },
     {
+      "id": "CIUDAD DE MEXICO",
+      "entidad": "CIUDAD DE MEXICO",
+      "metaClues": 32,
+      "cluesConInventario": 32,
+      "cluesMedicamentos": 32,
+      "cluesMaterialCuracion": 32,
+      "inventarioCompleto": 32.0
+    },
+    {
       "id": "COLIMA",
       "entidad": "COLIMA",
       "metaClues": 6,
@@ -51,9 +60,9 @@
       "entidad": "GUERRERO",
       "metaClues": 40,
       "cluesConInventario": 41,
-      "cluesMedicamentos": 40,
-      "cluesMaterialCuracion": 40,
-      "inventarioCompleto": 40.0
+      "cluesMedicamentos": 41,
+      "cluesMaterialCuracion": 41,
+      "inventarioCompleto": 41.0
     },
     {
       "id": "HIDALGO",
@@ -101,6 +110,15 @@
       "inventarioCompleto": 11.0
     },
     {
+      "id": "NAYARIT",
+      "entidad": "NAYARIT",
+      "metaClues": 14,
+      "cluesConInventario": 14,
+      "cluesMedicamentos": 14,
+      "cluesMaterialCuracion": 14,
+      "inventarioCompleto": 14.0
+    },
+    {
       "id": "PUEBLA",
       "entidad": "PUEBLA",
       "metaClues": 53,
@@ -126,6 +144,15 @@
       "cluesMedicamentos": 15,
       "cluesMaterialCuracion": 15,
       "inventarioCompleto": 15.0
+    },
+    {
+      "id": "SINALOA",
+      "entidad": "SINALOA",
+      "metaClues": 21,
+      "cluesConInventario": 21,
+      "cluesMedicamentos": 21,
+      "cluesMaterialCuracion": 21,
+      "inventarioCompleto": 21.0
     },
     {
       "id": "SONORA",
@@ -182,118 +209,21 @@
       "inventarioCompleto": 17.0
     },
     {
-      "id": "SINALOA",
-      "entidad": "SINALOA",
-      "metaClues": 21,
-      "cluesConInventario": 20,
-      "cluesMedicamentos": 20,
-      "cluesMaterialCuracion": 20,
-      "inventarioCompleto": 20.0
-    },
-    {
-      "id": "CIUDAD DE MEXICO",
-      "entidad": "CIUDAD DE MEXICO",
-      "metaClues": 32,
-      "cluesConInventario": 30,
-      "cluesMedicamentos": 30,
-      "cluesMaterialCuracion": 30,
-      "inventarioCompleto": 30.0
-    },
-    {
-      "id": "NAYARIT",
-      "entidad": "NAYARIT",
-      "metaClues": 14,
-      "cluesConInventario": 13,
-      "cluesMedicamentos": 13,
-      "cluesMaterialCuracion": 13,
-      "inventarioCompleto": 13.0
-    },
-    {
       "id": "OAXACA",
       "entidad": "OAXACA",
       "metaClues": 37,
-      "cluesConInventario": 33,
-      "cluesMedicamentos": 33,
-      "cluesMaterialCuracion": 33,
-      "inventarioCompleto": 33.0
+      "cluesConInventario": 36,
+      "cluesMedicamentos": 36,
+      "cluesMaterialCuracion": 36,
+      "inventarioCompleto": 36.0
     }
   ],
   "notReported": [
     {
       "id": "nr-1",
-      "clues": "DFIMB000183",
-      "nombreUnidad": "HOSPITAL PEDIÁTRICO COYOACÁN",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-2",
-      "clues": "DFIMB002003",
-      "nombreUnidad": "HOSPITAL PEDIÁTRICO TACUBAYA",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-3",
-      "clues": "NTIMB002523",
-      "nombreUnidad": "HOSPITAL BASICO COMUNITARIO DE TONDOROQUE",
-      "entidad": "NAYARIT",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-4",
-      "clues": "OCIMB000881",
-      "nombreUnidad": "HG OAXACA DR. AURELIO VALDIVIESO",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-5",
-      "clues": "OCIMB002100",
-      "nombreUnidad": "HG MARÍA LOMBARDO DE CASO",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-6",
-      "clues": "OCIMB003401",
-      "nombreUnidad": "HG POCHUTLA",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-7",
       "clues": "OCIMB008815",
       "nombreUnidad": "HG PUERTO ESCONDIDO",
       "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-8",
-      "clues": "SLIMB000014",
-      "nombreUnidad": "HOSPITAL GENERAL DE CULIACÁN",
-      "entidad": "SINALOA",
       "municipio": "",
       "tipoUnidad": "Primer Nivel",
       "diasSinReporte": 0,
@@ -303,30 +233,6 @@
   "incomplete": [
     {
       "id": "inc-1",
-      "clues": "GRIMB005163",
-      "nombreUnidad": "HOSPITAL GENERAL OMETEPEC",
-      "entidad": "GUERRERO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "motivoIncompleto": "Reporte incompleto",
-      "avanceMedicamentos": 100,
-      "avanceMaterial": 100,
-      "ultimaFechaRegistro": "30/10/2026 21:30"
-    },
-    {
-      "id": "inc-2",
-      "clues": "GRIMB006370",
-      "nombreUnidad": "HOSPITAL BÁSICO COMUNITARIO TECPAN DE GALEANA",
-      "entidad": "GUERRERO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "motivoIncompleto": "Reporte incompleto",
-      "avanceMedicamentos": 100,
-      "avanceMaterial": 100,
-      "ultimaFechaRegistro": "30/10/2026 21:30"
-    },
-    {
-      "id": "inc-3",
       "clues": "VZIMB004046",
       "nombreUnidad": "HOSPITAL GENERAL DE SANTIAGO TUXTLA",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -335,7 +241,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "30/10/2026 21:30"
+      "ultimaFechaRegistro": "05/11/2026 09:30"
     }
   ]
 }
