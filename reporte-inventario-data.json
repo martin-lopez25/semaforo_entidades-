@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "06/11/2026 13:30",
+  "lastUpdated": "06/11/2026 14:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -36,6 +36,15 @@
       "cluesMedicamentos": 40,
       "cluesMaterialCuracion": 40,
       "inventarioCompleto": 40.0
+    },
+    {
+      "id": "CIUDAD DE MEXICO",
+      "entidad": "CIUDAD DE MEXICO",
+      "metaClues": 32,
+      "cluesConInventario": 32,
+      "cluesMedicamentos": 32,
+      "cluesMaterialCuracion": 32,
+      "inventarioCompleto": 32.0
     },
     {
       "id": "COLIMA",
@@ -173,6 +182,15 @@
       "inventarioCompleto": 12.0
     },
     {
+      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "metaClues": 55,
+      "cluesConInventario": 55,
+      "cluesMedicamentos": 55,
+      "cluesMaterialCuracion": 55,
+      "inventarioCompleto": 55.0
+    },
+    {
       "id": "ZACATECAS",
       "entidad": "ZACATECAS",
       "metaClues": 17,
@@ -182,55 +200,27 @@
       "inventarioCompleto": 17.0
     },
     {
-      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "metaClues": 55,
-      "cluesConInventario": 54,
-      "cluesMedicamentos": 54,
-      "cluesMaterialCuracion": 54,
-      "inventarioCompleto": 54.0
-    },
-    {
-      "id": "CIUDAD DE MEXICO",
-      "entidad": "CIUDAD DE MEXICO",
-      "metaClues": 32,
-      "cluesConInventario": 31,
-      "cluesMedicamentos": 31,
-      "cluesMaterialCuracion": 31,
-      "inventarioCompleto": 31.0
+      "id": "OAXACA",
+      "entidad": "OAXACA",
+      "metaClues": 37,
+      "cluesConInventario": 36,
+      "cluesMedicamentos": 36,
+      "cluesMaterialCuracion": 36,
+      "inventarioCompleto": 36.0
     },
     {
       "id": "MEXICO",
       "entidad": "MEXICO",
       "metaClues": 70,
-      "cluesConInventario": 67,
-      "cluesMedicamentos": 67,
-      "cluesMaterialCuracion": 67,
-      "inventarioCompleto": 67.0
-    },
-    {
-      "id": "OAXACA",
-      "entidad": "OAXACA",
-      "metaClues": 37,
-      "cluesConInventario": 34,
-      "cluesMedicamentos": 34,
-      "cluesMaterialCuracion": 34,
-      "inventarioCompleto": 34.0
+      "cluesConInventario": 68,
+      "cluesMedicamentos": 68,
+      "cluesMaterialCuracion": 68,
+      "inventarioCompleto": 68.0
     }
   ],
   "notReported": [
     {
       "id": "nr-1",
-      "clues": "DFIMB002674",
-      "nombreUnidad": "HOSPITAL GENERAL AJUSCO MEDIO",
-      "entidad": "CIUDAD DE MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-2",
       "clues": "MCIMB005225",
       "nombreUnidad": "HOSPITAL GENERAL MIGUEL HIDALGO Y COSTILLA BICENTENARIO",
       "entidad": "MEXICO",
@@ -240,17 +230,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-3",
-      "clues": "MCIMB012201",
-      "nombreUnidad": "HOSPITAL MATERNO INFANTIL VICENTE GUERRERO CHIMALHUACÁN",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-4",
+      "id": "nr-2",
       "clues": "MCIMB012254",
       "nombreUnidad": "HOSPITAL MATERNO INFANTIL GUADALUPE VICTORIA ATIZAPÁN DE ZARAGOZA",
       "entidad": "MEXICO",
@@ -260,40 +240,10 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-5",
-      "clues": "OCIMB000490",
-      "nombreUnidad": "HG HUAJUAPAN ENF. MARÍA DEL PILAR SÁNCHEZ VILLAVICENCIO",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-6",
-      "clues": "OCIMB008045",
-      "nombreUnidad": "HC LA PAZ TEOJOMULCO-TEXMELUCAN",
-      "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-7",
+      "id": "nr-3",
       "clues": "OCIMB008774",
       "nombreUnidad": "HC NEJAPA DE MADERO",
       "entidad": "OAXACA",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-8",
-      "clues": "VZIMB001000",
-      "nombreUnidad": "HOSPITAL GENERAL COSAMALOAPAN  DR. VÍCTOR MANUEL PITALUA GONZÁLEZ",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
       "municipio": "",
       "tipoUnidad": "Primer Nivel",
       "diasSinReporte": 0,
@@ -311,7 +261,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "06/11/2026 13:30"
+      "ultimaFechaRegistro": "06/11/2026 14:30"
     }
   ]
 }
