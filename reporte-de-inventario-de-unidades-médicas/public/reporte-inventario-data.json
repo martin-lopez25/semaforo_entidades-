@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "06/11/2026 11:30",
+  "lastUpdated": "06/11/2026 12:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -155,6 +155,15 @@
       "inventarioCompleto": 18.5
     },
     {
+      "id": "TAMAULIPAS",
+      "entidad": "TAMAULIPAS",
+      "metaClues": 18,
+      "cluesConInventario": 18,
+      "cluesMedicamentos": 18,
+      "cluesMaterialCuracion": 18,
+      "inventarioCompleto": 18.0
+    },
+    {
       "id": "TLAXCALA",
       "entidad": "TLAXCALA",
       "metaClues": 12,
@@ -198,15 +207,6 @@
       "cluesMedicamentos": 67,
       "cluesMaterialCuracion": 67,
       "inventarioCompleto": 67.0
-    },
-    {
-      "id": "TAMAULIPAS",
-      "entidad": "TAMAULIPAS",
-      "metaClues": 18,
-      "cluesConInventario": 17,
-      "cluesMedicamentos": 17,
-      "cluesMaterialCuracion": 17,
-      "inventarioCompleto": 17.0
     },
     {
       "id": "OAXACA",
@@ -291,16 +291,6 @@
     },
     {
       "id": "nr-8",
-      "clues": "TSIMB002520",
-      "nombreUnidad": "HOSPITAL GENERAL DE TAMPICO DR. CARLOS CANSECO",
-      "entidad": "TAMAULIPAS",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-9",
       "clues": "VZIMB001000",
       "nombreUnidad": "HOSPITAL GENERAL COSAMALOAPAN  DR. VÍCTOR MANUEL PITALUA GONZÁLEZ",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -321,7 +311,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "06/11/2026 11:30"
+      "ultimaFechaRegistro": "06/11/2026 12:30"
     }
   ]
 }
