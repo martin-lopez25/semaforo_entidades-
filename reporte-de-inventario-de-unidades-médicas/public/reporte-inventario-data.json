@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "06/11/2026 14:30",
+  "lastUpdated": "06/11/2026 15:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -200,6 +200,15 @@
       "inventarioCompleto": 17.0
     },
     {
+      "id": "MEXICO",
+      "entidad": "MEXICO",
+      "metaClues": 70,
+      "cluesConInventario": 69,
+      "cluesMedicamentos": 69,
+      "cluesMaterialCuracion": 69,
+      "inventarioCompleto": 69.0
+    },
+    {
       "id": "OAXACA",
       "entidad": "OAXACA",
       "metaClues": 37,
@@ -207,30 +216,11 @@
       "cluesMedicamentos": 36,
       "cluesMaterialCuracion": 36,
       "inventarioCompleto": 36.0
-    },
-    {
-      "id": "MEXICO",
-      "entidad": "MEXICO",
-      "metaClues": 70,
-      "cluesConInventario": 68,
-      "cluesMedicamentos": 68,
-      "cluesMaterialCuracion": 68,
-      "inventarioCompleto": 68.0
     }
   ],
   "notReported": [
     {
       "id": "nr-1",
-      "clues": "MCIMB005225",
-      "nombreUnidad": "HOSPITAL GENERAL MIGUEL HIDALGO Y COSTILLA BICENTENARIO",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-2",
       "clues": "MCIMB012254",
       "nombreUnidad": "HOSPITAL MATERNO INFANTIL GUADALUPE VICTORIA ATIZAPÁN DE ZARAGOZA",
       "entidad": "MEXICO",
@@ -240,7 +230,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-3",
+      "id": "nr-2",
       "clues": "OCIMB008774",
       "nombreUnidad": "HC NEJAPA DE MADERO",
       "entidad": "OAXACA",
@@ -261,7 +251,7 @@
       "motivoIncompleto": "Reporte incompleto",
       "avanceMedicamentos": 100,
       "avanceMaterial": 100,
-      "ultimaFechaRegistro": "06/11/2026 14:30"
+      "ultimaFechaRegistro": "06/11/2026 15:30"
     }
   ]
 }
