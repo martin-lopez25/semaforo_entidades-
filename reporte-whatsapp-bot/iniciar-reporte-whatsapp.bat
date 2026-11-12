@@ -38,4 +38,4 @@ start "ReporteWhatsAppBot" /MIN powershell -NoProfile -ExecutionPolicy Bypass -W
 echo El bot fue lanzado en segundo plano.
 echo Si quieres detenerlo, cierra el proceso "node.exe" o usa:
 echo   taskkill /F /IM node.exe
-exit /b 0
+exit /b 
