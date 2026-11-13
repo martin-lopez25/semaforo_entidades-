@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "13/11/2026 15:30",
+  "lastUpdated": "13/11/2026 16:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -54,6 +54,15 @@
       "cluesMedicamentos": 41,
       "cluesMaterialCuracion": 41,
       "inventarioCompleto": 41.0
+    },
+    {
+      "id": "HIDALGO",
+      "entidad": "HIDALGO",
+      "metaClues": 18,
+      "cluesConInventario": 18,
+      "cluesMedicamentos": 18,
+      "cluesMaterialCuracion": 18,
+      "inventarioCompleto": 18.0
     },
     {
       "id": "HRAES",
@@ -191,15 +200,6 @@
       "inventarioCompleto": 26.0
     },
     {
-      "id": "HIDALGO",
-      "entidad": "HIDALGO",
-      "metaClues": 18,
-      "cluesConInventario": 17,
-      "cluesMedicamentos": 17,
-      "cluesMaterialCuracion": 17,
-      "inventarioCompleto": 17.0
-    },
-    {
       "id": "PUEBLA",
       "entidad": "PUEBLA",
       "metaClues": 53,
@@ -231,16 +231,6 @@
     },
     {
       "id": "nr-2",
-      "clues": "HGIMB000431",
-      "nombreUnidad": "HOSPITAL INTEGRAL ATLAPEXCO",
-      "entidad": "HIDALGO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-3",
       "clues": "MCIMB004443",
       "nombreUnidad": "HOSPITAL MUNICIPAL OTUMBA BICENTENARIO",
       "entidad": "MEXICO",
@@ -250,7 +240,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-4",
+      "id": "nr-3",
       "clues": "MNIMB003544",
       "nombreUnidad": "HOSPITAL GENERAL PATZCUARO",
       "entidad": "MICHOACAN DE OCAMPO",
@@ -260,7 +250,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-5",
+      "id": "nr-4",
       "clues": "OCIMB000490",
       "nombreUnidad": "HG HUAJUAPAN ENF. MARÍA DEL PILAR SÁNCHEZ VILLAVICENCIO",
       "entidad": "OAXACA",
@@ -270,7 +260,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-6",
+      "id": "nr-5",
       "clues": "PLIMB001536",
       "nombreUnidad": "HOSPITAL GENERAL DE LIBRES",
       "entidad": "PUEBLA",
@@ -280,7 +270,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-7",
+      "id": "nr-6",
       "clues": "PLIMB004954",
       "nombreUnidad": "HOSPITAL INTEGRAL SAN JOSE CHIAPA",
       "entidad": "PUEBLA",
@@ -290,7 +280,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-8",
+      "id": "nr-7",
       "clues": "PLIMB006103",
       "nombreUnidad": "HOSPITAL GENERAL DE ZACATLÁN",
       "entidad": "PUEBLA",
@@ -300,7 +290,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-9",
+      "id": "nr-8",
       "clues": "SPIMB000643",
       "nombreUnidad": "HOSPITAL COMUNITARIO SALINAS DE HIDALGO",
       "entidad": "SAN LUIS POTOSI",
@@ -310,7 +300,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-10",
+      "id": "nr-9",
       "clues": "VZIMB002675",
       "nombreUnidad": "HOSPITAL GENERAL MARTÍNEZ DE LA TORRE",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -320,7 +310,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-11",
+      "id": "nr-10",
       "clues": "VZIMB006151",
       "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DE LLANO DE EN MEDIO",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
