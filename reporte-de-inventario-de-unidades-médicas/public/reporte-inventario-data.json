@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "13/11/2026 21:30",
+  "lastUpdated": "19/11/2026 09:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -185,10 +185,10 @@
       "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
       "metaClues": 55,
-      "cluesConInventario": 53,
-      "cluesMedicamentos": 53,
-      "cluesMaterialCuracion": 53,
-      "inventarioCompleto": 53.0
+      "cluesConInventario": 54,
+      "cluesMedicamentos": 54,
+      "cluesMaterialCuracion": 54,
+      "inventarioCompleto": 54.0
     },
     {
       "id": "MICHOACAN DE OCAMPO",
@@ -273,16 +273,6 @@
       "id": "nr-6",
       "clues": "VZIMB002675",
       "nombreUnidad": "HOSPITAL GENERAL MARTÍNEZ DE LA TORRE",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-7",
-      "clues": "VZIMB006151",
-      "nombreUnidad": "HOSPITAL DE LA COMUNIDAD DE LLANO DE EN MEDIO",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
       "municipio": "",
       "tipoUnidad": "Primer Nivel",
