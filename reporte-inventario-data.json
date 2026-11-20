@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20/11/2026 12:30",
+  "lastUpdated": "20/11/2026 13:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -191,6 +191,15 @@
       "inventarioCompleto": 12.0
     },
     {
+      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
+      "metaClues": 55,
+      "cluesConInventario": 55,
+      "cluesMedicamentos": 55,
+      "cluesMaterialCuracion": 55,
+      "inventarioCompleto": 55.0
+    },
+    {
       "id": "ZACATECAS",
       "entidad": "ZACATECAS",
       "metaClues": 17,
@@ -207,15 +216,6 @@
       "cluesMedicamentos": 69,
       "cluesMaterialCuracion": 69,
       "inventarioCompleto": 69.0
-    },
-    {
-      "id": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
-      "metaClues": 55,
-      "cluesConInventario": 54,
-      "cluesMedicamentos": 54,
-      "cluesMaterialCuracion": 54,
-      "inventarioCompleto": 54.0
     }
   ],
   "notReported": [
@@ -224,16 +224,6 @@
       "clues": "MCIMB006946",
       "nombreUnidad": "H.G. DR. NICOLÁS SAN JUAN",
       "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-2",
-      "clues": "VZIMB006315",
-      "nombreUnidad": "HOSPITAL GENERAL DE OLUTA-ACAYUCAN",
-      "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
       "municipio": "",
       "tipoUnidad": "Primer Nivel",
       "diasSinReporte": 0,
