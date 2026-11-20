@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20/11/2026 14:30",
+  "lastUpdated": "20/11/2026 15:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -81,6 +81,15 @@
       "cluesMedicamentos": 2,
       "cluesMaterialCuracion": 2,
       "inventarioCompleto": 2.0
+    },
+    {
+      "id": "MEXICO",
+      "entidad": "MEXICO",
+      "metaClues": 70,
+      "cluesConInventario": 70,
+      "cluesMedicamentos": 70,
+      "cluesMaterialCuracion": 70,
+      "inventarioCompleto": 70.0
     },
     {
       "id": "MICHOACAN DE OCAMPO",
@@ -207,28 +216,8 @@
       "cluesMedicamentos": 17,
       "cluesMaterialCuracion": 17,
       "inventarioCompleto": 17.0
-    },
-    {
-      "id": "MEXICO",
-      "entidad": "MEXICO",
-      "metaClues": 70,
-      "cluesConInventario": 69,
-      "cluesMedicamentos": 69,
-      "cluesMaterialCuracion": 69,
-      "inventarioCompleto": 69.0
     }
   ],
-  "notReported": [
-    {
-      "id": "nr-1",
-      "clues": "MCIMB006946",
-      "nombreUnidad": "H.G. DR. NICOLÁS SAN JUAN",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    }
-  ],
+  "notReported": [],
   "incomplete": []
 }
