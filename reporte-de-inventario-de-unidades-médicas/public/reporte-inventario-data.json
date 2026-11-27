@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "27/11/2026 12:30",
+  "lastUpdated": "27/11/2026 13:30",
   "entities": [
     {
       "id": "BAJA CALIFORNIA",
@@ -200,6 +200,15 @@
       "inventarioCompleto": 17.0
     },
     {
+      "id": "MEXICO",
+      "entidad": "MEXICO",
+      "metaClues": 70,
+      "cluesConInventario": 61,
+      "cluesMedicamentos": 61,
+      "cluesMaterialCuracion": 61,
+      "inventarioCompleto": 61.0
+    },
+    {
       "id": "OAXACA",
       "entidad": "OAXACA",
       "metaClues": 37,
@@ -207,15 +216,6 @@
       "cluesMedicamentos": 32,
       "cluesMaterialCuracion": 32,
       "inventarioCompleto": 32.0
-    },
-    {
-      "id": "MEXICO",
-      "entidad": "MEXICO",
-      "metaClues": 70,
-      "cluesConInventario": 53,
-      "cluesMedicamentos": 53,
-      "cluesMaterialCuracion": 53,
-      "inventarioCompleto": 53.0
     }
   ],
   "notReported": [
@@ -271,16 +271,6 @@
     },
     {
       "id": "nr-6",
-      "clues": "MCIMB005942",
-      "nombreUnidad": "HOSPITAL MUNICIPAL MARIANO MATAMOROS BICENTENARIO TENANGO DEL VALLE",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-7",
       "clues": "MCIMB006893",
       "nombreUnidad": "HOSPITAL MUNICIPAL SAN PEDRO LIMÓN",
       "entidad": "MEXICO",
@@ -290,7 +280,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-8",
+      "id": "nr-7",
       "clues": "MCIMB006946",
       "nombreUnidad": "H.G. DR. NICOLÁS SAN JUAN",
       "entidad": "MEXICO",
@@ -300,37 +290,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-9",
-      "clues": "MCIMB006951",
-      "nombreUnidad": "HOSPITAL MATERNO PERINATAL MÓNICA PRETELINI SÁENZ",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-10",
-      "clues": "MCIMB008556",
-      "nombreUnidad": "HOSPITAL VALERIO TRUJANO BICENTENARIO",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-11",
-      "clues": "MCIMB009162",
-      "nombreUnidad": "HOSPITAL MUNICIPAL TEMOAYA",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-12",
+      "id": "nr-8",
       "clues": "MCIMB009676",
       "nombreUnidad": "HOSPITAL MATERNO DE TEXCOCO",
       "entidad": "MEXICO",
@@ -340,27 +300,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-13",
-      "clues": "MCIMB009734",
-      "nombreUnidad": "HOSPITAL MUNICIPAL VILLA DEL CARBON",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-14",
-      "clues": "MCIMB010224",
-      "nombreUnidad": "HOSPITAL MUNICIPAL DE CHICONCUAC",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-15",
+      "id": "nr-9",
       "clues": "MCIMB010294",
       "nombreUnidad": "HOSPITAL MUNICIPAL MALINALCO PEDRO ASCENCIO DE ALQUISIRAS",
       "entidad": "MEXICO",
@@ -370,7 +310,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-16",
+      "id": "nr-10",
       "clues": "MCIMB010825",
       "nombreUnidad": "HOSPITAL MUNICIPAL IXTAPALUCA LEONA VICARIO BICENTENARIO",
       "entidad": "MEXICO",
@@ -380,27 +320,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-17",
-      "clues": "MCIMB012085",
-      "nombreUnidad": "HOSPITAL MATERNO INFANTIL JOSÉ MARÍA MORELOS Y PAVÓN BICENTENARIO SAN JOSÉ DEL RINCÓN",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-18",
-      "clues": "MCIMB012254",
-      "nombreUnidad": "HOSPITAL MATERNO INFANTIL GUADALUPE VICTORIA ATIZAPÁN DE ZARAGOZA",
-      "entidad": "MEXICO",
-      "municipio": "",
-      "tipoUnidad": "Primer Nivel",
-      "diasSinReporte": 0,
-      "ultimaFechaRegistro": "Sin registro en ciclo actual"
-    },
-    {
-      "id": "nr-19",
+      "id": "nr-11",
       "clues": "OCIMB000350",
       "nombreUnidad": "HC HOSPITAL INTEGRAL COMUNITARIO CHALCATONGO",
       "entidad": "OAXACA",
@@ -410,7 +330,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-20",
+      "id": "nr-12",
       "clues": "OCIMB000490",
       "nombreUnidad": "HG HUAJUAPAN ENF. MARÍA DEL PILAR SÁNCHEZ VILLAVICENCIO",
       "entidad": "OAXACA",
@@ -420,7 +340,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-21",
+      "id": "nr-13",
       "clues": "OCIMB001844",
       "nombreUnidad": "HG CUICATLAN DR. ALBERTO VARGAS MERINO",
       "entidad": "OAXACA",
@@ -430,7 +350,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-22",
+      "id": "nr-14",
       "clues": "OCIMB009071",
       "nombreUnidad": "HG PUTLA AMIGO DE LA NIÑEZ Y DE LA MADRE",
       "entidad": "OAXACA",
@@ -440,7 +360,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-23",
+      "id": "nr-15",
       "clues": "OCIMB009416",
       "nombreUnidad": "HC TEOTITLÁN DE FLORES MAGÓN",
       "entidad": "OAXACA",
@@ -450,7 +370,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-24",
+      "id": "nr-16",
       "clues": "TCIMB000791",
       "nombreUnidad": "HOSPITAL REGIONAL DE ALTA ESPECIALIDAD DR. JUAN GRAHAM CASASUS",
       "entidad": "TABASCO",
@@ -460,7 +380,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-25",
+      "id": "nr-17",
       "clues": "VZIMB000790",
       "nombreUnidad": "HOSPITAL DE LA COMUNIDAD COATEPEC",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -470,7 +390,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-26",
+      "id": "nr-18",
       "clues": "VZIMB004944",
       "nombreUnidad": "HOSPITAL GENERAL DE  TIERRA BLANCA JESÚS GARCÍA CORONA",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
@@ -480,7 +400,7 @@
       "ultimaFechaRegistro": "Sin registro en ciclo actual"
     },
     {
-      "id": "nr-27",
+      "id": "nr-19",
       "clues": "VZIMB006315",
       "nombreUnidad": "HOSPITAL GENERAL DE OLUTA-ACAYUCAN",
       "entidad": "VERACRUZ DE IGNACIO DE LA LLAVE",
